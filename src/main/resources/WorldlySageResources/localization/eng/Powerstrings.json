@@ -1,0 +1,38 @@
+{
+  "${ModID}:LosePowerPower": {
+    "NAME": "Lose ",
+    "DESCRIPTIONS": ["At the end of your turn, lose #b"," ","."]
+  },
+  "${ModID}:NextTurnPowerPower": {
+    "NAME": "Next Turn ",
+    "DESCRIPTIONS": ["Next turn, gain #b"," ","."]
+  },
+  "${ModID}:PoisonPowderPower": {
+    "NAME": "Poison Powder",
+    "DESCRIPTIONS": ["Your next Attack applies #b"," #yPoison on hit."]
+  },
+  "${ModID}:BracedPower": {
+    "NAME": "Braced",
+    "DESCRIPTIONS": ["Your next #yBlock gaining card gains #b", " additional #yBlock."]
+  },
+  "${ModID}:ExposedPower": {
+    "NAME": "Exposed",
+    "DESCRIPTIONS": ["Takes #b"," more damage from Attacks this turn."]
+  },
+  "${ModID}:StaggerPower": {
+    "NAME": "Staggered",
+    "DESCRIPTIONS": ["Deals #b"," less damage with Attacks this turn."]
+  },
+  "${ModID}:CardToHandPower": {
+    "NAME": " Next Turn",
+    "DESCRIPTIONS": ["Next turn, add "," into your hand."," copies of "]
+  },
+  "${ModID}:EchoingHymnPower": {
+    "NAME": "Echoing Hymn",
+    "DESCRIPTIONS": ["Gain #b"," #yBlock at the start of your next turn."," #yBlock at the start of your next #b"," turns."]
+  },
+  "${ModID}:GamblerPower": {
+    "NAME": "Gambler",
+    "DESCRIPTIONS": ["Whenever an Attack enters your hand, increase its damage by #b0 to #b"," this combat."]
+  }
+}

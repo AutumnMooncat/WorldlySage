@@ -1,0 +1,24 @@
+{
+  "${ModID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Main description",
+    "UPGRADE_DESCRIPTION": "Upgrade description",
+    "EXTENDED_DESCRIPTION": ["Extra Stuff"]
+  },
+  "${ModID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${ModID}:Petal": {
+    "NAME": "Petal",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
+  },
+  "${ModID}:Star": {
+    "NAME": "Star",
+    "DESCRIPTION": "Deal !D! damage. NL Ignores Block."
+  },
+  "${ModID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  }
+}

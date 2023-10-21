@@ -1,0 +1,18 @@
+{
+  "${ModID}:NatureOrb": {
+    "NAME": "Nature Orb",
+    "FLAVOR": "Plants spring to life around this if left alone too long.",
+    "DESCRIPTIONS": [
+      "Replaces [#3e90f4]Water [#3e90f4]Orb. The first Attack you play each turn costs 0.",
+      "Energy saved: "," NL Per turn: "," NL Per combat: "
+    ]
+  },
+  "${ModID}:WaterOrb": {
+    "NAME": "Water Orb",
+    "FLAVOR": "It seems to contain an unlimited amount of clean water.",
+    "DESCRIPTIONS": [
+      "The first Attack you play each combat costs 0.",
+      "Energy saved: "," NL Per turn: "," NL Per combat: "
+    ]
+  }
+}
