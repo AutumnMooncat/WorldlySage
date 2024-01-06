@@ -1,9 +1,12 @@
 package WorldlySage.util;
 
 import WorldlySage.actions.TimedVFXAction;
+import WorldlySage.cardmods.GrowthMod;
 import WorldlySage.patches.CardCounterPatches;
 import WorldlySage.powers.LosePowerPower;
 import WorldlySage.powers.NextTurnPowerPower;
+import basemod.abstracts.AbstractCardModifier;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -305,5 +308,14 @@ public class Wiz {
         ArrayList<AbstractMonster> ret = new ArrayList<>();
         forAdjacentMonsters(entity, ret::add);
         return ret;
+    }
+
+    public static int getGrowthAmount(AbstractCard card) {
+        ArrayList<AbstractCardModifier> mods = CardModifierManager.getModifiers(card, GrowthMod.ID);
+        if (!mods.isEmpty()) {
+            GrowthMod mod = (GrowthMod) mods.get(0);
+            return mod.amount;
+        }
+        return 0;
     }
 }

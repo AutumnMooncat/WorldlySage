@@ -53,5 +53,22 @@
       "abilities"
     ],
     "DESCRIPTION": "Abilities can be upgraded any number of times via accumulated damage dealt, but cannot be upgraded normally."
+  },
+  {
+    "ID": "plant",
+    "PROPER_NAME": "Plant",
+    "NAMES": [
+      "plant",
+      "planted"
+    ],
+    "DESCRIPTION": "A planted card is set aside. Each turn, place a #yGrowth #yToken on it. You may #yRight #yClick it at any point to return it to your hand."
+  },
+  {
+    "ID": "growth",
+    "PROPER_NAME": "Growth [${ModID}:GrowthIcon]",
+    "NAMES": [
+      "growth"
+    ],
+    "DESCRIPTION": "Growth increases a card's damage and #yBlock amounts."
   }
 ]

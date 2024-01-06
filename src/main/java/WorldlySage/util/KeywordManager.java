@@ -11,6 +11,8 @@ public class KeywordManager {
     public static String INFUSE;
     public static String GATHER;
     public static String ABILITY;
+    public static String PLANT;
+    public static String GROWTH;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");
