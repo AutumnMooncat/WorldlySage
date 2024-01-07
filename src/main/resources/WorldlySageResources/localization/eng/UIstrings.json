@@ -34,5 +34,12 @@
       "Choose a card to Guide.",
       "Choose "," cards to Guide."
     ]
+  },
+  "${ModID}:PlantCardsAction": {
+    "TEXT": [
+      "Plant",
+      "Choose a card to Plant.",
+      "Choose "," cards to Plant."
+    ]
   }
 }
