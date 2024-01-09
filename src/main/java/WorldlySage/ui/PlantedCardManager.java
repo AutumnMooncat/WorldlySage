@@ -46,11 +46,12 @@ public class PlantedCardManager {
     public static void update() {
         bob.update();
         int i = 0;
+        int j = 0;
         hovered = null;
         boolean toRemove = false;
         for (AbstractCard card : cards.group) {
-            card.target_y = Wiz.adp().hb.cY + Wiz.adp().hb.height/2f + Y_OFFSET + bob.y;
-            card.target_x = Wiz.adp().hb.cX + X_OFFSET * (cards.size()-1) / 2f - X_OFFSET * i;
+            card.target_y = Wiz.adp().hb.cY + Wiz.adp().hb.height/2f + Y_OFFSET*(j+1) + bob.y;
+            card.target_x = Wiz.adp().hb.cX + X_OFFSET * Math.min(9, (cards.size()-1-10*j)) / 2f - X_OFFSET * i;
             card.targetAngle = 0f;
             card.update();
             card.hb.update();
@@ -65,6 +66,10 @@ public class PlantedCardManager {
             }
             card.applyPowers();
             i++;
+            if (i == 10) {
+                i = 0;
+                j++;
+            }
         }
         if (toRemove) {
             if (Wiz.adp().hand.size() < BaseMod.MAX_HAND_SIZE) {
