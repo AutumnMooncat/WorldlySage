@@ -5,6 +5,10 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:Bifurcate": {
+    "NAME": "Bifurcate",
+    "DESCRIPTION": "${ModID}:Plant !M! {@@}{!M!|1=copy|@=copies} of a card in your hand."
+  },
   "${ModID}:CrossCut": {
     "NAME": "Cross Cut",
     "DESCRIPTION": "Deal !D! damage to ALL enemies twice."
@@ -12,6 +16,10 @@
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "${ModID}:GrowingPains": {
+    "NAME": "Growing Pains",
+    "DESCRIPTION": "${ModID}:Plant !M! *Shivs."
   },
   "${ModID}:Petal": {
     "NAME": "Petal",
