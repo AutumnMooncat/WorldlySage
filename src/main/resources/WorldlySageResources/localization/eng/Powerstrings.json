@@ -26,5 +26,11 @@
   "${ModID}:CardToHandPower": {
     "NAME": " Next Turn",
     "DESCRIPTIONS": ["Next turn, add "," into your hand."," copies of "]
+  },
+  "${ModID}:FlowingPower": {
+    "NAME": "Flow",
+    "DESCRIPTIONS": [
+      "Next turn, draw #b1 additional card and gain #b1 additional [E] .",
+      "At the start of your next #b"," turns, draw #b1 additional card and gain #b1 additional [E] ."]
   }
 }
