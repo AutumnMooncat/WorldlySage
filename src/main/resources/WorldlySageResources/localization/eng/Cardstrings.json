@@ -21,6 +21,13 @@
     "NAME": "Growing Pains",
     "DESCRIPTION": "${ModID}:Plant !M! *Shivs."
   },
+  "${ModID}:Mending": {
+    "NAME": "Mending",
+    "DESCRIPTION": "Unplayable. NL At the end of your turn, gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
+  },
   "${ModID}:Petal": {
     "NAME": "Petal",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
