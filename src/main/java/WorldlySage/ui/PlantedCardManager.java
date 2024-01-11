@@ -1,12 +1,11 @@
 package WorldlySage.ui;
 
-import WorldlySage.cardmods.GrowthMod;
+import WorldlySage.actions.ApplyGrowthAction;
 import WorldlySage.cards.interfaces.OnPlantCard;
 import WorldlySage.patches.CardCounterPatches;
 import WorldlySage.powers.interfaces.OnPlantPower;
 import WorldlySage.util.Wiz;
 import basemod.BaseMod;
-import basemod.helpers.CardModifierManager;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.mod.stslib.patches.HitboxRightClick;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -119,8 +118,7 @@ public class PlantedCardManager {
         @SpirePrefixPatch
         public static void growCards() {
             for (AbstractCard c : cards.group) {
-                c.superFlash();
-                CardModifierManager.addModifier(c, new GrowthMod(1));
+                ApplyGrowthAction.applyGrowth(c, 1);
             }
         }
     }
