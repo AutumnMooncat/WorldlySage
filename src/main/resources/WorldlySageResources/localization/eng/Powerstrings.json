@@ -26,13 +26,5 @@
   "${ModID}:CardToHandPower": {
     "NAME": " Next Turn",
     "DESCRIPTIONS": ["Next turn, add "," into your hand."," copies of "]
-  },
-  "${ModID}:EchoingHymnPower": {
-    "NAME": "Echoing Hymn",
-    "DESCRIPTIONS": ["Gain #b"," #yBlock at the start of your next turn."," #yBlock at the start of your next #b"," turns."]
-  },
-  "${ModID}:GamblerPower": {
-    "NAME": "Gambler",
-    "DESCRIPTIONS": ["Whenever an Attack enters your hand, increase its damage by #b0 to #b"," this combat."]
   }
 }
