@@ -70,5 +70,14 @@
       "growth"
     ],
     "DESCRIPTION": "Growth increases a card's damage and #yBlock amounts."
+  },
+  {
+    "ID": "water",
+    "PROPER_NAME": "Water",
+    "NAMES": [
+      "water",
+      "watered"
+    ],
+    "DESCRIPTION": "Place a #yGrowth #yToken on a card, increasing its damage and #yBlock."
   }
 ]
