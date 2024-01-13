@@ -1,17 +1,19 @@
 package WorldlySage.relics;
 
 import WorldlySage.TheWorldlySage;
-import WorldlySage.util.Wiz;
+import WorldlySage.actions.ApplyGrowthAction;
+import WorldlySage.actions.PlantCardsAction;
+import WorldlySage.cards.Sapling;
+import WorldlySage.patches.CustomTags;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -25,7 +27,6 @@ public class WaterOrb extends AbstractEasyRelic {
     private final String SAVED_STAT = DESCRIPTIONS[1];
     private final String PER_TURN = DESCRIPTIONS[2];
     private final String PER_COMBAT = DESCRIPTIONS[3];
-    private boolean triggered;
 
     public WaterOrb() {
         super(ID, RelicTier.STARTER, LandingSound.MAGICAL, TheWorldlySage.Enums.SAGELY_MALIBU_COLOR);
@@ -36,19 +37,18 @@ public class WaterOrb extends AbstractEasyRelic {
     public void atBattleStart() {
         flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        Wiz.applyToSelf(new FreeAttackPower(Wiz.adp(), 1));
-        triggered = false;
+        CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        AbstractCard card = new Sapling();
+        card.tags.add(CustomTags.SAGE_RELIC_TRACKER);
+        group.addToTop(card);
+        addToBot(new PlantCardsAction(group, group.size()));
+        addToBot(new ApplyGrowthAction(card, 2));
     }
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if (c.type == AbstractCard.CardType.ATTACK && !triggered) {
-            triggered = true;
-            if (c.cost == -1) {
-                incrementStat(EnergyPanel.getCurrentEnergy());
-            } else if (c.costForTurn > 0) {
-                incrementStat(c.costForTurn);
-            }
+        if (c.hasTag(CustomTags.SAGE_RELIC_TRACKER) && c.block > 0) {
+            incrementStat(c.block);
         }
     }
 

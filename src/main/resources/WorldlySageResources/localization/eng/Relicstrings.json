@@ -3,16 +3,16 @@
     "NAME": "Nature Orb",
     "FLAVOR": "Plants spring to life around this if left alone too long.",
     "DESCRIPTIONS": [
-      "Replaces [#3e90f4]Water [#3e90f4]Orb. The first Attack you play each turn costs 0.",
-      "Energy saved: "," NL Per turn: "," NL Per combat: "
+      "Replaces [#3e90f4]Water [#3e90f4]Orb. At the start of each combat, #y${ModID}:Plant #b3 #ySaplings.",
+      "Block Gained: "," NL Per turn: "," NL Per combat: "
     ]
   },
   "${ModID}:WaterOrb": {
     "NAME": "Water Orb",
     "FLAVOR": "It seems to contain an unlimited amount of clean water.",
     "DESCRIPTIONS": [
-      "The first Attack you play each combat costs 0.",
-      "Energy saved: "," NL Per turn: "," NL Per combat: "
+      "At the start of each combat, #y${ModID}:Plant a #ySapling and #y${ModID}:Water it #b2 times.",
+      "Block Gained: "," NL Per turn: "," NL Per combat: "
     ]
   }
 }
