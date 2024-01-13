@@ -4,6 +4,7 @@ import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import WorldlySage.vfx.DirectedParticleEffect;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
@@ -29,10 +30,11 @@ public class MudSlide extends AbstractEasyCard {
             @Override
             public void update() {
                 CardCrawlGame.sound.play("APPEAR");
-                AbstractDungeon.effectList.add(new DirectedParticleEffect(Color.BROWN.cpy(), p.hb.cX, p.hb.cY, 100f, 0f));
                 for (int i = 0 ; i < 10 ; i++) {
-                    AbstractDungeon.effectList.add(new DirectedParticleEffect(Color.BROWN.cpy(), p.hb.cX, p.hb.cY, 100f, i));
-                    AbstractDungeon.effectList.add(new DirectedParticleEffect(Color.BROWN.cpy(), p.hb.cX, p.hb.cY, 100f, -i));
+                    for (int j = 0 ; j < 20 ; j++) {
+                        AbstractDungeon.effectList.add(new DirectedParticleEffect(Color.BROWN.cpy(), p.hb.cX, p.hb.cY, MathUtils.random(50f, 75f) * j, i * j));
+                        AbstractDungeon.effectList.add(new DirectedParticleEffect(Color.BROWN.cpy(), p.hb.cX, p.hb.cY, MathUtils.random(50f, 75f) * j, -i * j));
+                    }
                 }
                 this.isDone = true;
             }
