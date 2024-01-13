@@ -1,4 +1,4 @@
-package WorldlySage.cards;
+package WorldlySage.cutStuff.cards;
 
 import WorldlySage.actions.EasyXCostAction;
 import WorldlySage.cards.abstracts.AbstractAbilityCard;
