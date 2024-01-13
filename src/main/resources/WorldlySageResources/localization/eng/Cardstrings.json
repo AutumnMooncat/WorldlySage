@@ -28,9 +28,21 @@
       "I can't play this card."
     ]
   },
+  "${ModID}:MudBall": {
+    "NAME": "Mud Ball",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
+  "${ModID}:MudSlide": {
+    "NAME": "Mud Slide",
+    "DESCRIPTION": "Draw !M! cards. NL Apply 1 Vulnerable to ALL enemies."
+  },
   "${ModID}:Petal": {
     "NAME": "Petal",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
+  },
+  "${ModID}:Sapling": {
+    "NAME": "Sapling",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust."
   },
   "${ModID}:Star": {
     "NAME": "Star",
@@ -39,6 +51,10 @@
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:ToweringOak": {
+    "NAME": "Towering Oak",
+    "DESCRIPTION": "Gain !B! Block."
   },
   "${ModID}:Zielregen": {
     "NAME": "Zielregen",
