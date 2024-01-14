@@ -13,7 +13,7 @@ public class Mending extends AbstractEasyCard {
     public final static String ID = makeID(Mending.class.getSimpleName());
 
     public Mending() {
-        super(ID, -2, CardType.SKILL, CardRarity.COMMON, CardTarget.NONE);
+        super(ID, -2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
         baseBlock = block = 5;
     }
 
