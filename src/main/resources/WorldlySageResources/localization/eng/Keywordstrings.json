@@ -79,5 +79,13 @@
       "watered"
     ],
     "DESCRIPTION": "Place a #yGrowth #yToken on a card, increasing its damage and #yBlock."
+  },
+  {
+    "ID": "hydration",
+    "PROPER_NAME": "Hydration",
+    "NAMES": [
+      "hydration"
+    ],
+    "DESCRIPTION": "Whenever you place a #yGrowth #yToken on a card, place additional tokens."
   }
 ]
