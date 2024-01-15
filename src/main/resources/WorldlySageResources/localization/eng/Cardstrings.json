@@ -38,6 +38,10 @@
     "NAME": "Irrigation",
     "DESCRIPTION": "Gain !M! ${ModID}:Hydration."
   },
+  "${ModID}:ManaStorm": {
+    "NAME": "Mana Storm",
+    "DESCRIPTION": "If you end your turn with excess Energy, gain !M! ${ModID}:Mystic_Force."
+  },
   "${ModID}:Mending": {
     "NAME": "Mending",
     "DESCRIPTION": "Unplayable. NL At the end of your turn, gain !B! Block.",
@@ -62,6 +66,10 @@
     "DESCRIPTION": "At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 *Saplings. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "${ModID}:Plant 2 *Saplings. NL At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 *Saplings. NL Exhaust."
   },
+  "${ModID}:RiverOfAsh": {
+    "NAME": "River of Ash",
+    "DESCRIPTION": "Whenever a card is Exhausted this turn, draw 1 card. NL Exhaust 1 card."
+  },
   "${ModID}:RiverOfPeace": {
     "NAME": "River of Peace",
     "DESCRIPTION": "Draw !M! cards. NL ${ModID}:Water them twice."
@@ -73,6 +81,10 @@
   "${ModID}:Sapling": {
     "NAME": "Sapling",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."
+  },
+  "${ModID}:Smoulder": {
+    "NAME": "Smoulder",
+    "DESCRIPTION": "Exhaust up to !M! cards in your hand. NL Gain !M! Vigor for each card Exhausted this way."
   },
   "${ModID}:Star": {
     "NAME": "Star",

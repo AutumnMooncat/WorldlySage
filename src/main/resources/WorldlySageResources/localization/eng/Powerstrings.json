@@ -46,5 +46,16 @@
     "DESCRIPTIONS": [
       "Next turn, #yPlant #b2 #ySaplings.",
       "At the start of your next #b"," turns, #yPlant #b2 #ySaplings."]
+  },
+  "${ModID}:ManaStormPower": {
+    "NAME": "Mana Storm",
+    "DESCRIPTIONS": ["If you end your turn with excess #yEnergy, gain #b"," #yMystic #yForce."]
+  },
+  "${ModID}:RiverOfAshPower": {
+    "NAME": "River of Ash",
+    "DESCRIPTIONS": [
+      "Whenever a card is #yExhausted this turn, draw #b1 card.",
+      "Whenever a card is #yExhausted this turn, draw #b"," cards."
+    ]
   }
 }

@@ -48,5 +48,13 @@
       "Choose a card to Plant a copy of.",
       "Choose "," cards to Plant a copy of."
     ]
+  },
+  "${ModID}:Exhaust": {
+    "TEXT": [
+      "Exhaust",
+      "Choose a card to Exhaust.",
+      "Choose "," cards to Exhaust.",
+      "Choose up to "," card to Exhaust."," cards to Exhaust."
+    ]
   }
 }
