@@ -35,6 +35,6 @@
   },
   "${ModID}:HydrationPower": {
     "NAME": "Hydration",
-    "DESCRIPTIONS": ["#yPlanted cards gain #b"," addition #yGrowth at the end of your turn."]
+    "DESCRIPTIONS": ["Whenever you #yWater a card, add #b"," additional #yGrowth #yTokens."]
   }
 }
