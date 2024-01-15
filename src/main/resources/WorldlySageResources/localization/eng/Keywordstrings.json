@@ -96,5 +96,14 @@
       "mystic_force"
     ],
     "DESCRIPTION": "Draw an additional card and gain an additional energy next turn."
+  },
+  {
+    "ID": "crushed",
+    "PROPER_NAME": "Crushed",
+    "NAMES": [
+      "crush",
+      "crushed"
+    ],
+    "DESCRIPTION": "Crushed creatures take more damage from Attacks."
   }
 ]
