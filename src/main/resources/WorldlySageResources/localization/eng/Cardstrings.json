@@ -45,12 +45,12 @@
       "I can't play this card."
     ]
   },
-  "${ModID}:MudBall": {
-    "NAME": "Mud Ball",
+  "${ModID}:Mudball": {
+    "NAME": "Mudball",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   },
-  "${ModID}:MudSlide": {
-    "NAME": "Mud Slide",
+  "${ModID}:Mudslide": {
+    "NAME": "Mudslide",
     "DESCRIPTION": "Draw !M! cards. NL Apply 1 Vulnerable to ALL enemies."
   },
   "${ModID}:Petal": {

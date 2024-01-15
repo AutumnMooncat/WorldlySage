@@ -16,10 +16,10 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class MudSlide extends AbstractEasyCard {
-    public final static String ID = makeID(MudSlide.class.getSimpleName());
+public class Mudslide extends AbstractEasyCard {
+    public final static String ID = makeID(Mudslide.class.getSimpleName());
 
-    public MudSlide() {
+    public Mudslide() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.ALL_ENEMY);
         baseMagicNumber = magicNumber = 2;
     }

@@ -13,10 +13,10 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class MudBall extends AbstractAbilityCard {
-    public final static String ID = makeID(MudBall.class.getSimpleName());
+public class Mudball extends AbstractAbilityCard {
+    public final static String ID = makeID(Mudball.class.getSimpleName());
 
-    public MudBall() {
+    public Mudball() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
         baseDamage = damage = 6;
         baseMagicNumber = magicNumber = 1;
