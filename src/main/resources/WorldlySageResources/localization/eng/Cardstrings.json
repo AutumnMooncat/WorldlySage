@@ -9,13 +9,30 @@
     "NAME": "Bifurcate",
     "DESCRIPTION": "${ModID}:Plant !M! {@@}{!M!|1=copy|@=copies} of a card in your hand."
   },
+  "${ModID}:Compost": {
+    "NAME": "Compost",
+    "DESCRIPTION": "Exhaust 1 card. NL ${ModID}:Plant 1 *Fertilizer."
+  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:Fertilizer": {
+    "NAME": "Fertilizer",
+    "DESCRIPTION": "Draw cards equal to this cards *Growth. NL Exhaust."
+  },
+  "${ModID}:Forage": {
+    "NAME": "Forage",
+    "DESCRIPTION": "Choose 1 of !M! cards to ${ModID}:Plant. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of !M! Upgraded cards to ${ModID}:Plant. NL Exhaust."
+  },
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
     "DESCRIPTION": "${ModID}:Plant !M! *Shivs."
+  },
+  "${ModID}:Irrigation": {
+    "NAME": "Irrigation",
+    "DESCRIPTION": "Gain !M! ${ModID}:Hydration."
   },
   "${ModID}:Mending": {
     "NAME": "Mending",
