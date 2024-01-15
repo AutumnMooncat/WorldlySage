@@ -59,7 +59,8 @@
   },
   "${ModID}:Reforestation": {
     "NAME": "Reforestation",
-    "DESCRIPTION": "${ModID}:Plant 2 *Saplings. NL At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 *Saplings. NL Exhaust."
+    "DESCRIPTION": "At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 *Saplings. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Plant 2 *Saplings. NL At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 *Saplings. NL Exhaust."
   },
   "${ModID}:RiverOfPeace": {
     "NAME": "River of Peace",

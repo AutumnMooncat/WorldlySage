@@ -17,7 +17,6 @@ public class Reforestation extends AbstractEasyCard {
 
     public Reforestation() {
         super(ID, -1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 0;
         cardsToPreview = new Sapling();
         exhaust = true;
     }
@@ -30,11 +29,13 @@ public class Reforestation extends AbstractEasyCard {
                 effect += i;
             }
             if (effect > 0) {
+                Wiz.applyToSelfTop(new ReforestationPower(p, effect));
+            }
+            if (upgraded) {
                 CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                 for (int i = 0 ; i < 2 ; i++) {
                     group.addToTop(new Sapling());
                 }
-                Wiz.applyToSelfTop(new ReforestationPower(p, effect));
                 addToTop(new PlantCardsAction(group, group.size()));
             }
             return true;
@@ -44,7 +45,7 @@ public class Reforestation extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        uDesc();
     }
 
     @Override
