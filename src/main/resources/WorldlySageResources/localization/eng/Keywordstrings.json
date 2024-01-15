@@ -61,7 +61,7 @@
       "plant",
       "planted"
     ],
-    "DESCRIPTION": "A planted card is set aside. Each turn, place a #yGrowth #yToken on it, increasing its damage and #yBlock. You may #yRight #yClick a planted card to add it into your hand."
+    "DESCRIPTION": "A planted card is set aside. Each turn, #yWater it, increasing its damage and #yBlock. You may #yRight #yClick a planted card to add it into your hand."
   },
   {
     "ID": "growth",
@@ -86,6 +86,6 @@
     "NAMES": [
       "hydration"
     ],
-    "DESCRIPTION": "Whenever you place a #yGrowth #yToken on a card, place additional tokens."
+    "DESCRIPTION": "Whenever you #yWater a card, #yWater it additional times."
   }
 ]
