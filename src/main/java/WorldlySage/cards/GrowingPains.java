@@ -15,7 +15,7 @@ public class GrowingPains extends AbstractEasyCard {
 
     public GrowingPains() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 3;
+        baseMagicNumber = magicNumber = 2;
         cardsToPreview = new Shiv();
     }
 
