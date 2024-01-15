@@ -9,6 +9,10 @@
     "NAME": "Bifurcate",
     "DESCRIPTION": "${ModID}:Plant !M! {@@}{!M!|1=copy|@=copies} of a card in your hand."
   },
+  "${ModID}:BlackHole": {
+    "NAME": "Black Hole",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Crushed. NL Exhaust."
+  },
   "${ModID}:Compost": {
     "NAME": "Compost",
     "DESCRIPTION": "Exhaust 1 card. NL ${ModID}:Plant 1 *Fertilizer."

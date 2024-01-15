@@ -3,12 +3,16 @@ package WorldlySage.actions;
 import WorldlySage.MainModfile;
 import WorldlySage.util.TexLoader;
 import WorldlySage.vfx.VFXContainer;
+import basemod.helpers.VfxBuilder;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+
+import java.util.function.BiConsumer;
 
 public class ThrowObjectAction extends AbstractGameAction {
     //private static final float THROW_TIME = 0.25f;
@@ -25,6 +29,10 @@ public class ThrowObjectAction extends AbstractGameAction {
 
     public ThrowObjectAction(Texture tex, float scale, Hitbox target, Color color, boolean bounceOff) {
         this.e = VFXContainer.throwEffect(tex, scale, target, color, bounceOff, true);
+    }
+
+    public ThrowObjectAction(Texture tex, float scale, Hitbox target, Color color, boolean bounceOff, BiConsumer<VfxBuilder, SpriteBatch> onRender) {
+        this.e = VFXContainer.throwEffect(tex, scale, target, color, bounceOff, true, onRender);
     }
 
     @Override

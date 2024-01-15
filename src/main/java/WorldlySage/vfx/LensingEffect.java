@@ -9,13 +9,31 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
-import com.megacrit.cardcrawl.helpers.input.InputHelper;
 
 import java.nio.charset.StandardCharsets;
 
-public class ShaderTest implements ScreenPostProcessor {
+public class LensingEffect implements ScreenPostProcessor {
     public static ShaderProgram sp = new ShaderProgram(SpriteBatch.createDefaultShader().getVertexShaderSource(), Gdx.files.internal(MainModfile.makePath("shaders/lensing.frag")).readString(String.valueOf(StandardCharsets.UTF_8)));
     public static float time;
+    public float x, y;
+    public float size;
+
+    public LensingEffect(float x, float y) {
+        updatePosition(x, y);
+        this.size = 1000f;
+    }
+
+    public void updatePosition(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public void shrinkSize() {
+        size -= 1000 * Gdx.graphics.getRawDeltaTime();
+        if (size < 0) {
+            size = 0;
+        }
+    }
 
     @Override
     public void postProcess(SpriteBatch sb, TextureRegion textureRegion, OrthographicCamera orthographicCamera) {
@@ -25,8 +43,8 @@ public class ShaderTest implements ScreenPostProcessor {
         ShaderProgram back = sb.getShader();
         sb.setShader(sp);
         sp.setUniformf("x_time", time);
-        sp.setUniformf("u_mouse", InputHelper.mX, InputHelper.mY);
-        sp.setUniformf("size", 1000f);
+        sp.setUniformf("u_mouse", x, y);
+        sp.setUniformf("size", size);
         sb.draw(textureRegion, 0, 0);
         sb.setShader(back);
     }
