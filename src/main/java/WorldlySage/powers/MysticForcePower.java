@@ -21,7 +21,7 @@ public class MysticForcePower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
-        this.loadRegion("like_water");
+        this.loadRegion("deva2");
         updateDescription();
     }
 
