@@ -83,6 +83,6 @@
   },
   "${ModID}:ToweringOak": {
     "NAME": "Towering Oak",
-    "DESCRIPTION": "Gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Growth affects this card !M! times."
   }
 }

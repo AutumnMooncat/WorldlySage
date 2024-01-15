@@ -1,6 +1,7 @@
 package WorldlySage.cardmods;
 
 import WorldlySage.MainModfile;
+import WorldlySage.cards.interfaces.GrowthModifierCard;
 import WorldlySage.util.KeywordManager;
 import WorldlySage.util.TexLoader;
 import basemod.BaseMod;
@@ -35,7 +36,7 @@ public class GrowthMod extends AbstractCardModifier {
     @Override
     public float modifyBaseDamage(float damage, DamageInfo.DamageType type, AbstractCard card, AbstractMonster target) {
         if (damage >= 0) {
-            damage += amount;
+            damage += amount * (card instanceof GrowthModifierCard ? ((GrowthModifierCard)card).boostPerGrowth() : 1);
         }
         return damage;
     }
@@ -43,7 +44,7 @@ public class GrowthMod extends AbstractCardModifier {
     @Override
     public float modifyBaseBlock(float block, AbstractCard card) {
         if (block >= 0) {
-            block += amount;
+            block += amount * (card instanceof GrowthModifierCard ? ((GrowthModifierCard)card).boostPerGrowth() : 1);
         }
         return block;
     }
