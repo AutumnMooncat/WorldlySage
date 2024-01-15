@@ -57,6 +57,18 @@
     "NAME": "Petal",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
   },
+  "${ModID}:Reforestation": {
+    "NAME": "Reforestation",
+    "DESCRIPTION": "${ModID}:Plant 2 *Saplings. NL At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 *Saplings. NL Exhaust."
+  },
+  "${ModID}:RiverOfPeace": {
+    "NAME": "River of Peace",
+    "DESCRIPTION": "Draw !M! cards. NL ${ModID}:Water them twice."
+  },
+  "${ModID}:RiverOfTime": {
+    "NAME": "River of Time",
+    "DESCRIPTION": "Put a card from your discard pile into your hand. NL ${ModID}:Water it !M! times. NL Exhaust."
+  },
   "${ModID}:Sapling": {
     "NAME": "Sapling",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."

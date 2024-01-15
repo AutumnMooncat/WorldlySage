@@ -40,5 +40,11 @@
   "${ModID}:CrushPower": {
     "NAME": "Crushed",
     "DESCRIPTIONS": ["Takes #b"," more damage from Attacks."]
+  },
+  "${ModID}:ReforestationPower": {
+    "NAME": "Reforestation",
+    "DESCRIPTIONS": [
+      "Next turn, #yPlant #b2 #ySaplings.",
+      "At the start of your next #b"," turns, #yPlant #b2 #ySaplings."]
   }
 }
