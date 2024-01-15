@@ -15,6 +15,7 @@ public class KeywordManager {
     public static String GROWTH;
     public static String WATER;
     public static String HYDRATION;
+    public static String MYSTIC_FORCE;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

@@ -87,5 +87,14 @@
       "hydration"
     ],
     "DESCRIPTION": "Whenever you #yWater a card, #yWater it additional times."
+  },
+  {
+    "ID": "mystic_force",
+    "PROPER_NAME": "Mystic Force",
+    "NAMES": [
+      "mystic force",
+      "mystic_force"
+    ],
+    "DESCRIPTION": "Draw an additional card and gain an additional energy next turn."
   }
 ]
