@@ -17,6 +17,7 @@ public class KeywordManager {
     public static String HYDRATION;
     public static String MYSTIC_FORCE;
     public static String CRUSH;
+    public static String FLOW;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");
