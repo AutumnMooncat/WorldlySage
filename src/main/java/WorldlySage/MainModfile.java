@@ -10,6 +10,7 @@ import WorldlySage.powers.StaggerPower;
 import WorldlySage.powers.interfaces.InfusionTriggerPower;
 import WorldlySage.powers.interfaces.OnUpgradePower;
 import WorldlySage.relics.AbstractEasyRelic;
+import WorldlySage.ui.PlantedCardManager;
 import WorldlySage.util.*;
 import WorldlySage.vfx.ShaderTest;
 import basemod.AutoAdd;
@@ -48,7 +49,7 @@ public class MainModfile implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber {
+        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber, StartGameSubscriber {
 
     public static final String modID = "WorldlySage";
     public static final Logger logger = LogManager.getLogger(MainModfile.class.getName());
@@ -345,5 +346,10 @@ public class MainModfile implements
                 }
             }
         }
+    }
+
+    @Override
+    public void receiveStartGame() {
+        PlantedCardManager.EmptyCards.yeet();
     }
 }
