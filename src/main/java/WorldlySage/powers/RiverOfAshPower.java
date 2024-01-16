@@ -22,7 +22,7 @@ public class RiverOfAshPower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
-        this.loadRegion("darkembrace");
+        this.loadRegion("corruption");
         updateDescription();
     }
 
