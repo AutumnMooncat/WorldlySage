@@ -25,7 +25,7 @@ import static WorldlySage.MainModfile.makeID;
 
 public class GrowthMod extends AbstractCardModifier {
     public static String ID = makeID(GrowthMod.class.getSimpleName());
-    public static Texture modIcon = /*TextureScaler.rescale(*/TexLoader.getTexture(MainModfile.makeImagePath("icons/GrowthToken2.png"))/*, 64, 64)*/;
+    public static Texture modIcon = /*TextureScaler.rescale(*/TexLoader.getTexture(MainModfile.makeImagePath("icons/three-leaves.png"))/*, 64, 64)*/;
     private static final ArrayList<TooltipInfo> tips = new ArrayList<>(Collections.singletonList(new TooltipInfo(BaseMod.getKeywordTitle(KeywordManager.GROWTH), BaseMod.getKeywordDescription(KeywordManager.GROWTH))));
     public int amount;
 
