@@ -25,6 +25,10 @@
     "NAME": "Fertilizer",
     "DESCRIPTION": "Draw cards equal to this cards *Growth. NL Exhaust."
   },
+  "${ModID}:Floe": {
+    "NAME": "Floe",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{!M!|>1=s}. NL Discard !M! card{!M!|>1=s}.{@@}"
+  },
   "${ModID}:Forage": {
     "NAME": "Forage",
     "DESCRIPTION": "Choose 1 of !M! cards to ${ModID}:Plant. NL Exhaust.",
@@ -33,6 +37,10 @@
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
     "DESCRIPTION": "${ModID}:Plant !M! *Shivs."
+  },
+  "${ModID}:IceWave": {
+    "NAME": "Ice Wave",
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
   },
   "${ModID}:Irrigation": {
     "NAME": "Irrigation",
