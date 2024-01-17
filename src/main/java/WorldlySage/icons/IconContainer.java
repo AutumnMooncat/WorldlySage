@@ -5,8 +5,15 @@ import WorldlySage.cardmods.DrawGlyph;
 import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cardmods.GrowthMod;
 import com.evacipated.cardcrawl.mod.stslib.icons.AbstractCustomIcon;
+import com.evacipated.cardcrawl.mod.stslib.icons.CustomIconHelper;
 
 public class IconContainer {
+    public static void register() {
+        CustomIconHelper.addCustomIcon(IconContainer.Growth.get());
+        CustomIconHelper.addCustomIcon(IconContainer.Energy.get());
+        CustomIconHelper.addCustomIcon(IconContainer.Draw.get());
+    }
+
     public static class Growth extends AbstractCustomIcon {
         static AbstractCustomIcon singleton;
 
