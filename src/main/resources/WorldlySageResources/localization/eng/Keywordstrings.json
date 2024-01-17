@@ -157,5 +157,14 @@
       "shield_glyph"
     ],
     "DESCRIPTION": "The next time this card is played, gain #b3 #yBlock and remove a #yShield #yGlyph."
+  },
+  {
+    "ID": "swap_glyph",
+    "PROPER_NAME": "Swap Glyph [${ModID}:CostIcon]",
+    "NAMES": [
+      "swap glyph",
+      "swap_glyph"
+    ],
+    "DESCRIPTION": "The next time this card is played, change its cost back and remove a #ySwap #yGlyph."
   }
 ]

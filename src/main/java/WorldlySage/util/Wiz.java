@@ -5,6 +5,7 @@ import WorldlySage.cardmods.GrowthMod;
 import WorldlySage.patches.CardCounterPatches;
 import WorldlySage.powers.LosePowerPower;
 import WorldlySage.powers.NextTurnPowerPower;
+import WorldlySage.ui.PlantedCardManager;
 import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -43,7 +44,7 @@ public class Wiz {
         }
     }
 
-    public static ArrayList<AbstractCard> getAllCardsInCardGroups(boolean includeHand, boolean includeExhaust) {
+    public static ArrayList<AbstractCard> getAllCardsInCardGroups(boolean includeHand, boolean includeExhaust, boolean includePlant) {
         ArrayList<AbstractCard> masterCardsList = new ArrayList<>();
         masterCardsList.addAll(AbstractDungeon.player.drawPile.group);
         masterCardsList.addAll(AbstractDungeon.player.discardPile.group);
@@ -52,6 +53,9 @@ public class Wiz {
         }
         if (includeExhaust) {
             masterCardsList.addAll(AbstractDungeon.player.exhaustPile.group);
+        }
+        if (includePlant) {
+            masterCardsList.addAll(PlantedCardManager.cards.group);
         }
         return masterCardsList;
     }

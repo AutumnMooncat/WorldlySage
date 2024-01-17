@@ -1,6 +1,7 @@
 package WorldlySage.actions;
 
 import WorldlySage.cardmods.AbstractGlyph;
+import WorldlySage.cardmods.CostSwapGlyph;
 import WorldlySage.cards.interfaces.OnGlyphCard;
 import WorldlySage.powers.interfaces.OnGlyphPower;
 import WorldlySage.util.Wiz;
@@ -26,6 +27,7 @@ public class ApplyGlyphAction extends AbstractGameAction {
 
     public static void applyGlyph(AbstractCard card, AbstractGlyph glyph) {
         int amount = glyph.amount;
+        int base = amount;
         if (card instanceof OnGlyphCard) {
             amount = ((OnGlyphCard) card).onGlyphApplied(amount);
         }
@@ -36,6 +38,10 @@ public class ApplyGlyphAction extends AbstractGameAction {
         }
         if (amount != 0) {
             glyph.amount = amount;
+            int delta = amount - base;
+            if (glyph instanceof CostSwapGlyph) {
+                ((CostSwapGlyph) glyph).fixArray(delta);
+            }
             card.superFlash();
             CardModifierManager.addModifier(card, glyph);
         }

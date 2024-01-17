@@ -67,5 +67,9 @@
   "${ModID}:WildfirePower": {
     "NAME": "Wildfire",
     "DESCRIPTIONS": ["Whenever you #yExhaust a card, gain #b"," [E] ."]
+  },
+  "${ModID}:GraspTheArcanePower": {
+    "NAME": "Grasp the Arcane",
+    "DESCRIPTIONS": ["Whenever you put a #yGlyph on a card, increase its amount by #b","."]
   }
 }

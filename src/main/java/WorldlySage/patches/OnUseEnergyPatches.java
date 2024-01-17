@@ -19,7 +19,7 @@ public class OnUseEnergyPatches {
         @SpirePrefixPatch
         public static void trigger(int e) {
             int amount = Math.min(e, EnergyPanel.totalCount);
-            for (AbstractCard c : Wiz.getAllCardsInCardGroups(true, true)) {
+            for (AbstractCard c : Wiz.getAllCardsInCardGroups(true, true, true)) {
                 if (c instanceof OnUseEnergyObject) {
                     ((OnUseEnergyObject) c).onUseEnergy(amount);
                 }

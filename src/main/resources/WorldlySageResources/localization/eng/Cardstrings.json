@@ -21,6 +21,11 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:Engrave": {
+    "NAME": "Engrave",
+    "DESCRIPTION": "Choose 2 cards that cost 0 or more. NL Swap their costs and put a ${ModID}:Swap_Glyph on them.",
+    "EXTENDED_DESCRIPTION": ["Swap Costs"]
+  },
   "${ModID}:Fertilizer": {
     "NAME": "Fertilizer",
     "DESCRIPTION": "Draw cards equal to this cards *Growth. NL Exhaust."
@@ -33,6 +38,10 @@
     "NAME": "Forage",
     "DESCRIPTION": "Choose 1 of !M! cards to ${ModID}:Plant. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Choose 1 of !M! Upgraded cards to ${ModID}:Plant. NL Exhaust."
+  },
+  "${ModID}:GraspTheArcane": {
+    "NAME": "Grasp the Arcane",
+    "DESCRIPTION": "Whenever you apply a ${ModID}:Glyph to a card, increase its amount by !M!."
   },
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
@@ -105,6 +114,10 @@
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:TheMountain": {
+    "NAME": "The Mountain",
+    "DESCRIPTION": "Put !M! ${ModID}:Shield_Glyph on all your cards. NL Exhaust."
   },
   "${ModID}:ToweringOak": {
     "NAME": "Towering Oak",

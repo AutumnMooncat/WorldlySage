@@ -13,6 +13,7 @@ public class IconContainer {
         makeIcon("Draw", DrawGlyph.ICON);
         makeIcon("Pierce", PiercingGlyph.ICON);
         makeIcon("Shield", ShieldGlyph.ICON);
+        makeIcon("Cost", CostSwapGlyph.ICON);
     }
     
     private static void makeIcon(String ID, Texture icon) {
