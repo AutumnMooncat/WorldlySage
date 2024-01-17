@@ -113,5 +113,23 @@
       "flow"
     ],
     "DESCRIPTION": "Draw an additional card next turn."
+  },
+  {
+    "ID": "energy_glyph",
+    "PROPER_NAME": "Energy Glyph [${ModID}:EnergyIcon]",
+    "NAMES": [
+      "energy glyph",
+      "energy_glyph"
+    ],
+    "DESCRIPTION": "The next time this card is played, gain [E] and remove an #yEnergy #yGlyph."
+  },
+  {
+    "ID": "draw_glyph",
+    "PROPER_NAME": "Draw Glyph [${ModID}:DrawIcon]",
+    "NAMES": [
+      "draw glyph",
+      "draw_glyph"
+    ],
+    "DESCRIPTION": "The next time this card is played, draw a card and remove a #yDraw #yGlyph."
   }
 ]

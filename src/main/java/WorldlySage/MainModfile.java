@@ -167,6 +167,8 @@ public class MainModfile implements
         BaseMod.addDynamicVariable(new XP());
 
         CustomIconHelper.addCustomIcon(IconContainer.Growth.get());
+        CustomIconHelper.addCustomIcon(IconContainer.Energy.get());
+        CustomIconHelper.addCustomIcon(IconContainer.Draw.get());
 
         new AutoAdd(modID)
                 .packageFilter(modID+".cards")
