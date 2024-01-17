@@ -38,6 +38,10 @@
     "NAME": "Growing Pains",
     "DESCRIPTION": "${ModID}:Plant !M! *Shivs."
   },
+  "${ModID}:Haste": {
+    "NAME": "Haste",
+    "DESCRIPTION": "Gain !M! ${ModID}:Mystic_Force."
+  },
   "${ModID}:IceWave": {
     "NAME": "Ice Wave",
     "DESCRIPTION": "Deal !D! damage. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
@@ -105,5 +109,14 @@
   "${ModID}:ToweringOak": {
     "NAME": "Towering Oak",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Growth affects this card !M! times."
+  },
+  "${ModID}:Wildfire": {
+    "NAME": "Wildfire",
+    "DESCRIPTION": "Whenever you Exhaust a card, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}.{@@}"
+  },
+  "${ModID}:Wormhole": {
+    "NAME": "Wormhole",
+    "DESCRIPTION": "Put a card from your draw pile, discard pile, or exhaust pile into your hand. NL Put this card where that card was.",
+    "EXTENDED_DESCRIPTION": ["Choose a card to swap positions with."]
   }
 }

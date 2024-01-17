@@ -63,5 +63,9 @@
     "DESCRIPTIONS": [
       "Next turn, draw #b1 additional card.",
       "At the start of your next #b"," turns, draw #b1 additional card."]
+  },
+  "${ModID}:WildfirePower": {
+    "NAME": "Wildfire",
+    "DESCRIPTIONS": ["Whenever you #yExhaust a card, gain #b"," [E] ."]
   }
 }
