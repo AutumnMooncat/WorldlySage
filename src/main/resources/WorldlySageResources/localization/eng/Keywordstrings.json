@@ -139,5 +139,23 @@
       "draw_glyph"
     ],
     "DESCRIPTION": "The next time this card is played, draw a card and remove a #yDraw #yGlyph."
+  },
+  {
+    "ID": "pierce_glyph",
+    "PROPER_NAME": "Pierce Glyph [${ModID}:PierceIcon]",
+    "NAMES": [
+      "pierce glyph",
+      "pierce_glyph"
+    ],
+    "DESCRIPTION": "The next time this card is played, ignore enemy #yBlock and remove a #yPierce #yGlyph."
+  },
+  {
+    "ID": "shield_glyph",
+    "PROPER_NAME": "Shield Glyph [${ModID}:ShieldIcon]",
+    "NAMES": [
+      "shield glyph",
+      "shield_glyph"
+    ],
+    "DESCRIPTION": "The next time this card is played, gain #b3 #yBlock and remove a #yShield #yGlyph."
   }
 ]

@@ -21,6 +21,8 @@ public class KeywordManager {
     public static String GLYPH;
     public static String ENERGY_GLYPH;
     public static String DRAW_GLYPH;
+    public static String PIERCE_GLYPH;
+    public static String SHIELD_GLYPH;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");
