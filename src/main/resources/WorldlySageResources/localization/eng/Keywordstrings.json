@@ -115,6 +115,14 @@
     "DESCRIPTION": "Draw an additional card next turn."
   },
   {
+    "ID": "glyph",
+    "PROPER_NAME": "Glyph",
+    "NAMES": [
+      "glyph"
+    ],
+    "DESCRIPTION": "A one time effect that can be added to cards."
+  },
+  {
     "ID": "energy_glyph",
     "PROPER_NAME": "Energy Glyph [${ModID}:EnergyIcon]",
     "NAMES": [
