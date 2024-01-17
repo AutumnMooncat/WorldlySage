@@ -10,6 +10,7 @@ import basemod.helpers.TooltipInfo;
 import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
 import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -70,7 +71,7 @@ public abstract class AbstractAbilityCard extends AbstractEasyCard implements Cu
     }
 
     public void upgrade() {
-        if (expUpgrade || copyFix) {
+        if (expUpgrade || copyFix || SingleCardViewPopup.isViewingUpgrade) {
             upgradeName();
             upp();
             expUpgrade = false;
