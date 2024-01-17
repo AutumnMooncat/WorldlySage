@@ -15,11 +15,12 @@ public class RiverOfAsh extends AbstractEasyCard {
 
     public RiverOfAsh() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
+        baseMagicNumber = magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        Wiz.applyToSelf(new RiverOfAshPower(p, 1));
+        Wiz.applyToSelf(new RiverOfAshPower(p, magicNumber));
         addToBot(new ExhaustAction(1, false, false));
     }
 
