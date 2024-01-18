@@ -130,6 +130,10 @@
     "NAME": "The Mountain",
     "DESCRIPTION": "Put !M! ${ModID}:Shield_Glyph on all your cards. NL Exhaust."
   },
+  "${ModID}:Till": {
+    "NAME": "Till",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Plant !M! *Sapling{@@}{!M!|>1=s}."
+  },
   "${ModID}:ToweringOak": {
     "NAME": "Towering Oak",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Growth affects this card !M! times."
