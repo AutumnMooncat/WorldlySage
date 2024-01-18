@@ -24,6 +24,7 @@ public class KeywordManager {
     public static String PIERCE_GLYPH;
     public static String SHIELD_GLYPH;
     public static String SWAP_GLYPH;
+    public static String ACCURACY_GLYPH;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

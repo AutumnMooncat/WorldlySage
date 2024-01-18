@@ -14,6 +14,7 @@ public class IconContainer {
         makeIcon("Pierce", PiercingGlyph.ICON);
         makeIcon("Shield", ShieldGlyph.ICON);
         makeIcon("Cost", CostSwapGlyph.ICON);
+        makeIcon("Accuracy", AccuracyGlyph.ICON);
     }
     
     private static void makeIcon(String ID, Texture icon) {

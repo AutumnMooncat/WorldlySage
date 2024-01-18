@@ -166,5 +166,14 @@
       "swap_glyph"
     ],
     "DESCRIPTION": "The next time this card is played, change its cost back and remove a #ySwap #yGlyph."
+  },
+  {
+    "ID": "accuracy_glyph",
+    "PROPER_NAME": "Accuracy Glyph [${ModID}:AccuracyIcon]",
+    "NAMES": [
+      "accuracy glyph",
+      "accuracy_glyph"
+    ],
+    "DESCRIPTION": "The next time this card is played, deal #b50% more damage and remove an #yAccuracy #yGlyph."
   }
 ]
