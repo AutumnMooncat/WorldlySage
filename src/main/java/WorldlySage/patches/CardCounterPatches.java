@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.EnableEndTurnButtonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -27,6 +28,7 @@ public class CardCounterPatches {
     public static final ArrayList<AbstractCard> cardsDrawnThisTurn = new ArrayList<>();
     public static final ArrayList<AbstractCard> cardsDrawnThisCombat = new ArrayList<>();
     public static final ArrayList<AbstractCard> cardsCreatedThisCombat = new ArrayList<>();
+    public static final ArrayList<AbstractCard> cardsExhaustedThisTurn = new ArrayList<>();
     public static final ArrayList<AbstractCard> initialHand = new ArrayList<>();
     public static boolean isInitialDraw;
 
@@ -44,6 +46,7 @@ public class CardCounterPatches {
             cardsDrawnThisCombat.clear();
             cardsDrawnThisTurn.clear();
             cardsCreatedThisCombat.clear();
+            cardsExhaustedThisTurn.clear();
             initialHand.clear();
             isInitialDraw = true;
         }
@@ -57,6 +60,7 @@ public class CardCounterPatches {
             cardsGuidedThisTurn = 0;
             cardsProjectedThisTurn = 0;
             cardsDrawnThisTurn.clear();
+            cardsExhaustedThisTurn.clear();
             initialHand.clear();
             isInitialDraw = true;
         }
@@ -117,6 +121,14 @@ public class CardCounterPatches {
             public int[] Locate(CtBehavior ctBehavior) throws Exception {
                 return LineFinder.findInOrder(ctBehavior, new Matcher.MethodCallMatcher(GameActionManager.class, "useNextCombatActions"));
             }
+        }
+    }
+
+    @SpirePatch2(clz = CardGroup.class, method = "moveToExhaustPile")
+    public static class TrackExhaust {
+        @SpirePostfixPatch
+        public static void plz(AbstractCard c) {
+            cardsExhaustedThisTurn.add(c);
         }
     }
 }

@@ -32,7 +32,7 @@
   },
   "${ModID}:Fireball": {
     "NAME": "Fireball",
-    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Fireball cards by !M! this combat."
+    "DESCRIPTION": "Deal !D! damage. NL If you Exhausted a card this turn, deal !D! damage again."
   },
   "${ModID}:Floe": {
     "NAME": "Floe",
@@ -126,6 +126,10 @@
   "${ModID}:Smoulder": {
     "NAME": "Smoulder",
     "DESCRIPTION": "Exhaust up to !M! cards in your hand. NL Gain !M! Vigor for each card Exhausted this way."
+  },
+  "${ModID}:Spark": {
+    "NAME": "Spark",
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Spark cards by !M! this combat."
   },
   "${ModID}:Star": {
     "NAME": "Star",
