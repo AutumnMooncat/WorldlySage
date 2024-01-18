@@ -11,26 +11,28 @@ import static WorldlySage.MainModfile.makeID;
 
 public class Mending extends AbstractEasyCard {
     public final static String ID = makeID(Mending.class.getSimpleName());
+    private boolean justTriggered;
 
     public Mending() {
         super(ID, -2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
-        baseBlock = block = 5;
+        baseBlock = block = 8;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (this.dontTriggerOnUseCard) {
+        if (justTriggered || (purgeOnUse && isInAutoplay)) {
+            justTriggered = false;
             blck();
         }
     }
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
-        return false;
+        return justTriggered || (purgeOnUse && isInAutoplay);
     }
 
     public void triggerOnEndOfTurnForPlayingCard() {
-        this.dontTriggerOnUseCard = true;
+        justTriggered = true;
         AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(this, true));
     }
 
