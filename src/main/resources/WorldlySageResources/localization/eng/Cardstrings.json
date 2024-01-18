@@ -115,6 +115,10 @@
     "NAME": "River of Time",
     "DESCRIPTION": "Put a card from your discard pile into your hand. NL ${ModID}:Grow it !M! times. NL Exhaust."
   },
+  "${ModID}:RockSmash": {
+    "NAME": "Rock Smash",
+    "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Block."
+  },
   "${ModID}:Sapling": {
     "NAME": "Sapling",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."
@@ -154,6 +158,10 @@
   "${ModID}:Wildfire": {
     "NAME": "Wildfire",
     "DESCRIPTION": "Whenever you Exhaust a card, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}.{@@}"
+  },
+  "${ModID}:WoodWall": {
+    "NAME": "Wood Wall",
+    "DESCRIPTION": "Gain !B! Block twice."
   },
   "${ModID}:Wormhole": {
     "NAME": "Wormhole",
