@@ -30,6 +30,10 @@
     "NAME": "Fertilizer",
     "DESCRIPTION": "Draw cards equal to this cards *Growth. NL Exhaust."
   },
+  "${ModID}:Fireball": {
+    "NAME": "Fireball",
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Fireball cards by !M! this combat."
+  },
   "${ModID}:Floe": {
     "NAME": "Floe",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{!M!|>1=s}. NL Discard !M! card{!M!|>1=s}.{@@}"
@@ -77,6 +81,11 @@
   "${ModID}:Mudslide": {
     "NAME": "Mudslide",
     "DESCRIPTION": "Draw !M! cards. NL Apply 1 Vulnerable to ALL enemies."
+  },
+  "${ModID}:Overgrowth": {
+    "NAME": "Overgrowth Form",
+    "DESCRIPTION": "Ethereal. NL Whenever you draw a card, ${ModID}:Grow it !M! times.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a card, ${ModID}:Grow it !M! times."
   },
   "${ModID}:Pitfall": {
     "NAME": "Pitfall",
@@ -137,6 +146,10 @@
   "${ModID}:ToweringOak": {
     "NAME": "Towering Oak",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Growth affects this card !M! times."
+  },
+  "${ModID}:Waterball": {
+    "NAME": "Waterball",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL If the last card played this combat costed 0, draw !M! card{!M!|>1=s}."
   },
   "${ModID}:Wildfire": {
     "NAME": "Wildfire",
