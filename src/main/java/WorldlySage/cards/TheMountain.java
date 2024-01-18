@@ -1,11 +1,8 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.ApplyGlyphAction;
+import WorldlySage.actions.ApplyGlyphToAllCardsAction;
 import WorldlySage.cardmods.ShieldGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import WorldlySage.util.Wiz;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -23,15 +20,7 @@ public class TheMountain extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new AbstractGameAction() {
-            @Override
-            public void update() {
-                this.isDone = true;
-                for (AbstractCard c : Wiz.getAllCardsInCardGroups(true, true, true)) {
-                    ApplyGlyphAction.applyGlyph(c, new ShieldGlyph(magicNumber));
-                }
-            }
-        });
+        addToBot(new ApplyGlyphToAllCardsAction(new ShieldGlyph(magicNumber)));
     }
 
     @Override
@@ -43,4 +32,5 @@ public class TheMountain extends AbstractEasyCard {
     public String cardArtCopy() {
         return Defend_Green.ID;
     }
+
 }
