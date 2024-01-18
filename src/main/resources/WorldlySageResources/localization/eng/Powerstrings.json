@@ -35,7 +35,7 @@
   },
   "${ModID}:HydrationPower": {
     "NAME": "Hydration",
-    "DESCRIPTIONS": ["Whenever you #yWater a card, add #b"," additional #yGrowth #yTokens."]
+    "DESCRIPTIONS": ["Whenever you #yGrow a card, increase the amount it #yGrows by #b","."]
   },
   "${ModID}:CrushPower": {
     "NAME": "Crushed",

@@ -61,13 +61,16 @@
       "plant",
       "planted"
     ],
-    "DESCRIPTION": "A planted card is set aside. Each turn, #yWater it, increasing its damage and #yBlock. You may #yRight #yClick a planted card to add it into your hand."
+    "DESCRIPTION": "A planted card is set aside. Each turn, it #yGrows, increasing its damage and #yBlock. NL You may #yRight #yClick a planted card to add it into your hand."
   },
   {
     "ID": "growth",
     "PROPER_NAME": "Growth [${ModID}:GrowthIcon]",
     "NAMES": [
-      "growth"
+      "growth",
+      "grow",
+      "grown",
+      "grows"
     ],
     "DESCRIPTION": "Growth increases a card's damage and #yBlock amounts."
   },
@@ -78,7 +81,7 @@
       "water",
       "watered"
     ],
-    "DESCRIPTION": "Place a #yGrowth #yToken on a card, increasing its damage and #yBlock."
+    "DESCRIPTION": "Unused"
   },
   {
     "ID": "hydration",
@@ -86,7 +89,7 @@
     "NAMES": [
       "hydration"
     ],
-    "DESCRIPTION": "Whenever you #yWater a card, #yWater it additional times."
+    "DESCRIPTION": "Whenever you #yGrow a card, increase the amount it #yGrows."
   },
   {
     "ID": "mystic_force",

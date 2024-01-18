@@ -93,11 +93,11 @@
   },
   "${ModID}:RiverOfPeace": {
     "NAME": "River of Peace",
-    "DESCRIPTION": "Draw !M! cards. NL ${ModID}:Water them twice."
+    "DESCRIPTION": "Draw !M! cards. NL ${ModID}:Grow them twice."
   },
   "${ModID}:RiverOfTime": {
     "NAME": "River of Time",
-    "DESCRIPTION": "Put a card from your discard pile into your hand. NL ${ModID}:Water it !M! times. NL Exhaust."
+    "DESCRIPTION": "Put a card from your discard pile into your hand. NL ${ModID}:Grow it !M! times. NL Exhaust."
   },
   "${ModID}:Sapling": {
     "NAME": "Sapling",
