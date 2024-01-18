@@ -27,7 +27,7 @@ public class Fertilizer extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBlock(3);
+        CardModifierManager.addModifier(this, new GrowthMod(1));
     }
 
     @Override
