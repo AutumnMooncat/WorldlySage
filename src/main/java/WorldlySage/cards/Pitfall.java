@@ -40,7 +40,7 @@ public class Pitfall extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBlock(3);
+        upgradeDamage(3);
     }
 
     @Override
