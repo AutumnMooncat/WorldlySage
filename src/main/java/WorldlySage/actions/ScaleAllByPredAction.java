@@ -1,5 +1,6 @@
 package WorldlySage.actions;
 
+import WorldlySage.ui.PlantedCardManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -32,6 +33,7 @@ public class ScaleAllByPredAction extends AbstractGameAction {
         cards.addAll(AbstractDungeon.player.drawPile.group);
         cards.addAll(AbstractDungeon.player.hand.group);
         cards.addAll(AbstractDungeon.player.discardPile.group);
+        cards.addAll(PlantedCardManager.cards.group);
         /*if (Loader.isModLoaded("Starlight")) {
             cards.addAll(SistersHelper.projectedCards());
         }*/
