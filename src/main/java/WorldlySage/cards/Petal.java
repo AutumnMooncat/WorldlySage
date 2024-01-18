@@ -13,8 +13,8 @@ public class Petal extends AbstractEasyCard {
     public final static String ID = makeID(Petal.class.getSimpleName());
 
     public Petal() {
-        super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF);
-        baseBlock = block = 3;
+        super(ID, 0, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF);
+        //baseBlock = block = 3;
         baseMagicNumber = magicNumber = 3;
     }
 
@@ -26,7 +26,7 @@ public class Petal extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBlock(2);
+        //upgradeBlock(2);
         upgradeMagicNumber(2);
     }
 

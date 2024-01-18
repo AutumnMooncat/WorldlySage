@@ -87,7 +87,7 @@
   },
   "${ModID}:Petal": {
     "NAME": "Petal",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
+    "DESCRIPTION": "Gain !M! ${ModID}:Braced."
   },
   "${ModID}:Reforestation": {
     "NAME": "Reforestation",
