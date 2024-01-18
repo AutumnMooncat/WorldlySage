@@ -118,6 +118,15 @@
     "DESCRIPTION": "Draw an additional card next turn."
   },
   {
+    "ID": "sapling",
+    "PROPER_NAME": "Sapling",
+    "NAMES": [
+      "sapling",
+      "saplings"
+    ],
+    "DESCRIPTION": "Saplings are #b0 cost #yBlock giving cards which #yExhaust."
+  },
+  {
     "ID": "glyph",
     "PROPER_NAME": "Glyph",
     "NAMES": [

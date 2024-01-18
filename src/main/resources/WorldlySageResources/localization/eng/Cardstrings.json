@@ -100,8 +100,8 @@
   },
   "${ModID}:Reforestation": {
     "NAME": "Reforestation",
-    "DESCRIPTION": "At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 *Saplings. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "${ModID}:Plant 2 *Saplings. NL At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 *Saplings. NL Exhaust."
+    "DESCRIPTION": "At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 ${ModID}:Saplings. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Plant 2 ${ModID}:Saplings. NL At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 ${ModID}:Saplings. NL Exhaust."
   },
   "${ModID}:RiverOfAsh": {
     "NAME": "River of Ash",
@@ -141,7 +141,7 @@
   },
   "${ModID}:Till": {
     "NAME": "Till",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Plant !M! *Sapling{@@}{!M!|>1=s}."
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Plant !M! ${ModID}:Sapling{@@}{!M!|>1=s}."
   },
   "${ModID}:ToweringOak": {
     "NAME": "Towering Oak",
