@@ -75,6 +75,7 @@ public abstract class AbstractAbilityCard extends AbstractEasyCard implements Cu
             upgradeName();
             upp();
             expUpgrade = false;
+            initializeDescription();
         }
     }
 
