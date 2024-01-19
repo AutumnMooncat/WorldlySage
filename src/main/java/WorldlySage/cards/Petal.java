@@ -20,7 +20,6 @@ public class Petal extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        blck();
         Wiz.applyToSelf(new BracedPower(p, magicNumber));
     }
 
