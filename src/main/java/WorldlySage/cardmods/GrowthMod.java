@@ -63,6 +63,9 @@ public class GrowthMod extends AbstractCardModifier {
 
     @Override
     public List<TooltipInfo> additionalTooltips(AbstractCard card) {
+        if (card.keywords.stream().anyMatch(key -> key.equals(KeywordManager.GROWTH))) {
+            return null;
+        }
         return tips;
     }
 

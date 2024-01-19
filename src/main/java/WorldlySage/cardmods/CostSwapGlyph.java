@@ -3,10 +3,8 @@ package WorldlySage.cardmods;
 import WorldlySage.MainModfile;
 import WorldlySage.util.KeywordManager;
 import WorldlySage.util.TexLoader;
-import basemod.BaseMod;
 import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
-import basemod.helpers.TooltipInfo;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -14,19 +12,17 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 import static WorldlySage.MainModfile.makeID;
 
 public class CostSwapGlyph extends AbstractGlyph {
     public static String ID = makeID(CostSwapGlyph.class.getSimpleName());
     public static Texture ICON = TexLoader.getTexture(MainModfile.makeImagePath("icons/card-exchange.png"));
-    private static final ArrayList<TooltipInfo> TIPS = new ArrayList<>(Collections.singletonList(new TooltipInfo(BaseMod.getKeywordTitle(KeywordManager.SWAP_GLYPH), BaseMod.getKeywordDescription(KeywordManager.SWAP_GLYPH))));
     private final ArrayList<Integer> costTracker = new ArrayList<>();
     private final ArrayList<Integer> costForTurnTracker = new ArrayList<>();
 
     public CostSwapGlyph(int turns, int oldCost, int oldCostForTurn, int newCost, int newCostForTurn) {
-        super(ID, turns, ICON, TIPS);
+        super(ID, turns, ICON, KeywordManager.SWAP_GLYPH);
         costTracker.add(oldCost);
         costForTurnTracker.add(oldCostForTurn);
         for (int i = 0 ; i < turns ; i++) {
@@ -36,7 +32,7 @@ public class CostSwapGlyph extends AbstractGlyph {
     }
 
     public CostSwapGlyph(ArrayList<Integer> costTracker, ArrayList<Integer> costForTurnTracker) {
-        super(ID, costTracker.size(), ICON, TIPS);
+        super(ID, costTracker.size(), ICON, KeywordManager.SWAP_GLYPH);
         this.costTracker.addAll(costTracker);
         this.costForTurnTracker.addAll(costForTurnTracker);
     }

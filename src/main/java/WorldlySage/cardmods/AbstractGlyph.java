@@ -1,5 +1,6 @@
 package WorldlySage.cardmods;
 
+import basemod.BaseMod;
 import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
 import basemod.helpers.TooltipInfo;
@@ -13,19 +14,22 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public abstract class AbstractGlyph extends AbstractCardModifier {
     public String glyphID;
+    public String keyword;
     public ArrayList<TooltipInfo> glyphTips;
     public int amount;
     public transient Texture modIcon;
 
-    public AbstractGlyph(String glyphID, int amount, Texture modIcon, ArrayList<TooltipInfo> glyphTips) {
+    public AbstractGlyph(String glyphID, int amount, Texture modIcon, String keyword) {
         this.glyphID = glyphID;
         this.amount = amount;
         this.modIcon = modIcon;
-        this.glyphTips = glyphTips;
+        this.keyword = keyword;
+        this.glyphTips = new ArrayList<>(Collections.singletonList(new TooltipInfo(BaseMod.getKeywordTitle(keyword), BaseMod.getKeywordDescription(keyword))));
     }
 
     public abstract void extraEffect(AbstractCard card, AbstractCreature target, UseCardAction action);
@@ -43,6 +47,9 @@ public abstract class AbstractGlyph extends AbstractCardModifier {
 
     @Override
     public List<TooltipInfo> additionalTooltips(AbstractCard card) {
+        if (card.keywords.stream().anyMatch(key -> key.equals(keyword))) {
+            return null;
+        }
         return glyphTips;
     }
 
