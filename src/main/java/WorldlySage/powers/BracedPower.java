@@ -1,8 +1,6 @@
 package WorldlySage.powers;
 
 import WorldlySage.MainModfile;
-import WorldlySage.cardmods.GainBlockMod;
-import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -38,7 +36,7 @@ public class BracedPower extends AbstractPower {
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if ((card.baseBlock > -1 && !(card instanceof RitualDagger)) || CardModifierManager.hasModifier(card, GainBlockMod.ID)) {
+        if (card.baseBlock > -1 && !(card instanceof RitualDagger)) {
             this.flash();
             addToBot(new ReducePowerAction(owner, owner, this, amount));
         }

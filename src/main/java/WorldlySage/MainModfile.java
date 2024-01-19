@@ -1,13 +1,11 @@
 package WorldlySage;
 
-import WorldlySage.cardmods.AbstractInfusion;
 import WorldlySage.cards.cardvars.*;
 import WorldlySage.cards.interfaces.GlowAdjacentCard;
 import WorldlySage.icons.IconContainer;
 import WorldlySage.patches.GlowChangePatch;
 import WorldlySage.powers.BracedPower;
 import WorldlySage.powers.StaggerPower;
-import WorldlySage.powers.interfaces.InfusionTriggerPower;
 import WorldlySage.powers.interfaces.OnUpgradePower;
 import WorldlySage.relics.AbstractEasyRelic;
 import WorldlySage.ui.PlantedCardManager;
@@ -26,7 +24,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
-import com.evacipated.cardcrawl.mod.stslib.icons.CustomIconHelper;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
@@ -328,14 +325,6 @@ public class MainModfile implements
         BaseMod.addAudio(CustomSounds.SYNTH_START_KEY2, CustomSounds.SYNTH_START_PATH2);
         BaseMod.addAudio(CustomSounds.SYNTH_END_KEY, CustomSounds.SYNTH_END_PATH);
         BaseMod.addAudio(CustomSounds.SYNTH_MIX_KEY, CustomSounds.SYNTH_MIX_PATH);
-    }
-
-    public static void infusionTrigger(AbstractInfusion infusion, int directAmount, int relicAmount) {
-        for (AbstractPower p : Wiz.adp().powers) {
-            if (p instanceof InfusionTriggerPower) {
-                ((InfusionTriggerPower) p).infusionTrigger(infusion, directAmount);
-            }
-        }
     }
 
     public static void onUpgradeTrigger(AbstractCard c) {
