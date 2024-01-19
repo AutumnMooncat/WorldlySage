@@ -5,6 +5,10 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:AuraSphere": {
+    "NAME": "Aura Sphere",
+    "DESCRIPTION": "Deal !D! damage. NL Put an ${ModID}:Accuracy_Glyph on this card."
+  },
   "${ModID}:Bifurcate": {
     "NAME": "Bifurcate",
     "DESCRIPTION": "${ModID}:Plant !M! {@@}{!M!|1=copy|@=copies} of a card in your hand."
@@ -32,7 +36,7 @@
   },
   "${ModID}:Fertilizer": {
     "NAME": "Fertilizer",
-    "DESCRIPTION": "Draw cards equal to this cards *Growth. NL Exhaust."
+    "DESCRIPTION": "Draw cards equal to this card's ${ModID}:Growth. NL Exhaust."
   },
   "${ModID}:Fireball": {
     "NAME": "Fireball",
@@ -60,6 +64,10 @@
     "NAME": "Forage",
     "DESCRIPTION": "Choose 1 of !M! cards to ${ModID}:Plant. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Choose 1 of !M! Upgraded cards to ${ModID}:Plant. NL Exhaust."
+  },
+  "${ModID}:Geyser": {
+    "NAME": "Geyser",
+    "DESCRIPTION": "Deal !D! damage. NL Draw cards equal to this card's ${ModID}:Growth."
   },
   "${ModID}:GraspTheArcane": {
     "NAME": "Grasp the Arcane",
