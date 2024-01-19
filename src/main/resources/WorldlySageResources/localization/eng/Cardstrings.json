@@ -175,7 +175,7 @@
   },
   "${ModID}:Star": {
     "NAME": "Star",
-    "DESCRIPTION": "Deal !D! damage. NL Ignores Block."
+    "DESCRIPTION": "Deal !D! damage. NL Put a ${ModID}:Pierce_Glyph on this card."
   },
   "${ModID}:StealthRocks": {
     "NAME": "Stealth Rocks",
