@@ -16,7 +16,7 @@ public class CrystalShards extends AbstractAbilityCard {
 
     public CrystalShards() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 4;
+        baseDamage = damage = 5;
     }
 
     @Override

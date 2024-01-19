@@ -15,7 +15,7 @@ public class StealthRocks extends AbstractAbilityCard {
 
     public StealthRocks() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 5;
+        baseDamage = damage = 4;
     }
 
     @Override
