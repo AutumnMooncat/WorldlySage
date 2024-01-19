@@ -75,5 +75,9 @@
   "${ModID}:OvergrowthPower": {
     "NAME": "Overgrowth Form",
     "DESCRIPTIONS": ["Whenever you draw a card, #yGrow it.","Whenever you draw a card, #yGrow it #b"," times."]
+  },
+  "${ModID}:StealthRocksPower": {
+    "NAME": "Stealth Rocks",
+    "DESCRIPTIONS": ["At the end of this turn, ALL enemies lose #b"," HP."]
   }
 }

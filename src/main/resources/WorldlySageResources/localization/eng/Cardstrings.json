@@ -34,6 +34,15 @@
     "NAME": "Fireball",
     "DESCRIPTION": "Deal !D! damage. NL If you Exhausted a card this turn, deal !D! damage again."
   },
+  "${ModID}:Firestorm": {
+    "NAME": "Firestorm",
+    "DESCRIPTION": "Deal !D! damage for each card Exhausted this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (",
+      " card Exhausted.)",
+      " cards Exhausted.)"
+    ]
+  },
   "${ModID}:Floe": {
     "NAME": "Floe",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{!M!|>1=s}. NL Discard !M! card{!M!|>1=s}.{@@}"
@@ -123,6 +132,10 @@
     "NAME": "Sapling",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."
   },
+  "${ModID}:Serenity": {
+    "NAME": "Serenity",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0."
+  },
   "${ModID}:Smoulder": {
     "NAME": "Smoulder",
     "DESCRIPTION": "Exhaust up to !M! cards in your hand. NL Gain !M! Vigor for each card Exhausted this way."
@@ -134,6 +147,10 @@
   "${ModID}:Star": {
     "NAME": "Star",
     "DESCRIPTION": "Deal !D! damage. NL Ignores Block."
+  },
+  "${ModID}:StealthRocks": {
+    "NAME": "Stealth Rocks",
+    "DESCRIPTION": "Deal !D! damage. NL At the end of this turn, ALL enemies lose equal HP."
   },
   "${ModID}:Stranglevine": {
     "NAME": "Stranglevine",
@@ -158,6 +175,10 @@
   "${ModID}:Waterball": {
     "NAME": "Waterball",
     "DESCRIPTION": "{@@}Deal !D! damage. NL If the last card played this combat costed 0, draw !M! card{!M!|>1=s}."
+  },
+  "${ModID}:WaterBlade": {
+    "NAME": "Water Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Put !M! random cost 0 cards from your draw pile into your hand. NL Exhaust."
   },
   "${ModID}:Wildfire": {
     "NAME": "Wildfire",
