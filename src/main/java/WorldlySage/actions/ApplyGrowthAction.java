@@ -34,5 +34,6 @@ public class ApplyGrowthAction extends AbstractGameAction {
         }
         card.superFlash();
         CardModifierManager.addModifier(card, new GrowthMod(amount));
+        card.applyPowers();
     }
 }

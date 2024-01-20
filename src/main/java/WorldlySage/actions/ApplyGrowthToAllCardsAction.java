@@ -24,6 +24,7 @@ public class ApplyGrowthToAllCardsAction extends AbstractGameAction {
         for (AbstractCard c : Wiz.getAllCardsInCardGroups(true, true, true)) {
             if (filter.test(c)) {
                 ApplyGrowthAction.applyGrowth(c, amount);
+                c.applyPowers();
             }
         }
     }
