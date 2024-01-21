@@ -22,10 +22,10 @@ public class LevitateAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        ArrayList<AbstractCard> validCards = Wiz.adp().hand.group.stream().filter(c -> c.cost != -2).collect(Collectors.toCollection(ArrayList::new));
-        if (validCards.isEmpty() && !deferred) {
+        if (!deferred) {
             addToBot(new LevitateAction(amount, true));
         } else {
+            ArrayList<AbstractCard> validCards = Wiz.adp().hand.group.stream().filter(c -> c.cost != -2).collect(Collectors.toCollection(ArrayList::new));
             for (int i = 0 ; i < amount ; i++) {
                 AbstractCard c = Wiz.getRandomItem(validCards);
                 if (c != null) {
