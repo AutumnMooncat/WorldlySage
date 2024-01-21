@@ -1,6 +1,7 @@
 package WorldlySage.util;
 
 import WorldlySage.actions.TimedVFXAction;
+import WorldlySage.cardmods.AbstractGlyph;
 import WorldlySage.cardmods.GrowthMod;
 import WorldlySage.patches.CardCounterPatches;
 import WorldlySage.powers.LosePowerPower;
@@ -321,5 +322,14 @@ public class Wiz {
             return mod.amount;
         }
         return 0;
+    }
+
+    public static boolean hasGlyph(AbstractCard card) {
+        for (AbstractCardModifier mod : CardModifierManager.modifiers(card)) {
+            if (mod instanceof AbstractGlyph) {
+                return true;
+            }
+        }
+        return false;
     }
 }

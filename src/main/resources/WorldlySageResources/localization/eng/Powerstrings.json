@@ -87,5 +87,21 @@
   "${ModID}:LevitatePower": {
     "NAME": "Levitate",
     "DESCRIPTIONS": ["Whenever you gain Energy, put a #yShield #yGlyph onto #b"," random card in your hand."," random cards in your hand."]
+  },
+  "${ModID}:DruidryPower": {
+    "NAME": "Druidry",
+    "DESCRIPTIONS": ["Whenever you #yPlant a card, gain #b"," #yBlock."]
+  },
+  "${ModID}:SunnyDayPower": {
+    "NAME": "Sunny Day",
+    "DESCRIPTIONS": ["Whenever a card #yGrows, gain #b"," #yVigor."]
+  },
+  "${ModID}:PlayWithFirePower": {
+    "NAME": "Play With Fire",
+    "DESCRIPTIONS": ["At the end of your turn, deal #b"," damage to ALL enemies for each card in your hand."]
+  },
+  "${ModID}:TabulaRasaPower": {
+    "NAME": "Tabula Rasa",
+    "DESCRIPTIONS": ["Whenever you play a card with a #yGlyph, draw #b"," card."," cards."]
   }
 }

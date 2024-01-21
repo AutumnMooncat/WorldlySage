@@ -29,6 +29,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:Druidry": {
+    "NAME": "Druidry",
+    "DESCRIPTION": "Whenever you ${ModID}:Plant a card, gain !M! Block."
+  },
   "${ModID}:Engrave": {
     "NAME": "Engrave",
     "DESCRIPTION": "Choose 2 cards that cost 0 or more. NL Swap their costs and put a ${ModID}:Swap_Glyph on them.",
@@ -132,6 +136,10 @@
     "NAME": "Petal",
     "DESCRIPTION": "Gain !M! ${ModID}:Braced."
   },
+  "${ModID}:PlayWithFire": {
+    "NAME": "Play With Fire",
+    "DESCRIPTION": "Whenever a card is Exhausted, deal !M! damage to ALL enemies."
+  },
   "${ModID}:Reforestation": {
     "NAME": "Reforestation",
     "DESCRIPTION": "At the start of your next X{@@}{!M!|>0= + !M!} turns, ${ModID}:Plant 2 ${ModID}:Saplings. NL Exhaust.",
@@ -192,6 +200,14 @@
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:SunnyDay": {
+    "NAME": "Sunny Day",
+    "DESCRIPTION": "Whenever a card ${ModID}:Grows, gain !M! Vigor."
+  },
+  "${ModID}:TabulaRasa": {
+    "NAME": "Tabula Rasa",
+    "DESCRIPTION": "Whenever you play a card with a ${ModID}:Glyph, draw !M! card{@@}{!M!|>1=s}."
   },
   "${ModID}:TheMountain": {
     "NAME": "The Mountain",
