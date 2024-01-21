@@ -27,8 +27,8 @@ public class Star extends AbstractAbilityCard {
     private static final Texture STAR_TEX = TextureScaler.rescale(ImageMaster.TINY_STAR, 64, 64);
 
     public Star() {
-        super(ID, 0, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 6;
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        baseDamage = damage = 9;
         CardModifierManager.addModifier(this, new PiercingGlyph(1));
     }
 
