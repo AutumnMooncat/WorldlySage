@@ -12,8 +12,8 @@ public class RockSmash extends AbstractAbilityCard {
     public final static String ID = makeID(RockSmash.class.getSimpleName());
 
     public RockSmash() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 7;
+        super(ID, 0, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        baseDamage = damage = 5;
     }
 
     @Override
