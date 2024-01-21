@@ -183,7 +183,7 @@
   },
   "${ModID}:SignalFire": {
     "NAME": "Signal Fire",
-    "DESCRIPTION": "Exhaust 1 card. NL Put an ${ModID}:Accuracy_Glyph on all Attacks in your hand."
+    "DESCRIPTION": "Exhaust 1 card. NL Gain !M! Vigor."
   },
   "${ModID}:Smoulder": {
     "NAME": "Smoulder",
