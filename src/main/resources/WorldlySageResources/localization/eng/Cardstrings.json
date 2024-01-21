@@ -89,6 +89,10 @@
     "NAME": "Irrigation",
     "DESCRIPTION": "Gain !M! ${ModID}:Hydration."
   },
+  "${ModID}:Levitate": {
+    "NAME": "Levitate",
+    "DESCRIPTION": "Whenever you gain Energy, put a ${ModID}:Shield_Glyph onto !M! random card{@@}{!M!|>1=s} in your hand."
+  },
   "${ModID}:Lookout": {
     "NAME": "Lookout",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
@@ -212,6 +216,10 @@
   "${ModID}:WaterBlade": {
     "NAME": "Water Blade",
     "DESCRIPTION": "Deal !D! damage. NL Put !M! random cost 0 cards from your draw pile into your hand. NL Exhaust."
+  },
+  "${ModID}:Whirlpool": {
+    "NAME": "Whirlpool",
+    "DESCRIPTION": "At the end of your turn, deal !M! damage to ALL enemies for each card in your hand."
   },
   "${ModID}:Wildfire": {
     "NAME": "Wildfire",
