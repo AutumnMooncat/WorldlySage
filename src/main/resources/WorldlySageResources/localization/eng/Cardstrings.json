@@ -223,7 +223,7 @@
   },
   "${ModID}:Wildfire": {
     "NAME": "Wildfire",
-    "DESCRIPTION": "Whenever you Exhaust a card, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}.{@@}"
+    "DESCRIPTION": "Whenever a card is Exhausted, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}.{@@}"
   },
   "${ModID}:WoodWall": {
     "NAME": "Wood Wall",
