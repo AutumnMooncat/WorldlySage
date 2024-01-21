@@ -157,6 +157,10 @@
     "NAME": "River of Time",
     "DESCRIPTION": "Put a card from your discard pile into your hand. NL ${ModID}:Grow it !M! times. NL Exhaust."
   },
+  "${ModID}:RockPolish": {
+    "NAME": "Rock Polish",
+    "DESCRIPTION": "Draw !M! cards. NL Put a ${ModID}:Shield_Glyph on all Skills in your hand."
+  },
   "${ModID}:RockSmash": {
     "NAME": "Rock Smash",
     "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Block."
