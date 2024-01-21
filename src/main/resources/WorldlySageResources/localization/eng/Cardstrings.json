@@ -165,6 +165,10 @@
     "NAME": "Rolling Fog",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Grow all cards in your hand{@@}{!M!|>1= !M! times}."
   },
+  "${ModID}:Sandstorm": {
+    "NAME": "Sandstorm",
+    "DESCRIPTION": "At the end of your turn, deal !M! damage to a random enemy."
+  },
   "${ModID}:Sapling": {
     "NAME": "Sapling",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."

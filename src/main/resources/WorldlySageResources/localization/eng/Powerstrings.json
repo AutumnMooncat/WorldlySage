@@ -103,5 +103,9 @@
   "${ModID}:TabulaRasaPower": {
     "NAME": "Tabula Rasa",
     "DESCRIPTIONS": ["Whenever you play a card with a #yGlyph, draw #b"," card."," cards."]
+  },
+  "${ModID}:SandstormPower": {
+    "NAME": "Sandstorm",
+    "DESCRIPTIONS": ["At the end of your turn, deal #b"," damage to a random enemy."]
   }
 }
