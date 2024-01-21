@@ -120,6 +120,10 @@
     "NAME": "Mudslide",
     "DESCRIPTION": "Draw !M! cards. NL Apply 1 Vulnerable to ALL enemies."
   },
+  "${ModID}:NightWatch": {
+    "NAME": "Night Watch",
+    "DESCRIPTION": "Put an ${ModID}:Energy_Glyph onto !M! random cards in your hand. NL Exhaust."
+  },
   "${ModID}:Overgrowth": {
     "NAME": "Overgrowth Form",
     "DESCRIPTION": "Ethereal. NL Whenever you draw a card, ${ModID}:Grow it !M! times.",
@@ -193,6 +197,10 @@
     "NAME": "Spark",
     "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Spark cards by !M! this combat."
   },
+  "${ModID}:SpiderLily": {
+    "NAME": "Spider Lily",
+    "DESCRIPTION": "Enemy loses !M! HP whenever you play a card this combat."
+  },
   "${ModID}:Star": {
     "NAME": "Star",
     "DESCRIPTION": "Deal !D! damage. NL Put a ${ModID}:Pierce_Glyph on this card."
@@ -232,6 +240,10 @@
   "${ModID}:Tsunami": {
     "NAME": "Tsunami",
     "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@} for each card discarded."
+  },
+  "${ModID}:Vortex": {
+    "NAME": "Vortex",
+    "DESCRIPTION": "Put !M! card{@@}{!M!|>1=s} from your draw pile into your hand. NL Costs 0 if this has a ${ModID}:Glyph."
   },
   "${ModID}:Waterball": {
     "NAME": "Waterball",

@@ -106,5 +106,9 @@
   "${ModID}:SandstormPower": {
     "NAME": "Sandstorm",
     "DESCRIPTIONS": ["At the end of your turn, deal #b"," damage to a random enemy."]
+  },
+  "${ModID}:DeathtouchedPower": {
+    "NAME": "Deathtouched",
+    "DESCRIPTIONS": ["Loses #b"," HP whenever you play a card."]
   }
 }
