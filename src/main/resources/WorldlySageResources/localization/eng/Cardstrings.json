@@ -191,7 +191,7 @@
   },
   "${ModID}:TheMountain": {
     "NAME": "The Mountain",
-    "DESCRIPTION": "Put !M! ${ModID}:Shield_Glyph on all your cards. NL Exhaust."
+    "DESCRIPTION": "Put a ${ModID}:Shield_Glyph on all your cards. NL Exhaust."
   },
   "${ModID}:Till": {
     "NAME": "Till",

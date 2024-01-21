@@ -14,13 +14,12 @@ public class TheMountain extends AbstractEasyCard {
 
     public TheMountain() {
         super(ID, 3, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
-        baseMagicNumber = magicNumber = 1;
         exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyGlyphToAllCardsAction(new ShieldGlyph(magicNumber)));
+        addToBot(new ApplyGlyphToAllCardsAction(new ShieldGlyph(1)));
     }
 
     @Override
