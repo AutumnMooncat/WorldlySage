@@ -54,8 +54,7 @@
   "${ModID}:RiverOfAshPower": {
     "NAME": "River of Ash",
     "DESCRIPTIONS": [
-      "Whenever a card is #yExhausted this turn, draw #b1 card.",
-      "Whenever a card is #yExhausted this turn, draw #b"," cards."
+      "Whenever a card is #yExhausted this turn, draw #b"," card."," cards."
     ]
   },
   "${ModID}:FlowPower": {
