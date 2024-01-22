@@ -3,6 +3,7 @@ package WorldlySage.powers;
 import WorldlySage.MainModfile;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -31,7 +32,7 @@ public class DeathtouchedPower extends AbstractPower {
     }
 
     @Override
-    public void onAfterCardPlayed(AbstractCard usedCard) {
+    public void onUseCard(AbstractCard card, UseCardAction action) {
         flash();
         addToBot(new LoseHPAction(owner, owner, amount, AbstractGameAction.AttackEffect.POISON));
     }
