@@ -110,5 +110,12 @@
   "${ModID}:DeathtouchedPower": {
     "NAME": "Deathtouched",
     "DESCRIPTIONS": ["Loses #b"," HP whenever you play a card."]
+  },
+  "${ModID}:MoonlightPower": {
+    "NAME": "Moonlight",
+    "DESCRIPTIONS": [
+      "Your next card with a #yGlyph is played twice.",
+      "Your next #b", " cards with a #yGlyph are played twice."
+    ]
   }
 }

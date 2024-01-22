@@ -38,6 +38,10 @@
     "DESCRIPTION": "Choose 2 cards that cost 0 or more. NL Swap their costs and put a ${ModID}:Swap_Glyph on them.",
     "EXTENDED_DESCRIPTION": ["Swap Costs"]
   },
+  "${ModID}:Eruption": {
+    "NAME": "Eruption",
+    "DESCRIPTION": "Gain !M! Vigor for each card in your hand."
+  },
   "${ModID}:Fertilizer": {
     "NAME": "Fertilizer",
     "DESCRIPTION": "Draw cards equal to this card's ${ModID}:Growth. NL Exhaust."
@@ -97,6 +101,10 @@
     "NAME": "Levitate",
     "DESCRIPTION": "Whenever you gain Energy, put a ${ModID}:Shield_Glyph onto !M! random card{@@}{!M!|>1=s} in your hand."
   },
+  "${ModID}:LivingFlame": {
+    "NAME": "Living Flame",
+    "DESCRIPTION": "ALL enemies lose HP equal to this card's ${ModID}:Growth. Whenever this card ${ModID}:Grows, play a copy of it."
+  },
   "${ModID}:Lookout": {
     "NAME": "Lookout",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
@@ -111,6 +119,14 @@
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
+  },
+  "${ModID}:Meteor": {
+    "NAME": "Meteor",
+    "DESCRIPTION": "Deal !D! damage. NL Deals double damage if this has a ${ModID}:Glyph."
+  },
+  "${ModID}:Moonlight": {
+    "NAME": "Moonlight",
+    "DESCRIPTION": "Your next {@@}{!M!|>1=!M! }card{!M!|>1=s} with a ${ModID}:Glyph {!M!|1=is|@=are} played twice."
   },
   "${ModID}:Mudball": {
     "NAME": "Mudball",
@@ -264,6 +280,10 @@
   "${ModID}:WoodWall": {
     "NAME": "Wood Wall",
     "DESCRIPTION": "Gain !B! Block twice."
+  },
+  "${ModID}:WorldTree": {
+    "NAME": "World Tree",
+    "DESCRIPTION": "${ModID}:Grow ALL your cards !M! times."
   },
   "${ModID}:Wormhole": {
     "NAME": "Wormhole",
