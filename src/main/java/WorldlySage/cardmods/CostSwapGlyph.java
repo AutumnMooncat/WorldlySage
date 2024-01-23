@@ -1,6 +1,7 @@
 package WorldlySage.cardmods;
 
 import WorldlySage.MainModfile;
+import WorldlySage.cards.interfaces.KeepsGlyphsCard;
 import WorldlySage.util.KeywordManager;
 import WorldlySage.util.TexLoader;
 import basemod.abstracts.AbstractCardModifier;
@@ -39,6 +40,9 @@ public class CostSwapGlyph extends AbstractGlyph {
 
     @Override
     public void extraEffect(AbstractCard card, AbstractCreature target, UseCardAction action) {
+        if (card instanceof KeepsGlyphsCard && ((KeepsGlyphsCard) card).shouldKeep(this)) {
+            return;
+        }
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
