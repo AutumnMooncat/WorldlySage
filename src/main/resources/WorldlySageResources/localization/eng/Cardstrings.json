@@ -17,9 +17,17 @@
     "NAME": "Black Hole",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Crushed. NL Exhaust."
   },
+  "${ModID}:BoulderCrash": {
+    "NAME": "Boulder Crash",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
   "${ModID}:Compost": {
     "NAME": "Compost",
     "DESCRIPTION": "Exhaust 1 card. NL ${ModID}:Plant 1 *Fertilizer."
+  },
+  "${ModID}:Crystallize": {
+    "NAME": "Crystallize",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies twice. NL ${ModID}:Glyphs added to this card are not removed on play."
   },
   "${ModID}:CrystalShards": {
     "NAME": "Crystal Shards",
@@ -58,6 +66,10 @@
       " card Exhausted.)",
       " cards Exhausted.)"
     ]
+  },
+  "${ModID}:Fissure": {
+    "NAME": "Fissure",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Enemies with !M! or less HP left are killed."
   },
   "${ModID}:Floe": {
     "NAME": "Floe",
@@ -181,6 +193,10 @@
     "NAME": "Rock Polish",
     "DESCRIPTION": "Draw !M! cards. NL Put a ${ModID}:Shield_Glyph on all Skills in your hand."
   },
+  "${ModID}:Rockslide": {
+    "NAME": "Rockslide",
+    "DESCRIPTION": "Deal !D! damage and apply !M! ${ModID}:Crushed to ALL enemies."
+  },
   "${ModID}:RockSmash": {
     "NAME": "Rock Smash",
     "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Block."
@@ -252,6 +268,10 @@
   "${ModID}:ToweringOak": {
     "NAME": "Towering Oak",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Growth affects this card !M! times."
+  },
+  "${ModID}:TreeCover": {
+    "NAME": "Tree Cover",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak to ALL enemies."
   },
   "${ModID}:Tsunami": {
     "NAME": "Tsunami",

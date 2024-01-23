@@ -1,5 +1,6 @@
 package WorldlySage.cardmods;
 
+import WorldlySage.cards.interfaces.KeepsGlyphsCard;
 import basemod.BaseMod;
 import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
@@ -36,8 +37,11 @@ public abstract class AbstractGlyph extends AbstractCardModifier {
 
     @Override
     public void onUse(AbstractCard card, AbstractCreature target, UseCardAction action) {
-        amount--;
         extraEffect(card, target, action);
+        if (card instanceof KeepsGlyphsCard && ((KeepsGlyphsCard) card).shouldKeep(this)) {
+            return;
+        }
+        amount--;
     }
 
     @Override

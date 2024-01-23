@@ -130,7 +130,8 @@
     "ID": "glyph",
     "PROPER_NAME": "Glyph",
     "NAMES": [
-      "glyph"
+      "glyph",
+      "glyphs"
     ],
     "DESCRIPTION": "A one time effect that can be added to cards."
   },
