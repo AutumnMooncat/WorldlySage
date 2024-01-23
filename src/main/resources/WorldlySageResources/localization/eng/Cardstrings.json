@@ -251,7 +251,7 @@
   },
   "${ModID}:SunnyDay": {
     "NAME": "Sunny Day",
-    "DESCRIPTION": "Whenever a card ${ModID}:Grows, gain !M! Vigor."
+    "DESCRIPTION": "At the start of your turn, gain !M! Vigor for each of your ${ModID}:Planted cards."
   },
   "${ModID}:TabulaRasa": {
     "NAME": "Tabula Rasa",
