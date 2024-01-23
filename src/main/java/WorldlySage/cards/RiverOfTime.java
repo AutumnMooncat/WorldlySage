@@ -14,8 +14,8 @@ public class RiverOfTime extends AbstractEasyCard {
     public final static String ID = makeID(RiverOfTime.class.getSimpleName());
 
     public RiverOfTime() {
-        super(ID, 0, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
-        baseMagicNumber = magicNumber = 3;
+        super(ID, 0, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
+        baseMagicNumber = magicNumber = 2;
         exhaust = true;
     }
 
