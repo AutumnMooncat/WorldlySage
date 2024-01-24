@@ -14,7 +14,7 @@ public class ToweringOak extends AbstractEasyCard implements GrowthModifierCard 
     public ToweringOak() {
         super(ID, 2, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
         baseBlock = block = 12;
-        baseMagicNumber = magicNumber = 2;
+        baseMagicNumber = magicNumber = 3;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class ToweringOak extends AbstractEasyCard implements GrowthModifierCard 
     @Override
     public void upp() {
         upgradeBlock(3);
-        upgradeMagicNumber(1);
+        upgradeMagicNumber(2);
     }
 
     @Override
