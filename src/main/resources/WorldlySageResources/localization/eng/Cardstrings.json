@@ -50,6 +50,10 @@
     "NAME": "Eruption",
     "DESCRIPTION": "Gain !M! Vigor for each card in your hand."
   },
+  "${ModID}:Exploration": {
+    "NAME": "Exploration",
+    "DESCRIPTION": "Draw !M! cards. NL Put a ${ModID}:Draw_Glyph on all cards drawn this way. NL Exhaust."
+  },
   "${ModID}:Fertilizer": {
     "NAME": "Fertilizer",
     "DESCRIPTION": "Draw cards equal to this card's ${ModID}:Growth. NL Exhaust."
@@ -216,6 +220,11 @@
   "${ModID}:Serenity": {
     "NAME": "Serenity",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Discard all cards drawn this way that do not cost 0."
+  },
+  "${ModID}:Sigil": {
+    "NAME": "Sigil",
+    "DESCRIPTION": "{@@}Choose !M! Attack{!M!|>1=s}. NL Put an ${ModID}:Accuracy_Glyph on {!M!|1=it|@=them}.",
+    "EXTENDED_DESCRIPTION": ["Put a Glyph on."]
   },
   "${ModID}:SignalFire": {
     "NAME": "Signal Fire",
