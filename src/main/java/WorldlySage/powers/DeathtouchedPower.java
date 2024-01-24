@@ -21,7 +21,7 @@ public class DeathtouchedPower extends AbstractPower {
         this.name = NAME;
         this.owner = owner;
         this.amount = amount;
-        this.type = PowerType.BUFF;
+        this.type = PowerType.DEBUFF;
         this.loadRegion("end_turn_death");
         updateDescription();
     }
