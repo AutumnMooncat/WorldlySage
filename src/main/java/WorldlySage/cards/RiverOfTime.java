@@ -1,9 +1,7 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.ApplyGrowthAction;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.FetchAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -15,22 +13,18 @@ public class RiverOfTime extends AbstractEasyCard {
 
     public RiverOfTime() {
         super(ID, 0, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
-        baseMagicNumber = magicNumber = 2;
+        baseMagicNumber = magicNumber = 1;
         exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new FetchAction(p.discardPile, 1, l -> {
-            for (AbstractCard c : l) {
-                ApplyGrowthAction.applyGrowth(c, magicNumber);
-            }
-        }));
+        addToBot(new FetchAction(p.discardPile, magicNumber));
     }
 
     @Override
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
     }
 
     @Override

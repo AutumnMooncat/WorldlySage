@@ -16,6 +16,7 @@ public class RiverOfAsh extends AbstractEasyCard {
     public RiverOfAsh() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
         baseMagicNumber = magicNumber = 1;
+        exhaust = true;
     }
 
     @Override

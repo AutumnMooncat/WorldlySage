@@ -183,15 +183,15 @@
   },
   "${ModID}:RiverOfAsh": {
     "NAME": "River of Ash",
-    "DESCRIPTION": "Whenever a card is Exhausted this turn, draw !M! card{@@}{!M!|>1=s}. NL Exhaust 1 card."
+    "DESCRIPTION": "Whenever a card is Exhausted this turn, draw !M! card{@@}{!M!|>1=s}. NL Exhaust 1 card. NL Exhaust."
   },
   "${ModID}:RiverOfPeace": {
     "NAME": "River of Peace",
-    "DESCRIPTION": "Draw !M! cards. NL ${ModID}:Grow them twice."
+    "DESCRIPTION": "Draw !M! cards. NL ${ModID}:Grow them twice. NL Exhaust."
   },
   "${ModID}:RiverOfTime": {
     "NAME": "River of Time",
-    "DESCRIPTION": "Put a card from your discard pile into your hand. NL ${ModID}:Grow it !M! times. NL Exhaust."
+    "DESCRIPTION": "Put !M! card{@@}{!M!|>1=s} from your discard pile into your hand. NL Exhaust."
   },
   "${ModID}:RockPolish": {
     "NAME": "Rock Polish",

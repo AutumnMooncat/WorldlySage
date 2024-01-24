@@ -17,6 +17,7 @@ public class RiverOfPeace extends AbstractEasyCard {
     public RiverOfPeace() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
         baseMagicNumber = magicNumber = 3;
+        exhaust = true;
     }
 
     @Override
