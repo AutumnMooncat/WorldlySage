@@ -73,7 +73,9 @@ public class PlantedCardManager {
         if (toRemove) {
             if (Wiz.adp().hand.size() < BaseMod.MAX_HAND_SIZE) {
                 cards.group.remove(hovered);
-                Wiz.adp().hand.group.add(hovered);
+                AbstractDungeon.player.hand.addToTop(hovered);
+                AbstractDungeon.player.hand.refreshHandLayout();
+                AbstractDungeon.player.hand.applyPowers();
             } else {
                 Wiz.adp().createHandIsFullDialog();
             }
