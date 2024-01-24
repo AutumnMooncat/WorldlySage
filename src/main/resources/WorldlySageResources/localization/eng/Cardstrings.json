@@ -150,7 +150,7 @@
   },
   "${ModID}:Mudslide": {
     "NAME": "Mudslide",
-    "DESCRIPTION": "Draw !M! cards. NL Apply 1 Vulnerable to ALL enemies."
+    "DESCRIPTION": "Apply Vulnerable to ALL enemies equal to this card's ${ModID}:Growth."
   },
   "${ModID}:NightWatch": {
     "NAME": "Night Watch",
