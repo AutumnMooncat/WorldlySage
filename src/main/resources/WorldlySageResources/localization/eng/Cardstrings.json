@@ -156,6 +156,10 @@
     "NAME": "Night Watch",
     "DESCRIPTION": "Put an ${ModID}:Energy_Glyph onto !M! random cards in your hand. NL Exhaust."
   },
+  "${ModID}:Nova": {
+    "NAME": "Nova",
+    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, put a copy of it on top of your draw pile. NL Exhaust."
+  },
   "${ModID}:Overgrowth": {
     "NAME": "Overgrowth Form",
     "DESCRIPTION": "Ethereal. NL Whenever you draw a card, ${ModID}:Grow it !M! times.",
@@ -175,6 +179,10 @@
   "${ModID}:PlayWithFire": {
     "NAME": "Play With Fire",
     "DESCRIPTION": "Whenever a card is Exhausted, deal !M! damage to ALL enemies."
+  },
+  "${ModID}:Reflection": {
+    "NAME": "Reflection",
+    "DESCRIPTION": "Exhaust a card. NL Gain ${ModID}:Hydration equal to its cost. NL Exhaust."
   },
   "${ModID}:Reforestation": {
     "NAME": "Reforestation",
@@ -297,6 +305,10 @@
   "${ModID}:WaterBlade": {
     "NAME": "Water Blade",
     "DESCRIPTION": "Deal !D! damage. NL Put !M! random cost 0 cards from your draw pile into your hand. NL Exhaust."
+  },
+  "${ModID}:Waterfall": {
+    "NAME": "Waterfall",
+    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, NL gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}.{@@}"
   },
   "${ModID}:Whirlpool": {
     "NAME": "Whirlpool",
