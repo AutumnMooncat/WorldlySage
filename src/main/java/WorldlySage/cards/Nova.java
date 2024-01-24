@@ -28,7 +28,7 @@ public class Nova extends AbstractAbilityCard {
 
     @Override
     public void triggerOnExhaust() {
-        addToBot(new MakeTempCardInDrawPileAction(makeSameInstanceOf(), 1, false, true));
+        addToBot(new MakeTempCardInDrawPileAction(makeSameInstanceOf(), 1, false, true, false));
     }
 
     @Override
