@@ -95,7 +95,7 @@
   },
   "${ModID}:GraspTheArcane": {
     "NAME": "Grasp the Arcane",
-    "DESCRIPTION": "Whenever you apply a ${ModID}:Glyph to a card, increase its amount by !M!."
+    "DESCRIPTION": "Whenever you put a ${ModID}:Glyph onto a card, increase its amount by !M!."
   },
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
