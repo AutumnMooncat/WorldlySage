@@ -158,7 +158,7 @@
   },
   "${ModID}:Nova": {
     "NAME": "Nova",
-    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, put a copy of it on top of your draw pile. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, put a copy of it into your hand with +1 cost and double damage."
   },
   "${ModID}:Overgrowth": {
     "NAME": "Overgrowth Form",

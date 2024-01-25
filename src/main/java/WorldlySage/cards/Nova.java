@@ -3,7 +3,8 @@ package WorldlySage.cards;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.vfx.BigExplosionVFX;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.purple.Wish;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -16,7 +17,7 @@ public class Nova extends AbstractEasyCard {
     public Nova() {
         super(ID, 0, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 6;
-        exhaust = true;
+        //exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -28,7 +29,13 @@ public class Nova extends AbstractEasyCard {
 
     @Override
     public void triggerOnExhaust() {
-        addToBot(new MakeTempCardInDrawPileAction(makeSameInstanceOf(), 1, false, true, false));
+        AbstractCard copy = makeStatEquivalentCopy();
+        copy.cost += 1;
+        copy.costForTurn += 1;
+        copy.isCostModified = true;
+        copy.baseDamage *= 2;
+        addToBot(new MakeTempCardInHandAction(copy));
+        //addToBot(new MakeTempCardInDrawPileAction(makeSameInstanceOf(), 1, false, true, false));
     }
 
     @Override
