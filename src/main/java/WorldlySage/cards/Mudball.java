@@ -1,6 +1,6 @@
 package WorldlySage.cards;
 
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import WorldlySage.vfx.ColoredThrowDaggerEffect;
 import com.badlogic.gdx.graphics.Color;
@@ -13,12 +13,12 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Mudball extends AbstractAbilityCard {
+public class Mudball extends AbstractEasyCard {
     public final static String ID = makeID(Mudball.class.getSimpleName());
 
     public Mudball() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 6;
+        baseDamage = damage = 7;
         baseMagicNumber = magicNumber = 1;
     }
 
@@ -33,7 +33,7 @@ public class Mudball extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(1);
+        upgradeDamage(2);
         upgradeMagicNumber(1);
     }
 

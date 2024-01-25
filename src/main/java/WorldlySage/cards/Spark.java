@@ -1,7 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.ScaleAllByPredAction;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.purple.Wish;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Spark extends AbstractAbilityCard {
+public class Spark extends AbstractEasyCard {
     public final static String ID = makeID(Spark.class.getSimpleName());
 
     public Spark() {

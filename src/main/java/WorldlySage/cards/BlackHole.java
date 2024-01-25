@@ -2,7 +2,7 @@ package WorldlySage.cards;
 
 import WorldlySage.actions.DamageFollowupAction;
 import WorldlySage.actions.ThrowObjectAction;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.powers.CrushPower;
 import WorldlySage.util.TextureScaler;
 import WorldlySage.util.Wiz;
@@ -23,7 +23,7 @@ import com.megacrit.cardcrawl.vfx.WallopEffect;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class BlackHole extends AbstractAbilityCard {
+public class BlackHole extends AbstractEasyCard {
     public final static String ID = makeID(BlackHole.class.getSimpleName());
     private static final Texture STAR_TEX = TextureScaler.rescale(ImageMaster.TINY_STAR, 1, 1);
 
@@ -40,9 +40,7 @@ public class BlackHole extends AbstractAbilityCard {
             LensingEffect le = new LensingEffect(p.hb.cX, p.hb.cY);
             ApplyShaderEffect ase = new ApplyShaderEffect(le, 1.50f);
             Wiz.atb(new VFXAction(ase));
-            Wiz.atb(new ThrowObjectAction(STAR_TEX, 1.0f, m.hb, Color.BLACK, true, (builder, batch) -> {
-                le.updatePosition(builder.x, builder.y);
-            }));
+            Wiz.atb(new ThrowObjectAction(STAR_TEX, 1.0f, m.hb, Color.BLACK, true, (builder, batch) -> le.updatePosition(builder.x, builder.y)));
             Wiz.atb(new VFXAction(new AbstractGameEffect() {
                 @Override
                 public void update() {

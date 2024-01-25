@@ -1,7 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.DamageFollowupAction;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Waterball extends AbstractAbilityCard {
+public class Waterball extends AbstractEasyCard {
     public final static String ID = makeID(Waterball.class.getSimpleName());
 
     public Waterball() {
@@ -41,7 +41,7 @@ public class Waterball extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(4);
         //upgradeMagicNumber(1);
     }
 

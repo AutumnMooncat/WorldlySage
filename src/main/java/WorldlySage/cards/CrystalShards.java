@@ -2,7 +2,7 @@ package WorldlySage.cards;
 
 import WorldlySage.actions.ApplyGlyphToAllCardsAction;
 import WorldlySage.cardmods.PiercingGlyph;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.purple.Wish;
@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class CrystalShards extends AbstractAbilityCard {
+public class CrystalShards extends AbstractEasyCard {
     public final static String ID = makeID(CrystalShards.class.getSimpleName());
 
     public CrystalShards() {

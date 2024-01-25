@@ -1,6 +1,6 @@
 package WorldlySage.cards;
 
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.purple.Wish;
@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class BoulderCrash extends AbstractAbilityCard {
+public class BoulderCrash extends AbstractEasyCard {
     public final static String ID = makeID(BoulderCrash.class.getSimpleName());
 
     public BoulderCrash() {
@@ -27,7 +27,7 @@ public class BoulderCrash extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(3);
         upgradeMagicNumber(1);
     }
 

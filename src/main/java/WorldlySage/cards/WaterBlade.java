@@ -1,7 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.PredicateDrawPileToHandAction;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class WaterBlade extends AbstractAbilityCard {
+public class WaterBlade extends AbstractEasyCard {
     public final static String ID = makeID(WaterBlade.class.getSimpleName());
 
     public WaterBlade() {
@@ -38,7 +38,9 @@ public class WaterBlade extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(3);
+        //upgradeDamage(3);
+        uDesc();
+        exhaust = false;
     }
 
     @Override

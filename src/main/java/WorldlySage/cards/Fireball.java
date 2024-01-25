@@ -1,6 +1,6 @@
 package WorldlySage.cards;
 
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.patches.CardCounterPatches;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Fireball extends AbstractAbilityCard {
+public class Fireball extends AbstractEasyCard {
     public final static String ID = makeID(Fireball.class.getSimpleName());
 
     public Fireball() {
@@ -35,7 +35,7 @@ public class Fireball extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(3);
     }
 
     @Override

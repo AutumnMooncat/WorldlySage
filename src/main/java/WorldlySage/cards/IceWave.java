@@ -1,6 +1,6 @@
 package WorldlySage.cards;
 
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.purple.Wish;
@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class IceWave extends AbstractAbilityCard {
+public class IceWave extends AbstractEasyCard {
     public final static String ID = makeID(IceWave.class.getSimpleName());
 
     public IceWave() {
@@ -27,7 +27,7 @@ public class IceWave extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(3);
     }
 
     @Override

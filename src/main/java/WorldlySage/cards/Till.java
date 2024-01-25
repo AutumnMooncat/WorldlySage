@@ -1,7 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.PlantCardsAction;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.purple.Wish;
@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Till extends AbstractAbilityCard {
+public class Till extends AbstractEasyCard {
     public final static String ID = makeID(Till.class.getSimpleName());
 
     public Till() {
@@ -32,8 +32,9 @@ public class Till extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        //upgradeDamage(2);
         //upgradeMagicNumber(1);
+        upgradeBaseCost(0);
     }
 
     @Override

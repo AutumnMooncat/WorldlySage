@@ -5,7 +5,7 @@ import WorldlySage.actions.DamageFollowupAction;
 import WorldlySage.actions.DoAction;
 import WorldlySage.actions.ThrowObjectAction;
 import WorldlySage.cardmods.PiercingGlyph;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.TextureScaler;
 import WorldlySage.util.Wiz;
 import basemod.helpers.CardModifierManager;
@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.vfx.WallopEffect;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Star extends AbstractAbilityCard {
+public class Star extends AbstractEasyCard {
     public final static String ID = makeID(Star.class.getSimpleName());
     private static final Texture STAR_TEX = TextureScaler.rescale(ImageMaster.TINY_STAR, 64, 64);
 
@@ -43,7 +43,7 @@ public class Star extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(3);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package WorldlySage.cards;
 
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.purple.Wish;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class RockSmash extends AbstractAbilityCard {
+public class RockSmash extends AbstractEasyCard {
     public final static String ID = makeID(RockSmash.class.getSimpleName());
 
     public RockSmash() {

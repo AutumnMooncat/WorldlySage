@@ -1,6 +1,6 @@
 package WorldlySage.cards;
 
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Waterfall extends AbstractAbilityCard {
+public class Waterfall extends AbstractEasyCard {
     public final static String ID = makeID(Waterfall.class.getSimpleName());
 
     public Waterfall() {
@@ -40,7 +40,7 @@ public class Waterfall extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(3);
         upgradeMagicNumber(1);
     }
 

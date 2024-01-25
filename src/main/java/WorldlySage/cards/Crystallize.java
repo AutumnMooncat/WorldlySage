@@ -1,7 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.cardmods.AbstractGlyph;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.cards.interfaces.KeepsGlyphsCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.vfx.combat.BlizzardEffect;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Crystallize extends AbstractAbilityCard implements KeepsGlyphsCard {
+public class Crystallize extends AbstractEasyCard implements KeepsGlyphsCard {
     public final static String ID = makeID(Crystallize.class.getSimpleName());
 
     public Crystallize() {

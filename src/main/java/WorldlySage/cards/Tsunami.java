@@ -1,7 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.FlowAction;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Tsunami extends AbstractAbilityCard {
+public class Tsunami extends AbstractEasyCard {
     public final static String ID = makeID(Tsunami.class.getSimpleName());
 
     public Tsunami() {
@@ -32,7 +32,7 @@ public class Tsunami extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(5);
+        upgradeDamage(6);
     }
 
     @Override

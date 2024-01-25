@@ -4,7 +4,7 @@ import WorldlySage.actions.ApplyGlyphAction;
 import WorldlySage.actions.DoAction;
 import WorldlySage.actions.ThrowObjectAction;
 import WorldlySage.cardmods.AccuracyGlyph;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.TextureScaler;
 import WorldlySage.util.Wiz;
 import com.badlogic.gdx.graphics.Color;
@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class AuraSphere extends AbstractAbilityCard {
+public class AuraSphere extends AbstractEasyCard {
     public final static String ID = makeID(AuraSphere.class.getSimpleName());
     private static final Texture EFFECT = TextureScaler.rescale(ImageMaster.vfxAtlas.findRegion("env/dustCloud"), 64, 64);
 
@@ -37,7 +37,7 @@ public class AuraSphere extends AbstractAbilityCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(4);
     }
 
     @Override

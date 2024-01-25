@@ -1,7 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.cardmods.PiercingGlyph;
-import WorldlySage.cards.abstracts.AbstractAbilityCard;
+import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Meteor extends AbstractAbilityCard {
+public class Meteor extends AbstractEasyCard {
     public final static String ID = makeID(Meteor.class.getSimpleName());
 
     public Meteor() {
