@@ -1,7 +1,9 @@
 package WorldlySage.cards;
 
+import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import basemod.ReflectionHacks;
+import basemod.helpers.CardModifierManager;
 import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MultiGroupSelectAction;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -77,7 +79,7 @@ public class Wormhole extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        CardModifierManager.addModifier(this, new EnergyGlyph(1));
     }
 
     @Override
