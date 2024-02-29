@@ -26,13 +26,10 @@
   "${ModID}:DealAOEDamageMod": {
     "EXTENDED_DESCRIPTION": [" NL Deal %s damage to ALL enemies."]
   },
-  "${ModID}:UnlockedMod": {
-    "EXTENDED_DESCRIPTION": ["professor:Masterpiece. NL "]
-  },
-  "${ModID}:ApplyDestabilizedMod": {
-    "EXTENDED_DESCRIPTION": [" NL Apply %s professor:Unstable."]
-  },
   "${ModID}:XPMod": {
     "EXTENDED_DESCRIPTION": [" NL XP: "]
+  },
+  "${ModID}:PhantomMod": {
+    "EXTENDED_DESCRIPTION": ["${ModID}:Phantom. NL "]
   }
 }
