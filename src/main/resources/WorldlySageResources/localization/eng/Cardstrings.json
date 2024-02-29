@@ -43,7 +43,7 @@
   },
   "${ModID}:Engrave": {
     "NAME": "Engrave",
-    "DESCRIPTION": "Choose 2 cards that cost 0 or more. NL Swap their costs and put a ${ModID}:Swap_Glyph on them.",
+    "DESCRIPTION": "Choose 2 cards that cost 0 or more. NL Swap their costs.",
     "EXTENDED_DESCRIPTION": ["Swap Costs"]
   },
   "${ModID}:Eruption": {
