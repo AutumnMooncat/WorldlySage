@@ -26,8 +26,8 @@ public class RollingFog extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBlock(2);
-        upgradeMagicNumber(1);
+        upgradeBlock(3);
+        //upgradeMagicNumber(1);
     }
 
     @Override
