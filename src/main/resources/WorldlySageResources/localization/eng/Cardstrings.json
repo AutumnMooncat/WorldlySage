@@ -103,7 +103,7 @@
   },
   "${ModID}:Haste": {
     "NAME": "Haste",
-    "DESCRIPTION": "Gain !M! ${ModID}:Mystic_Force."
+    "DESCRIPTION": "Make a ${ModID}:Phantom of the last card you played this combat."
   },
   "${ModID}:IceWave": {
     "NAME": "Ice Wave",
