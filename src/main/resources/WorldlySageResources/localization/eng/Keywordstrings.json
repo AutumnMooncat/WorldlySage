@@ -118,6 +118,14 @@
     "DESCRIPTION": "Draw an additional card next turn."
   },
   {
+    "ID": "phantom",
+    "PROPER_NAME": "Phantom",
+    "NAMES": [
+      "phantom"
+    ],
+    "DESCRIPTION": "A Phantom is a copy of a card with #yEthereal and #yExhaust."
+  },
+  {
     "ID": "sapling",
     "PROPER_NAME": "Sapling",
     "NAMES": [

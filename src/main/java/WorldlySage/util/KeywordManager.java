@@ -18,6 +18,7 @@ public class KeywordManager {
     public static String MYSTIC_FORCE;
     public static String CRUSH;
     public static String FLOW;
+    public static String PHANTOM;
     public static String GLYPH;
     public static String ENERGY_GLYPH;
     public static String DRAW_GLYPH;
