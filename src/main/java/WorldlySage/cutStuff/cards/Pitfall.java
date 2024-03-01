@@ -1,4 +1,4 @@
-package WorldlySage.cards;
+package WorldlySage.cutStuff.cards;
 
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
