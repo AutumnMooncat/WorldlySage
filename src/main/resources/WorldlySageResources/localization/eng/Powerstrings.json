@@ -97,7 +97,7 @@
   },
   "${ModID}:PlayWithFirePower": {
     "NAME": "Play With Fire",
-    "DESCRIPTIONS": ["At the end of your turn, deal #b"," damage to ALL enemies for each card in your hand."]
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, deal #b"," damage to ALL enemies."]
   },
   "${ModID}:TabulaRasaPower": {
     "NAME": "Tabula Rasa",
