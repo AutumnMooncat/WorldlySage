@@ -139,7 +139,7 @@ public class TheWorldlySage extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new Petal();
+        return new Till();
     }
 
     @Override
