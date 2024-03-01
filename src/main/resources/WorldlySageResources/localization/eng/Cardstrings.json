@@ -329,7 +329,7 @@
   },
   "${ModID}:WoodWall": {
     "NAME": "Wood Wall",
-    "DESCRIPTION": "Gain !B! Block twice."
+    "DESCRIPTION": "Put a ${ModID}:Shield_Glyph on this card. NL ${ModID}:Shield_Glyphs on this card are not removed on play."
   },
   "${ModID}:WorldTree": {
     "NAME": "World Tree",
