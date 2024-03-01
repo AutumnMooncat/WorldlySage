@@ -50,6 +50,10 @@
     "NAME": "Eruption",
     "DESCRIPTION": "Gain !M! Vigor for each card in your hand."
   },
+  "${ModID}:Etherealize": {
+    "NAME": "Etherealize",
+    "DESCRIPTION": "Exhaust 1 card. NL Make !M! ${ModID}:Phantoms of it."
+  },
   "${ModID}:Exploration": {
     "NAME": "Exploration",
     "DESCRIPTION": "Draw !M! cards. NL Put a ${ModID}:Draw_Glyph on all cards drawn this way. NL Exhaust."
@@ -293,6 +297,10 @@
   "${ModID}:Tsunami": {
     "NAME": "Tsunami",
     "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@} for each card discarded."
+  },
+  "${ModID}:TunnelVision": {
+    "NAME": "Tunnel Vision",
+    "DESCRIPTION": "Choose a card. NL Discard your hand. NL Make a ${ModID}:Phantom of the chosen card for each card discarded this way."
   },
   "${ModID}:Vortex": {
     "NAME": "Vortex",
