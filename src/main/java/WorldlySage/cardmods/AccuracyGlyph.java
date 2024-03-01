@@ -23,7 +23,7 @@ public class AccuracyGlyph extends AbstractGlyph {
 
     @Override
     public float modifyDamageFinal(float damage, DamageInfo.DamageType type, AbstractCard card, AbstractMonster target) {
-        return damage * 1.5f;
+        return damage * (1 + 0.5f * amount);
     }
 
     @Override

@@ -149,25 +149,28 @@
     "PROPER_NAME": "Energy Glyph [${ModID}:EnergyIcon]",
     "NAMES": [
       "energy glyph",
-      "energy_glyph"
+      "energy_glyph",
+      "energy_glyphs"
     ],
-    "DESCRIPTION": "The next time this card is played, gain [E] and remove an #yEnergy #yGlyph."
+    "DESCRIPTION": "The next time this card is played, gain [E] for each #yEnergy #yGlyph."
   },
   {
     "ID": "draw_glyph",
     "PROPER_NAME": "Draw Glyph [${ModID}:DrawIcon]",
     "NAMES": [
       "draw glyph",
-      "draw_glyph"
+      "draw_glyph",
+      "draw_glyphs"
     ],
-    "DESCRIPTION": "The next time this card is played, draw a card and remove a #yDraw #yGlyph."
+    "DESCRIPTION": "The next time this card is played, draw a card for each #yDraw #yGlyph."
   },
   {
     "ID": "pierce_glyph",
     "PROPER_NAME": "Pierce Glyph [${ModID}:PierceIcon]",
     "NAMES": [
       "pierce glyph",
-      "pierce_glyph"
+      "pierce_glyph",
+      "pierce_glyphs"
     ],
     "DESCRIPTION": "The next time this card is played, ignore enemy #yBlock and remove a #yPierce #yGlyph."
   },
@@ -176,9 +179,10 @@
     "PROPER_NAME": "Shield Glyph [${ModID}:ShieldIcon]",
     "NAMES": [
       "shield glyph",
-      "shield_glyph"
+      "shield_glyph",
+      "shield_glyphs"
     ],
-    "DESCRIPTION": "The next time this card is played, gain #b3 #yBlock and remove a #yShield #yGlyph."
+    "DESCRIPTION": "The next time this card is played, gain #b3 #yBlock for each #yShield #yGlyph."
   },
   {
     "ID": "swap_glyph",
@@ -194,8 +198,9 @@
     "PROPER_NAME": "Accuracy Glyph [${ModID}:AccuracyIcon]",
     "NAMES": [
       "accuracy glyph",
-      "accuracy_glyph"
+      "accuracy_glyph",
+      "accuracy_glyphs"
     ],
-    "DESCRIPTION": "The next time this card is played, deal #b50% more damage and remove an #yAccuracy #yGlyph."
+    "DESCRIPTION": "The next time this card is played, deal #b50% more damage for each #yAccuracy #yGlyph."
   }
 ]

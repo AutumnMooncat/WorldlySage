@@ -23,7 +23,7 @@ public class DrawGlyph extends AbstractGlyph {
 
     @Override
     public void extraEffect(AbstractCard card, AbstractCreature target, UseCardAction action) {
-        Wiz.atb(new DrawCardAction(1));
+        Wiz.atb(new DrawCardAction(amount));
     }
 
     @Override

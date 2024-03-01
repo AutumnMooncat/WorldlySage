@@ -24,6 +24,7 @@ public abstract class AbstractGlyph extends AbstractCardModifier {
     public ArrayList<TooltipInfo> glyphTips;
     public int amount;
     public transient Texture modIcon;
+    private boolean remove;
 
     public AbstractGlyph(String glyphID, int amount, Texture modIcon, String keyword) {
         this.glyphID = glyphID;
@@ -41,12 +42,12 @@ public abstract class AbstractGlyph extends AbstractCardModifier {
         if (card instanceof KeepsGlyphsCard && ((KeepsGlyphsCard) card).shouldKeep(this)) {
             return;
         }
-        amount--;
+        remove = true;
     }
 
     @Override
     public boolean removeOnCardPlayed(AbstractCard card) {
-        return amount == 0;
+        return remove;
     }
 
     @Override

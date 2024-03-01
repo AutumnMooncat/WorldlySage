@@ -23,7 +23,7 @@ public class ShieldGlyph extends AbstractGlyph {
 
     @Override
     public void extraEffect(AbstractCard card, AbstractCreature target, UseCardAction action) {
-        Wiz.atb(new GainBlockAction(Wiz.adp(), 3));
+        Wiz.atb(new GainBlockAction(Wiz.adp(), 3*amount));
     }
 
     @Override

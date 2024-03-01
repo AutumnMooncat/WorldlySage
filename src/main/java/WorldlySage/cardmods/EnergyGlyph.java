@@ -23,7 +23,7 @@ public class EnergyGlyph extends AbstractGlyph {
 
     @Override
     public void extraEffect(AbstractCard card, AbstractCreature target, UseCardAction action) {
-        Wiz.atb(new GainEnergyAction(1));
+        Wiz.atb(new GainEnergyAction(amount));
     }
 
     @Override
