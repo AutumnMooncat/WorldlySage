@@ -13,7 +13,7 @@ void main() {
     //uv.x += cos(angleR) * ((sin((uv.y + (x_time * 0.05)) * 10.0) * 0.02) + (sin((uv.y + (x_time * 0.02)) * 32.0) * 0.01));
     //uv.y += sin(angleR) * ((sin((uv.x + (x_time * 0.05)) * 10.0) * 0.02) + (sin((uv.x + (x_time * 0.02)) * 32.0) * 0.01));
     vec4 texColor = texture(u_texture, uv);
-    texColor.rgb += (1+sin(x_time))/10;
-    texColor.a *= 0.5;
+    //texColor.rgb += (1+sin(x_time))/10;
+    texColor.a *= 0.75;
     gl_FragColor = texColor;
 }
