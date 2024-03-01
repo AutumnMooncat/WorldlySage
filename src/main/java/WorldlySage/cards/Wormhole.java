@@ -2,14 +2,8 @@ package WorldlySage.cards;
 
 import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import basemod.ReflectionHacks;
 import basemod.helpers.CardModifierManager;
-import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MultiGroupSelectAction;
-import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.utility.HandCheckAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
@@ -17,7 +11,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
-import javassist.CtBehavior;
 
 import static WorldlySage.MainModfile.makeID;
 
@@ -85,40 +78,5 @@ public class Wormhole extends AbstractEasyCard {
     @Override
     public String cardArtCopy() {
         return Defend_Green.ID;
-    }
-
-    @SpirePatch2(clz = UseCardAction.class, method = "update")
-    public static class FixUCA {
-        @SpireInsertPatch(locator = Locator.class)
-        public static SpireReturn<?> UseCardActionPatch(UseCardAction __instance, AbstractCard ___targetCard, float ___duration) {
-            if (___targetCard instanceof Wormhole) {
-                Wormhole card = (Wormhole) ___targetCard;
-                if (!card.success) {
-                    return SpireReturn.Continue();
-                }
-                card.success = false;
-                //__instance.isDone = true;
-
-                ReflectionHacks.setPrivate(__instance, AbstractGameAction.class, "duration", ___duration - Gdx.graphics.getDeltaTime());
-
-                AbstractDungeon.player.cardInUse = null;
-                ___targetCard.exhaustOnUseOnce = false;
-                ___targetCard.dontTriggerOnUseCard = false;
-                AbstractDungeon.actionManager.addToBottom(new HandCheckAction());
-
-                return SpireReturn.Return(null);
-            }
-
-            return SpireReturn.Continue();
-        }
-
-
-        private static class Locator extends SpireInsertLocator {
-            @Override
-            public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
-                Matcher finalMatcher = new Matcher.FieldAccessMatcher(AbstractCard.class, "purgeOnUse");
-                return LineFinder.findInOrder(ctMethodToPatch, finalMatcher);
-            }
-        }
     }
 }
