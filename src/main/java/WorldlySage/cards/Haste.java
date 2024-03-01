@@ -1,5 +1,6 @@
 package WorldlySage.cards;
 
+import WorldlySage.actions.DoAction;
 import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cardmods.PhantomMod;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
@@ -22,12 +23,14 @@ public class Haste extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard card = Wiz.secondLastCardPlayed();
-        if (card != null) {
-            card = card.makeStatEquivalentCopy();
-            CardModifierManager.addModifier(card, new PhantomMod());
-            addToBot(new MakeTempCardInHandAction(card));
-        }
+        addToBot(new DoAction(() -> {
+            AbstractCard card = Wiz.secondLastCardPlayed();
+            if (card != null) {
+                card = card.makeStatEquivalentCopy();
+                CardModifierManager.addModifier(card, new PhantomMod());
+                addToTop(new MakeTempCardInHandAction(card));
+            }
+        }));
     }
 
     @Override
