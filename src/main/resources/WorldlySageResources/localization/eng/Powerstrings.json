@@ -105,7 +105,7 @@
   },
   "${ModID}:SandstormPower": {
     "NAME": "Sandstorm",
-    "DESCRIPTIONS": ["At the end of your turn, deal #b"," damage to a random enemy."]
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain #b"," #yBlock."]
   },
   "${ModID}:DeathtouchedPower": {
     "NAME": "Deathtouched",
