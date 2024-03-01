@@ -296,7 +296,7 @@
   },
   "${ModID}:Vortex": {
     "NAME": "Vortex",
-    "DESCRIPTION": "Put !M! card{@@}{!M!|>1=s} from your draw pile into your hand. NL Costs 0 if this has a ${ModID}:Glyph."
+    "DESCRIPTION": "Make a ${ModID}:Phantom of the top card in your draw pile. NL This card costs 0 if it has a ${ModID}:Glyph."
   },
   "${ModID}:Waterball": {
     "NAME": "Waterball",
