@@ -121,7 +121,8 @@
     "ID": "phantom",
     "PROPER_NAME": "Phantom",
     "NAMES": [
-      "phantom"
+      "phantom",
+      "phantoms"
     ],
     "DESCRIPTION": "A Phantom is a copy of a card with #yEthereal and #yExhaust."
   },
