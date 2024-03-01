@@ -15,7 +15,7 @@ public class Till extends AbstractEasyCard {
 
     public Till() {
         super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
-        baseDamage = damage = 4;
+        baseDamage = damage = 3;
         baseMagicNumber = magicNumber = 1;
         cardsToPreview = new Sapling();
     }

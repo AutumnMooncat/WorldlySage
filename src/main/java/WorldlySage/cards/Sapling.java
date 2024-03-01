@@ -12,7 +12,7 @@ public class Sapling extends AbstractEasyCard {
 
     public Sapling() {
         super(ID, 0, CardType.SKILL, CardRarity.SPECIAL, CardTarget.SELF, CardColor.COLORLESS);
-        baseBlock = block = 4;
+        baseBlock = block = 3;
         exhaust = true;
     }
 
@@ -23,7 +23,7 @@ public class Sapling extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBlock(3);
+        upgradeBlock(2);
     }
 
     @Override
