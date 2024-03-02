@@ -31,7 +31,7 @@
   },
   "${ModID}:CrystalShards": {
     "NAME": "Crystal Shards",
-    "DESCRIPTION": "Deal !D! damage twice. NL Put a ${ModID}:Pierce_Glyph on all Attacks in your hand."
+    "DESCRIPTION": "Deal !D! damage 3 times. NL Put a ${ModID}:Pierce_Glyph on all Attacks in your hand."
   },
   "${ModID}:Defend": {
     "NAME": "Defend",

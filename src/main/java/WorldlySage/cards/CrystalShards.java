@@ -16,19 +16,20 @@ public class CrystalShards extends AbstractEasyCard {
 
     public CrystalShards() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 5;
+        baseDamage = damage = 2;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_VERTICAL);
+        dmg(m, AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
         dmg(m, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
         addToBot(new ApplyGlyphToAllCardsAction(new PiercingGlyph(1), c -> Wiz.adp().hand.contains(c) && c.type == CardType.ATTACK));
     }
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(1);
     }
 
     @Override
