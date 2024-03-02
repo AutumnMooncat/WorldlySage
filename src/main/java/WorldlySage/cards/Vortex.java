@@ -25,8 +25,8 @@ public class Vortex extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DoAction(() -> {
-            if (!p.drawPile.isEmpty()) {
-                for (int i = magicNumber-1 ; i >= 0 ; i--) {
+            for (int i = magicNumber-1 ; i >= 0 ; i--) {
+                if (p.drawPile.size() > i) {
                     AbstractCard card = p.drawPile.getNCardFromTop(i).makeStatEquivalentCopy();
                     CardModifierManager.addModifier(card, new PhantomMod());
                     addToTop(new MakeTempCardInHandAction(card));
