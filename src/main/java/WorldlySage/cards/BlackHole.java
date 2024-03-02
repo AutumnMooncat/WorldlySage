@@ -31,7 +31,7 @@ public class BlackHole extends AbstractEasyCard {
         super(ID, 3, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
         baseDamage = damage = 20;
         baseMagicNumber = magicNumber = 5;
-        exhaust = true;
+        //exhaust = true;
     }
 
     @Override
