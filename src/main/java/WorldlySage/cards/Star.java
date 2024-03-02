@@ -43,7 +43,7 @@ public class Star extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(3);
+        upgradeDamage(4);
     }
 
     @Override
