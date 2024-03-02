@@ -28,7 +28,7 @@ public class Star extends AbstractEasyCard {
 
     public Star() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 9;
+        baseDamage = damage = 10;
         CardModifierManager.addModifier(this, new PiercingGlyph(1));
     }
 
