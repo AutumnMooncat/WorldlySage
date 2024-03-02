@@ -15,8 +15,8 @@ public class Rockslide extends AbstractEasyCard {
 
     public Rockslide() {
         super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        baseDamage = damage = 11;
-        baseMagicNumber = magicNumber = 1;
+        baseDamage = damage = 12;
+        baseMagicNumber = magicNumber = 2;
         isMultiDamage = true;
     }
 
