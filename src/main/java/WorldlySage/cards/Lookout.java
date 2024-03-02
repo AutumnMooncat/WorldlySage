@@ -21,7 +21,7 @@ public class Lookout extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        addToBot(new ApplyGlyphToRandomCardsAction(magicNumber, new ShieldGlyph(magicNumber), p.hand));
+        addToBot(new ApplyGlyphToRandomCardsAction(magicNumber, new ShieldGlyph(1), p.hand));
     }
 
     @Override
