@@ -117,5 +117,12 @@
       "Your next card with a #yGlyph is played twice.",
       "Your next #b", " cards with a #yGlyph are played twice."
     ]
+  },
+  "${ModID}:PlantNextCardPower": {
+    "NAME": "Plant Next Card",
+    "DESCRIPTIONS": [
+      "The next card you play this turn is #yPlanted.",
+      "The next #b"," cards you play this turn are #yPlanted."
+    ]
   }
 }
