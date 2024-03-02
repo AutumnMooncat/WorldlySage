@@ -15,7 +15,7 @@ public class IceWave extends AbstractEasyCard {
 
     public IceWave() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 8;
+        baseDamage = damage = 9;
         baseMagicNumber = magicNumber = 1;
     }
 
@@ -27,7 +27,8 @@ public class IceWave extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(3);
+        upgradeDamage(1);
+        upgradeMagicNumber(1);
     }
 
     @Override
