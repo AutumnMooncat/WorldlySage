@@ -127,7 +127,7 @@
   },
   "${ModID}:Lookout": {
     "NAME": "Lookout",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
+    "DESCRIPTION": "Gain !B! Block. NL Put a ${ModID}:Shield_Glyph onto !M! random card{@@}{!M!|>1=s} in your hand."
   },
   "${ModID}:ManaStorm": {
     "NAME": "Mana Storm",
