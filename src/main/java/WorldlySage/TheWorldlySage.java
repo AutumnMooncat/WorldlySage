@@ -90,7 +90,7 @@ public class TheWorldlySage extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(Petal.ID);
+        retVal.add(GrassyPlain.ID);
         return retVal;
     }
 

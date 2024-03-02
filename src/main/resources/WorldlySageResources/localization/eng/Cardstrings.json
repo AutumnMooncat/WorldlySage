@@ -101,6 +101,10 @@
     "NAME": "Grasp the Arcane",
     "DESCRIPTION": "Whenever you put a ${ModID}:Glyph onto a card, increase its amount by !M!."
   },
+  "${ModID}:GrassyPlain": {
+    "NAME": "Grassy Plain",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Plant the next card you play."
+  },
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
     "DESCRIPTION": "${ModID}:Plant !M! *Shivs."

@@ -1,4 +1,4 @@
-package WorldlySage.cards;
+package WorldlySage.cutStuff.cards;
 
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.powers.BracedPower;
