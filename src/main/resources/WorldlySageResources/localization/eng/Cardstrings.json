@@ -103,7 +103,7 @@
   },
   "${ModID}:GrassyPlain": {
     "NAME": "Grassy Plain",
-    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Plant the next card you play."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Plant the next card you play this turn."
   },
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
