@@ -105,7 +105,7 @@
   },
   "${ModID}:SandstormPower": {
     "NAME": "Sandstorm",
-    "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain #b"," #yBlock."]
+    "DESCRIPTIONS": ["Whenever you apply a debuff to an enemy, gain #b"," #yBlock."]
   },
   "${ModID}:DeathtouchedPower": {
     "NAME": "Deathtouched",

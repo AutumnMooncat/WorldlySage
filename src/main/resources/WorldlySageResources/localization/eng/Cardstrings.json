@@ -227,7 +227,7 @@
   },
   "${ModID}:Sandstorm": {
     "NAME": "Sandstorm",
-    "DESCRIPTION": "Whenever a card is Exhausted, gain !M! Block."
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, gain !M! Block."
   },
   "${ModID}:Sapling": {
     "NAME": "Sapling",
