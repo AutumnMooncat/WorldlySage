@@ -18,8 +18,8 @@ public class Mudball extends AbstractEasyCard {
 
     public Mudball() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 6;
-        baseMagicNumber = magicNumber = 2;
+        baseDamage = damage = 7;
+        baseMagicNumber = magicNumber = 1;
     }
 
     @Override
