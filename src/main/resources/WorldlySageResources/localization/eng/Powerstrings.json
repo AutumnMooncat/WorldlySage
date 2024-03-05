@@ -81,7 +81,7 @@
   },
   "${ModID}:WhirlpoolPower": {
     "NAME": "Whirlpool",
-    "DESCRIPTIONS": ["At the end of your turn, deal #b"," damage to ALL enemies for each card in your hand."]
+    "DESCRIPTIONS": ["Whenever you draw a card during your turn, deal #b"," damage to ALL enemies."]
   },
   "${ModID}:LevitatePower": {
     "NAME": "Levitate",
