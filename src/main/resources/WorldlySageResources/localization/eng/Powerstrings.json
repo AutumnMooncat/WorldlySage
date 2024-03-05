@@ -49,7 +49,7 @@
   },
   "${ModID}:ManaStormPower": {
     "NAME": "Mana Storm",
-    "DESCRIPTIONS": ["If you end your turn with excess #yEnergy, gain #b"," #yMystic #yForce."]
+    "DESCRIPTIONS": ["If you end your turn with excess #yEnergy, gain #b"," [E] and draw #b"," additional card next turn."," additional cards next turn."]
   },
   "${ModID}:RiverOfAshPower": {
     "NAME": "River of Ash",

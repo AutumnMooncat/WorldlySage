@@ -135,7 +135,7 @@
   },
   "${ModID}:ManaStorm": {
     "NAME": "Mana Storm",
-    "DESCRIPTION": "If you end your turn with excess Energy, gain !M! ${ModID}:Mystic_Force."
+    "DESCRIPTION": "If you end your turn with excess Energy, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@} and draw !M! additional card{!M!|>1=s} next turn."
   },
   "${ModID}:Mending": {
     "NAME": "Mending",
