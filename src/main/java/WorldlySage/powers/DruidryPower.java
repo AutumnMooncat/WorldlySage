@@ -2,8 +2,10 @@ package WorldlySage.powers;
 
 import WorldlySage.MainModfile;
 import WorldlySage.powers.interfaces.OnPlantPower;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -33,6 +35,7 @@ public class DruidryPower extends AbstractPower implements OnPlantPower {
     @Override
     public void onPlant(AbstractCard card, boolean isEndTurn) {
         flash();
-        addToBot(new GainBlockAction(owner, owner, amount));
+        //addToBot(new GainBlockAction(owner, owner, amount));
+        addToBot(new DamageRandomEnemyAction(new DamageInfo(owner, amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
     }
 }

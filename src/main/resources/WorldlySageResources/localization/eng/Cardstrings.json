@@ -39,7 +39,7 @@
   },
   "${ModID}:Druidry": {
     "NAME": "Druidry",
-    "DESCRIPTION": "Whenever you ${ModID}:Plant a card, gain !M! Block."
+    "DESCRIPTION": "Whenever you ${ModID}:Plant a card, deal !M! damage to a random enemy."
   },
   "${ModID}:Engrave": {
     "NAME": "Engrave",

@@ -89,7 +89,7 @@
   },
   "${ModID}:DruidryPower": {
     "NAME": "Druidry",
-    "DESCRIPTIONS": ["Whenever you #yPlant a card, gain #b"," #yBlock."]
+    "DESCRIPTIONS": ["Whenever you #yPlant a card, deal #b"," damage to a random enemy."]
   },
   "${ModID}:SunnyDayPower": {
     "NAME": "Sunny Day",
