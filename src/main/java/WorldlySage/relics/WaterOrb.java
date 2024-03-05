@@ -1,7 +1,6 @@
 package WorldlySage.relics;
 
 import WorldlySage.TheWorldlySage;
-import WorldlySage.actions.ApplyGrowthAction;
 import WorldlySage.actions.PlantCardsAction;
 import WorldlySage.cards.Sapling;
 import WorldlySage.patches.CustomTags;
@@ -38,11 +37,12 @@ public class WaterOrb extends AbstractEasyRelic {
         flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        AbstractCard card = new Sapling();
-        card.tags.add(CustomTags.SAGE_RELIC_TRACKER);
-        group.addToTop(card);
+        for (int i = 0 ; i < 2 ; i++) {
+            AbstractCard card = new Sapling();
+            card.tags.add(CustomTags.SAGE_RELIC_TRACKER);
+            group.addToTop(card);
+        }
         addToBot(new PlantCardsAction(group, group.size()));
-        addToBot(new ApplyGrowthAction(card, 2));
     }
 
     @Override

@@ -38,7 +38,7 @@ public class NatureOrb extends AbstractEasyRelic {
         flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (int i = 0 ; i < 3 ; i++) {
+        for (int i = 0 ; i < 2 ; i++) {
             AbstractCard card = new Sapling();
             card.tags.add(CustomTags.SAGE_RELIC_TRACKER);
             group.addToTop(card);
