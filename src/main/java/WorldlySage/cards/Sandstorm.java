@@ -14,7 +14,7 @@ public class Sandstorm extends AbstractEasyCard {
 
     public Sandstorm() {
         super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 3;
+        baseMagicNumber = magicNumber = 4;
     }
 
     @Override
