@@ -15,7 +15,7 @@ public class Fireball extends AbstractEasyCard {
 
     public Fireball() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 7;
+        baseDamage = damage = 6;
     }
 
     @Override
