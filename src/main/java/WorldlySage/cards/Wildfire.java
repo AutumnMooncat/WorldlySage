@@ -1,7 +1,6 @@
 package WorldlySage.cards;
 
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import WorldlySage.powers.HydrationPower;
 import WorldlySage.powers.WildfirePower;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.cards.red.DualWield;
@@ -14,7 +13,7 @@ public class Wildfire extends AbstractEasyCard {
     public final static String ID = makeID(Wildfire.class.getSimpleName());
 
     public Wildfire() {
-        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        super(ID, 3, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
         baseMagicNumber = magicNumber = 1;
     }
 
@@ -25,7 +24,7 @@ public class Wildfire extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        upgradeBaseCost(2);
     }
 
     @Override
