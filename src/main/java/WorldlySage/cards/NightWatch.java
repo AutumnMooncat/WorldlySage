@@ -1,8 +1,7 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.ApplyGlyphToRandomCardsAction;
-import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -15,12 +14,14 @@ public class NightWatch extends AbstractEasyCard {
     public NightWatch() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
         baseMagicNumber = magicNumber = 2;
-        exhaust = true;
+        isEthereal = true;
     }
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyGlyphToRandomCardsAction(magicNumber, new EnergyGlyph(1), p.hand));
+    public void use(AbstractPlayer p, AbstractMonster m) {}
+
+    public void triggerWhenDrawn() {
+        this.addToTop(new GainEnergyAction(magicNumber));
     }
 
     @Override

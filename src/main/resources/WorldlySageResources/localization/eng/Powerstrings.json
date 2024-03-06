@@ -124,5 +124,9 @@
       "The next card you play this turn is #yPlanted.",
       "The next #b"," cards you play this turn are #yPlanted."
     ]
+  },
+  "${ModID}:PolishedPower": {
+    "NAME": "Polished",
+    "DESCRIPTIONS": ["Whenever you play a #ySkill this turn, gain #b"," #yBlock."]
   }
 }

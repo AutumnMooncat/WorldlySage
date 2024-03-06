@@ -162,7 +162,7 @@
   },
   "${ModID}:NightWatch": {
     "NAME": "Night Watch",
-    "DESCRIPTION": "Put an ${ModID}:Energy_Glyph onto !M! random cards in your hand. NL Exhaust."
+    "DESCRIPTION": "Ethereal. NL When you draw this card, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
   },
   "${ModID}:Nova": {
     "NAME": "Nova",
@@ -211,7 +211,7 @@
   },
   "${ModID}:RockPolish": {
     "NAME": "Rock Polish",
-    "DESCRIPTION": "Draw !M! cards. NL Put a ${ModID}:Shield_Glyph on all Skills in your hand."
+    "DESCRIPTION": "Draw !M! cards. NL Whenever you play a Skill this turn, gain !${ModID}:M2! Block."
   },
   "${ModID}:Rockslide": {
     "NAME": "Rockslide",
@@ -239,8 +239,8 @@
   },
   "${ModID}:Sigil": {
     "NAME": "Sigil",
-    "DESCRIPTION": "{@@}Choose !M! Attack{!M!|>1=s}. NL Put an ${ModID}:Accuracy_Glyph on {!M!|1=it|@=them}.",
-    "EXTENDED_DESCRIPTION": ["Put a Glyph on."]
+    "DESCRIPTION": "{@@}Choose an Attack. NL Increase its damage by !M! this combat.",
+    "EXTENDED_DESCRIPTION": ["Boost."]
   },
   "${ModID}:SignalFire": {
     "NAME": "Signal Fire",
