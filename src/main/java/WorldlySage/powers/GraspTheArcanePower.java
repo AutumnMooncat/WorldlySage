@@ -1,14 +1,13 @@
 package WorldlySage.powers;
 
 import WorldlySage.MainModfile;
-import WorldlySage.powers.interfaces.OnGlyphPower;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import WorldlySage.patches.EnergyGainPatch;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class GraspTheArcanePower extends AbstractPower implements OnGlyphPower {
+public class GraspTheArcanePower extends AbstractPower implements EnergyGainPatch.OnGainEnergyPower {
     public static final String POWER_ID = MainModfile.makeID(GraspTheArcanePower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -30,7 +29,8 @@ public class GraspTheArcanePower extends AbstractPower implements OnGlyphPower {
     }
 
     @Override
-    public int OnGlyphApplied(AbstractCard card, int amount) {
+    public int onGainEnergy(int amount) {
+        flash();
         return amount + this.amount;
     }
 }

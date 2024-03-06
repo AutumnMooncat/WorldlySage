@@ -99,7 +99,7 @@
   },
   "${ModID}:GraspTheArcane": {
     "NAME": "Grasp the Arcane",
-    "DESCRIPTION": "Whenever you put a ${ModID}:Glyph onto a card, increase its amount by !M!."
+    "DESCRIPTION": "Whenever you gain Energy, increase the amount you gain by !M!."
   },
   "${ModID}:GrassyPlain": {
     "NAME": "Grassy Plain",

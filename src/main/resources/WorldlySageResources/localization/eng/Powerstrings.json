@@ -69,7 +69,7 @@
   },
   "${ModID}:GraspTheArcanePower": {
     "NAME": "Grasp the Arcane",
-    "DESCRIPTIONS": ["Whenever you put a #yGlyph on a card, increase its amount by #b","."]
+    "DESCRIPTIONS": ["Whenever you gain #yEnergy, increase the amount you gain by #b","."]
   },
   "${ModID}:OvergrowthPower": {
     "NAME": "Overgrowth Form",
