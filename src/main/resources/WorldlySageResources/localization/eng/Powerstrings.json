@@ -128,5 +128,9 @@
   "${ModID}:PolishedPower": {
     "NAME": "Polished",
     "DESCRIPTIONS": ["Whenever you play a #ySkill this turn, gain #b"," #yBlock."]
+  },
+  "${ModID}:CrystallizedPower": {
+    "NAME": "Crystallized",
+    "DESCRIPTIONS": ["When attacked this turn, loses #b", " HP."]
   }
 }

@@ -27,7 +27,7 @@
   },
   "${ModID}:Crystallize": {
     "NAME": "Crystallize",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies twice. NL ${ModID}:Glyphs added to this card are not removed on play."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Enemies hit lose !M! HP when attacked this turn."
   },
   "${ModID}:CrystalShards": {
     "NAME": "Crystal Shards",
