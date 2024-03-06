@@ -283,7 +283,7 @@
   },
   "${ModID}:TabulaRasa": {
     "NAME": "Tabula Rasa",
-    "DESCRIPTION": "Whenever you play a card with a ${ModID}:Glyph, draw !M! card{@@}{!M!|>1=s}."
+    "DESCRIPTION": "The first time you play a card each turn, draw cards equal to {@@}{!M!|>1=!M! times }its cost."
   },
   "${ModID}:TheMountain": {
     "NAME": "The Mountain",

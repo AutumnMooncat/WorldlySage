@@ -101,7 +101,9 @@
   },
   "${ModID}:TabulaRasaPower": {
     "NAME": "Tabula Rasa",
-    "DESCRIPTIONS": ["Whenever you play a card with a #yGlyph, draw #b"," card."," cards."]
+    "DESCRIPTIONS": [
+      "The first time you play a card each turn, draw cards equal to its cost.",
+      "The first time you play a card each turn, draw cards equal to #b"," times its cost."]
   },
   "${ModID}:SandstormPower": {
     "NAME": "Sandstorm",
