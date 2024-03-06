@@ -1,7 +1,6 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.DoAction;
-import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cardmods.PhantomMod;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
@@ -16,6 +15,7 @@ import static WorldlySage.MainModfile.makeID;
 
 public class Haste extends AbstractEasyCard {
     public final static String ID = makeID(Haste.class.getSimpleName());
+    private int lastSize;
 
     public Haste() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
@@ -24,18 +24,52 @@ public class Haste extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DoAction(() -> {
-            AbstractCard card = Wiz.secondLastCardPlayed();
+            AbstractCard card = null;
+            //Start at the second last card, as the last card is always this
+            for (int i = Wiz.cardsPlayedThisCombat().size() - 2 ; i >= 0 ; i--) {
+                if (!(Wiz.cardsPlayedThisCombat().get(i) instanceof Haste)) {
+                    card = Wiz.cardsPlayedThisCombat().get(i);
+                    break;
+                }
+            }
             if (card != null) {
                 card = card.makeStatEquivalentCopy();
                 CardModifierManager.addModifier(card, new PhantomMod());
                 addToTop(new MakeTempCardInHandAction(card));
             }
         }));
+        rawDescription = cardStrings.DESCRIPTION;
+        initializeDescription();
+    }
+
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        if (Wiz.cardsPlayedThisCombat().size() != lastSize) {
+            lastSize = Wiz.cardsPlayedThisCombat().size();
+            AbstractCard card = null;
+            for (int i = Wiz.cardsPlayedThisCombat().size() - 1 ; i >= 0 ; i--) {
+                if (!(Wiz.cardsPlayedThisCombat().get(i) instanceof Haste)) {
+                    card = Wiz.cardsPlayedThisCombat().get(i);
+                    break;
+                }
+            }
+            if (card != null) {
+                rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + CardModifierManager.onRenderTitle(card, card.name) + cardStrings.EXTENDED_DESCRIPTION[1];
+                cardsToPreview = card.makeStatEquivalentCopy();
+                initializeDescription();
+            }
+        }
+    }
+
+    @Override
+    public void triggerOnOtherCardPlayed(AbstractCard c) {
+        super.triggerOnOtherCardPlayed(c);
     }
 
     @Override
     public void upp() {
-        CardModifierManager.addModifier(this, new EnergyGlyph(1));
+        upgradeBaseCost(0);
     }
 
     @Override
