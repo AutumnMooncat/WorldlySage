@@ -1,10 +1,8 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.DoAction;
-import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cardmods.PhantomMod;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import WorldlySage.util.Wiz;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -36,14 +34,8 @@ public class Vortex extends AbstractEasyCard {
     }
 
     @Override
-    public boolean freeToPlay() {
-        return super.freeToPlay() || Wiz.hasGlyph(this);
-    }
-
-    @Override
     public void upp() {
-        //upgradeMagicNumber(1);
-        CardModifierManager.addModifier(this, new EnergyGlyph(1));
+        upgradeMagicNumber(1);
     }
 
     @Override
