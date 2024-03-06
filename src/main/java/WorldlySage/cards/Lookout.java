@@ -1,8 +1,8 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.ApplyGlyphToRandomCardsAction;
-import WorldlySage.cardmods.ShieldGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
+import WorldlySage.powers.BracedPower;
+import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.cards.purple.InnerPeace;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -15,18 +15,18 @@ public class Lookout extends AbstractEasyCard {
     public Lookout() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
         baseBlock = block = 6;
-        baseMagicNumber = magicNumber = 1;
+        baseMagicNumber = magicNumber = 3;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        addToBot(new ApplyGlyphToRandomCardsAction(magicNumber, new ShieldGlyph(1), p.hand));
+        Wiz.applyToSelf(new BracedPower(p, magicNumber));
     }
 
     @Override
     public void upp() {
-        //upgradeBlock(2);
+        upgradeBlock(2);
         upgradeMagicNumber(1);
     }
 

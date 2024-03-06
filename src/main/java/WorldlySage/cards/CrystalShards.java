@@ -1,10 +1,8 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.ApplyGlyphToAllCardsAction;
-import WorldlySage.cardmods.PiercingGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.purple.Wish;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -17,6 +15,7 @@ public class CrystalShards extends AbstractEasyCard {
     public CrystalShards() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
         baseDamage = damage = 2;
+        baseMagicNumber = magicNumber = 1;
     }
 
     @Override
@@ -24,7 +23,7 @@ public class CrystalShards extends AbstractEasyCard {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_VERTICAL);
         dmg(m, AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
         dmg(m, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
-        addToBot(new ApplyGlyphToAllCardsAction(new PiercingGlyph(1), c -> Wiz.adp().hand.contains(c) && c.type == CardType.ATTACK));
+        addToBot(new DrawCardAction(magicNumber));
     }
 
     @Override
