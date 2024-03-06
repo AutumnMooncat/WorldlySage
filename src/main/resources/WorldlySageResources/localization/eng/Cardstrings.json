@@ -7,7 +7,7 @@
   },
   "${ModID}:AuraSphere": {
     "NAME": "Aura Sphere",
-    "DESCRIPTION": "Deal !D! damage. NL Put an ${ModID}:Accuracy_Glyph on this card."
+    "DESCRIPTION": "Deal !D! damage. NL Set this card's damage to !M! this combat."
   },
   "${ModID}:Bifurcate": {
     "NAME": "Bifurcate",
@@ -260,7 +260,7 @@
   },
   "${ModID}:Star": {
     "NAME": "Star",
-    "DESCRIPTION": "Deal !D! damage. NL Put a ${ModID}:Pierce_Glyph on this card."
+    "DESCRIPTION": "Deal !D! damage. NL Ignores Block."
   },
   "${ModID}:StealthRocks": {
     "NAME": "Stealth Rocks",

@@ -1,9 +1,7 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.ApplyGlyphAction;
 import WorldlySage.actions.DoAction;
 import WorldlySage.actions.ThrowObjectAction;
-import WorldlySage.cardmods.AccuracyGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.TextureScaler;
 import WorldlySage.util.Wiz;
@@ -24,6 +22,7 @@ public class AuraSphere extends AbstractEasyCard {
     public AuraSphere() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 10;
+        baseMagicNumber = magicNumber = 15;
     }
 
     @Override
@@ -32,12 +31,13 @@ public class AuraSphere extends AbstractEasyCard {
             Wiz.atb(new ThrowObjectAction(EFFECT, 1.0f, m.hb, Color.WHITE, false));
         }
         dmg(m, AbstractGameAction.AttackEffect.FIRE);
-        addToBot(new DoAction(() -> addToBot(new ApplyGlyphAction(this, new AccuracyGlyph(1)))));
+        addToBot(new DoAction(() -> baseDamage = magicNumber));
     }
 
     @Override
     public void upp() {
         upgradeDamage(4);
+        upgradeMagicNumber(6);
     }
 
     @Override
