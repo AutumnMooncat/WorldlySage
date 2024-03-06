@@ -1,11 +1,11 @@
 package WorldlySage.cards;
 
+import WorldlySage.actions.ActuallyWaitAction;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.patches.EnterCardGroupPatches;
 import WorldlySage.powers.CrushPower;
 import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -28,9 +28,9 @@ public class TheMountain extends AbstractEasyCard implements EnterCardGroupPatch
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (m != null) {
-            this.addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
+            addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
         }
-        this.addToBot(new WaitAction(0.8F));
+        addToBot(new ActuallyWaitAction(0.8F));
         Wiz.applyToEnemy(m, new WeakPower(m, magicNumber, false));
         Wiz.applyToEnemy(m, new VulnerablePower(m, magicNumber, false));
         Wiz.applyToEnemy(m, new CrushPower(m, magicNumber));
