@@ -134,7 +134,7 @@
   },
   "${ModID}:Lookout": {
     "NAME": "Lookout",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Braced."
+    "DESCRIPTION": "Gain !B! Block. NL Your next Block gaining card gives !M! additional Block."
   },
   "${ModID}:ManaStorm": {
     "NAME": "Mana Storm",
