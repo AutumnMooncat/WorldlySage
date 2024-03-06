@@ -1,8 +1,6 @@
 package WorldlySage.cards;
 
-import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import basemod.helpers.CardModifierManager;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MultiGroupSelectAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -17,9 +15,11 @@ import static WorldlySage.MainModfile.makeID;
 public class Wormhole extends AbstractEasyCard {
     public final static String ID = makeID(Wormhole.class.getSimpleName());
     public boolean success;
+    public Runnable onSuccess;
 
     public Wormhole() {
         super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
+        exhaust = true;
     }
 
     @Override
@@ -29,25 +29,32 @@ public class Wormhole extends AbstractEasyCard {
             for (AbstractCard c : cards) {
                 CardGroup group = groups.get(c);
                 int index = group.group.indexOf(c);
-                //Actually add the card to the pile
-                group.group.add(index, this);
-                //Animate the card cosmetically
-                unhover();
-                untip();
-                stopGlowing();
-                if (group == p.drawPile) {
-                    shrink();
-                    darken(false);
-                    AbstractDungeon.getCurrRoom().souls.onToDeck(this, true, true);
-                } else if (group == p.discardPile) {
-                    shrink();
-                    darken(false);
-                    AbstractDungeon.getCurrRoom().souls.discard(this, true);
-                } else if (group == p.exhaustPile) {
-                    AbstractDungeon.effectList.add(new ExhaustCardEffect(this));
-                    //Also unfade the original card
-                    c.unfadeOut();
-                }
+
+                //Prepare the runnable for the UCA Patch
+                onSuccess = () -> {
+                    //Actually add the card to the pile
+                    group.group.add(index, this);
+
+                    //Animate the card cosmetically
+                    unhover();
+                    untip();
+                    stopGlowing();
+                    if (group == p.drawPile) {
+                        shrink();
+                        darken(false);
+                        AbstractDungeon.getCurrRoom().souls.onToDeck(this, true, true);
+                    } else if (group == p.discardPile) {
+                        shrink();
+                        darken(false);
+                        AbstractDungeon.getCurrRoom().souls.discard(this, true);
+                    } else if (group == p.exhaustPile) {
+                        AbstractDungeon.effectList.add(new ExhaustCardEffect(this));
+                    }
+                };
+
+                //Unfade the original card in case it came from the Exhaust pile
+                c.unfadeOut();
+
                 //Move original card to hand
                 c.unhover();
                 c.untip();
@@ -63,16 +70,21 @@ public class Wormhole extends AbstractEasyCard {
                     p.hand.addToTop(c);
                 }
 
+                //Refresh hand logic given we manually added to hand
                 AbstractDungeon.player.hand.refreshHandLayout();
                 AbstractDungeon.player.hand.applyPowers();
-                success = true;
+
+                //Tell UCA to run the runnable if we are upgraded, else let it go through normal UCA logic
+                //This means spoon can make the non-upgraded version discard instead of moving like the upgraded version
+                success = upgraded;
             }
         }, 1, CardGroup.CardGroupType.DRAW_PILE, CardGroup.CardGroupType.DISCARD_PILE, CardGroup.CardGroupType.EXHAUST_PILE));
     }
 
     @Override
     public void upp() {
-        CardModifierManager.addModifier(this, new EnergyGlyph(1));
+        exhaust = false;
+        uDesc();
     }
 
     @Override

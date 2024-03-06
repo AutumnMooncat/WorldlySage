@@ -19,35 +19,27 @@ public class UseCardActionPatches {
     }
 
     @SpirePatch2(clz = UseCardAction.class, method = "update")
-    public static class FixUCAForWormhole {
-        @SpireInsertPatch(locator = Locator.class)
+    public static class FixUCA {
+        @SpireInsertPatch(locator = Locator2.class)
         public static SpireReturn<?> plz(UseCardAction __instance, AbstractCard ___targetCard, float ___duration) {
+            boolean earlyReturn = false;
+            //First check Wormhole for success
             if (___targetCard instanceof Wormhole) {
                 Wormhole card = (Wormhole) ___targetCard;
-                if (!card.success) {
-                    return SpireReturn.Continue();
+                if (card.success) {
+                    card.onSuccess.run();
+                    card.success = false;
+                    earlyReturn = true;
                 }
-                card.success = false;
-                //__instance.isDone = true;
-
-                ReflectionHacks.setPrivate(__instance, AbstractGameAction.class, "duration", ___duration - Gdx.graphics.getDeltaTime());
-
-                AbstractDungeon.player.cardInUse = null;
-                ___targetCard.exhaustOnUseOnce = false;
-                ___targetCard.dontTriggerOnUseCard = false;
-                AbstractDungeon.actionManager.addToBottom(new HandCheckAction());
-
-                return SpireReturn.Return(null);
             }
 
-            return SpireReturn.Continue();
-        }
-
-        @SpireInsertPatch(locator = Locator2.class)
-        public static SpireReturn<?> plz2(UseCardAction __instance, AbstractCard ___targetCard, float ___duration) {
-            if (PlantField.plantNextCard.get(__instance)) {
+            //If we didn't move a Wormhole card already, check for Plant
+            if (!earlyReturn && PlantField.plantNextCard.get(__instance)) {
                 PlantedCardManager.addCard(___targetCard);
+                earlyReturn = true;
+            }
 
+            if (earlyReturn) {
                 ReflectionHacks.setPrivate(__instance, AbstractGameAction.class, "duration", ___duration - Gdx.graphics.getDeltaTime());
 
                 AbstractDungeon.player.cardInUse = null;
@@ -60,7 +52,6 @@ public class UseCardActionPatches {
 
             return SpireReturn.Continue();
         }
-
 
         private static class Locator extends SpireInsertLocator {
             @Override

@@ -344,7 +344,8 @@
   },
   "${ModID}:Wormhole": {
     "NAME": "Wormhole",
-    "DESCRIPTION": "Put a card from your draw pile, discard pile, or exhaust pile into your hand. NL Put this card where that card was.",
+    "DESCRIPTION": "Put a card from your draw pile, discard pile, or exhaust pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put a card from your draw pile, discard pile, or exhaust pile into your hand. NL Put this card where that card was.",
     "EXTENDED_DESCRIPTION": ["Choose a card to swap positions with."]
   }
 }
