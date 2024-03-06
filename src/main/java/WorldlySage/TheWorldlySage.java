@@ -129,7 +129,7 @@ public class TheWorldlySage extends CustomPlayer {
 
     @Override
     public BitmapFont getEnergyNumFont() {
-        return FontHelper.energyNumFontRed;
+        return FontHelper.energyNumFontBlue;
     }
 
     @Override
