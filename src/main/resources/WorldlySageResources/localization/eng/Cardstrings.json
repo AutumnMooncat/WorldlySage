@@ -149,7 +149,7 @@
   },
   "${ModID}:Meteor": {
     "NAME": "Meteor",
-    "DESCRIPTION": "Deal !D! damage. NL If this kills an enemy, deal damage to ALL enemies equal to damage dealt."
+    "DESCRIPTION": "Deal !D! damage. NL If this kills an enemy, deal equal damage to ALL enemies."
   },
   "${ModID}:Moonlight": {
     "NAME": "Moonlight",
