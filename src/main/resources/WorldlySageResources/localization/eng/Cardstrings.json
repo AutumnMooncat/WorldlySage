@@ -56,7 +56,7 @@
   },
   "${ModID}:Exploration": {
     "NAME": "Exploration",
-    "DESCRIPTION": "Draw !M! cards. NL Put a ${ModID}:Draw_Glyph on all cards drawn this way. NL Exhaust."
+    "DESCRIPTION": "Draw !M! cards. NL For each cost 0 card drawn this way, draw an additional card. NL Exhaust."
   },
   "${ModID}:Fertilizer": {
     "NAME": "Fertilizer",
@@ -123,7 +123,7 @@
   },
   "${ModID}:Levitate": {
     "NAME": "Levitate",
-    "DESCRIPTION": "Whenever you gain Energy, put a ${ModID}:Shield_Glyph onto !M! random card{@@}{!M!|>1=s} in your hand."
+    "DESCRIPTION": "Whenever you gain Energy, gain !M! Block."
   },
   "${ModID}:LivingFlame": {
     "NAME": "Living Flame",

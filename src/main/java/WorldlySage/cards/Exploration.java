@@ -1,7 +1,5 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.ApplyGlyphAction;
-import WorldlySage.cardmods.DrawGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -17,7 +15,7 @@ public class Exploration extends AbstractEasyCard {
 
     public Exploration() {
         super(ID, 0, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
-        baseMagicNumber = magicNumber = 3;
+        baseMagicNumber = magicNumber = 2;
         exhaust = true;
     }
 
@@ -26,8 +24,14 @@ public class Exploration extends AbstractEasyCard {
         addToBot(new DrawCardAction(magicNumber, new AbstractGameAction() {
             @Override
             public void update() {
+                int zeroes = 0;
                 for (AbstractCard c : DrawCardAction.drawnCards) {
-                    ApplyGlyphAction.applyGlyph(c, new DrawGlyph(1));
+                    if (c.costForTurn == 0 || c.freeToPlayOnce) {
+                        zeroes++;
+                    }
+                }
+                if (zeroes > 0) {
+                    addToTop(new DrawCardAction(zeroes));
                 }
                 this.isDone = true;
             }

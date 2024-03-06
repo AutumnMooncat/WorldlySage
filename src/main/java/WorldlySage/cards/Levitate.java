@@ -1,10 +1,8 @@
 package WorldlySage.cards;
 
-import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.powers.LevitatePower;
 import WorldlySage.util.Wiz;
-import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.cards.red.DualWield;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -16,7 +14,7 @@ public class Levitate extends AbstractEasyCard {
 
     public Levitate() {
         super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 1;
+        baseMagicNumber = magicNumber = 4;
     }
 
     @Override
@@ -26,8 +24,7 @@ public class Levitate extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        //upgradeBaseCost(0);
-        CardModifierManager.addModifier(this, new EnergyGlyph(1));
+        upgradeMagicNumber(1);
     }
 
     @Override
