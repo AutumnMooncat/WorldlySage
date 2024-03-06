@@ -6,6 +6,7 @@ import WorldlySage.patches.CardCounterPatches;
 import WorldlySage.powers.interfaces.OnPlantPower;
 import WorldlySage.util.Wiz;
 import basemod.BaseMod;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.mod.stslib.patches.HitboxRightClick;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -164,6 +165,26 @@ public class PlantedCardManager {
         public static int getCount(int __result) {
             int projectedStrikes = (int)(PlantedCardManager.cards.group.stream().filter(c -> c.hasTag(AbstractCard.CardTags.STRIKE)).count());
             return __result + projectedStrikes;
+        }
+    }
+
+    @SpirePatch2(clz = AbstractCard.class, method = "renderEnergy")
+    public static class MakeColoredText {
+        private static final Color ENERGY_COST_RESTRICTED_COLOR = new Color(1.0F, 0.3F, 0.3F, 1.0F);
+        @SpireInsertPatch(locator = Locator.class, localvars = {"costColor"})
+        public static void plz(AbstractCard __instance, Color costColor) {
+            if (AbstractDungeon.player != null && cards.contains(__instance) && !__instance.hasEnoughEnergy()) {
+                costColor.set(ENERGY_COST_RESTRICTED_COLOR);
+                costColor.set(costColor.r, costColor.g, costColor.b, __instance.transparency);
+            }
+        }
+
+        public static class Locator extends SpireInsertLocator {
+            @Override
+            public int[] Locate(CtBehavior ctBehavior) throws Exception {
+                Matcher m = new Matcher.MethodCallMatcher(AbstractCard.class, "getCost");
+                return LineFinder.findInOrder(ctBehavior, m);
+            }
         }
     }
 }
