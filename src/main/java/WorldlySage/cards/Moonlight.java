@@ -14,7 +14,7 @@ public class Moonlight extends AbstractEasyCard {
 
     public Moonlight() {
         super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 1;
+        baseMagicNumber = magicNumber = 2;
     }
 
     @Override

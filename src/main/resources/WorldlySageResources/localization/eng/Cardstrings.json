@@ -153,7 +153,7 @@
   },
   "${ModID}:Moonlight": {
     "NAME": "Moonlight",
-    "DESCRIPTION": "Your next {@@}{!M!|>1=!M! }card{!M!|>1=s} with a ${ModID}:Glyph {!M!|1=is|@=are} played twice."
+    "DESCRIPTION": "Double the next {@@}{!M!|>1=!M! }debuff{!M!|>1=s} you apply."
   },
   "${ModID}:Mudball": {
     "NAME": "Mudball",
@@ -287,7 +287,7 @@
   },
   "${ModID}:TheMountain": {
     "NAME": "The Mountain",
-    "DESCRIPTION": "Put a ${ModID}:Shield_Glyph on ALL your cards. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Weak. NL Apply !M! Vulnerable. NL Apply !M! ${ModID}:Crushed. NL Whenever this enters your hand, lower its cost by 1 this combat."
   },
   "${ModID}:Till": {
     "NAME": "Till",

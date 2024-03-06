@@ -114,8 +114,8 @@
   "${ModID}:MoonlightPower": {
     "NAME": "Moonlight",
     "DESCRIPTIONS": [
-      "Your next card with a #yGlyph is played twice.",
-      "Your next #b", " cards with a #yGlyph are played twice."
+      "Double the next debuff you apply.",
+      "Double the next #b", " debuffs you apply."
     ]
   },
   "${ModID}:PlantNextCardPower": {
