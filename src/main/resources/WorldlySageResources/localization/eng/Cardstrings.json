@@ -333,7 +333,7 @@
   },
   "${ModID}:WoodWall": {
     "NAME": "Wood Wall",
-    "DESCRIPTION": "Put a ${ModID}:Shield_Glyph on this card. NL ${ModID}:Shield_Glyphs on this card are not removed on play."
+    "DESCRIPTION": "Gain !B! Block. NL Increase this card's Block by !M! this combat."
   },
   "${ModID}:WorldTree": {
     "NAME": "World Tree",
