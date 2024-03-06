@@ -132,5 +132,12 @@
   "${ModID}:CrystallizedPower": {
     "NAME": "Crystallized",
     "DESCRIPTIONS": ["When attacked this turn, loses #b", " HP."]
+  },
+  "${ModID}:GrowNextCardPower": {
+    "NAME": "Grow Next Card",
+    "DESCRIPTIONS": [
+      "#yGrow the next card you play this turn.",
+      "#yGrow the next card you play this turn #b"," times."
+    ]
   }
 }
