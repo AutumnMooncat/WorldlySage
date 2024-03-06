@@ -19,6 +19,9 @@ public class Haste extends AbstractEasyCard {
 
     public Haste() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        exhaust = true;
+        rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[2];
+        initializeDescription();
     }
 
     @Override
@@ -38,7 +41,7 @@ public class Haste extends AbstractEasyCard {
                 addToTop(new MakeTempCardInHandAction(card));
             }
         }));
-        rawDescription = cardStrings.DESCRIPTION;
+        rawDescription = cardStrings.DESCRIPTION + (upgraded ? "" : cardStrings.EXTENDED_DESCRIPTION[2]);
         initializeDescription();
     }
 
@@ -55,7 +58,7 @@ public class Haste extends AbstractEasyCard {
                 }
             }
             if (card != null) {
-                rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + CardModifierManager.onRenderTitle(card, card.name) + cardStrings.EXTENDED_DESCRIPTION[1];
+                rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + CardModifierManager.onRenderTitle(card, card.name) + cardStrings.EXTENDED_DESCRIPTION[1] + (upgraded ? "" : cardStrings.EXTENDED_DESCRIPTION[2]);
                 cardsToPreview = card.makeStatEquivalentCopy();
                 initializeDescription();
             }
@@ -69,7 +72,10 @@ public class Haste extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        //upgradeBaseCost(0);
+        exhaust = false;
+        rawDescription = cardStrings.DESCRIPTION;
+        initializeDescription();
     }
 
     @Override

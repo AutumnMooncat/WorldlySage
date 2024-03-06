@@ -113,7 +113,7 @@
     "NAME": "Haste",
     "DESCRIPTION": "Make a ${ModID}:Phantom of the last non-Haste card you played this combat.",
     "EXTENDED_DESCRIPTION": [
-      "Make a ${ModID}:Phantom of the last non-Haste card you played this combat (",".)"
+      "Make a ${ModID}:Phantom of the last non-Haste card you played this combat (",".)"," NL Exhaust."
     ]
   },
   "${ModID}:IceWave": {
