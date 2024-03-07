@@ -16,7 +16,6 @@ public class Fertilizer extends AbstractEasyCard {
 
     public Fertilizer() {
         super(ID, 0, CardType.SKILL, CardRarity.SPECIAL, CardTarget.SELF, CardColor.COLORLESS);
-        CardModifierManager.addModifier(this, new GrowthMod(1));
         exhaust = true;
     }
 

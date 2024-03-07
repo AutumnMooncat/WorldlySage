@@ -23,7 +23,7 @@
   },
   "${ModID}:Compost": {
     "NAME": "Compost",
-    "DESCRIPTION": "Exhaust 1 card. NL ${ModID}:Plant 1 *Fertilizer."
+    "DESCRIPTION": "${ModID}:Plant 1 *Fertilizer. ${ModID}:Grow all your ${ModID}:Planted cards{@@}{!M!|>1= !M! times}."
   },
   "${ModID}:Crystallize": {
     "NAME": "Crystallize",
