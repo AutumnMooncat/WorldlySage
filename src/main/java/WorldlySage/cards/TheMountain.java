@@ -22,7 +22,7 @@ public class TheMountain extends AbstractEasyCard implements EnterCardGroupPatch
 
     public TheMountain() {
         super(ID, 4, CardType.SKILL, CardRarity.RARE, CardTarget.ENEMY);
-        baseMagicNumber = magicNumber = 5;
+        baseMagicNumber = magicNumber = 3;
     }
 
     @Override
@@ -38,7 +38,8 @@ public class TheMountain extends AbstractEasyCard implements EnterCardGroupPatch
 
     @Override
     public void upp() {
-        upgradeBaseCost(3);
+        //upgradeBaseCost(3);
+        upgradeMagicNumber(2);
     }
 
     @Override
