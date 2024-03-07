@@ -107,7 +107,8 @@
   },
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
-    "DESCRIPTION": "${ModID}:Plant !M! *Shivs."
+    "DESCRIPTION": "${ModID}:Plant !M! *Shivs.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Plant !M! *Shivs. NL ${ModID}:Grow them !M! times."
   },
   "${ModID}:Haste": {
     "NAME": "Haste",
