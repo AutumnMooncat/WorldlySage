@@ -134,7 +134,7 @@
   },
   "${ModID}:Lookout": {
     "NAME": "Lookout",
-    "DESCRIPTION": "Gain !B! Block. NL Your next Block gaining card gives !M! additional Block."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Plant !M! ${ModID}:Sapling{@@}{!M!|>1=s}."
   },
   "${ModID}:ManaStorm": {
     "NAME": "Mana Storm",
