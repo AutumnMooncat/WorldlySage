@@ -1,7 +1,9 @@
 package WorldlySage.cards;
 
+import WorldlySage.cardmods.GrowthMod;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.util.Wiz;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.purple.Wish;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -15,20 +17,19 @@ public class Stranglevine extends AbstractEasyCard {
 
     public Stranglevine() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = damage = 7;
-        baseMagicNumber = magicNumber = 2;
+        baseDamage = damage = 5;
+        CardModifierManager.addModifier(this, new GrowthMod(2));
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
-        Wiz.applyToEnemy(m, new ChokePower(m, magicNumber));
+        Wiz.applyToEnemy(m, new ChokePower(m, Wiz.getGrowthAmount(this)));
     }
 
     @Override
     public void upp() {
-        upgradeDamage(2);
-        upgradeMagicNumber(1);
+        CardModifierManager.addModifier(this, new GrowthMod(1));
     }
 
     @Override

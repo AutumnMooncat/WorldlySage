@@ -271,7 +271,7 @@
   },
   "${ModID}:Stranglevine": {
     "NAME": "Stranglevine",
-    "DESCRIPTION": "Deal !D! damage. NL Whenever you play a card this turn, the enemy loses !M! HP."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play a card this turn, the enemy loses HP equal to this card's ${ModID}:Growth."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",
