@@ -15,11 +15,11 @@
   },
   "${ModID}:BlackHole": {
     "NAME": "Black Hole",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Crushed."
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Adaptive - Apply !M! ${ModID}:Crushed to ALL enemies."
   },
   "${ModID}:BoulderCrash": {
     "NAME": "Boulder Crash",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Crushed."
   },
   "${ModID}:Compost": {
     "NAME": "Compost",
