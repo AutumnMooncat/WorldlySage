@@ -40,6 +40,8 @@ public class MoonlightPower extends AbstractPower implements BetterOnApplyPowerP
             --amount;
             if (amount == 0) {
                 addToTop(new RemoveSpecificPowerAction(owner, owner, this));
+            } else {
+                updateDescription();
             }
         }
     }
