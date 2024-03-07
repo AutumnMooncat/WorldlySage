@@ -22,7 +22,7 @@ public class Tsunami extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        dmg(m, AbstractGameAction.AttackEffect.FIRE);
+        dmg(m, AbstractGameAction.AttackEffect.BLUNT_HEAVY);
         Wiz.atb(new FlowAction(cards -> {
             if (!cards.isEmpty()) {
                 Wiz.att(new GainEnergyAction(cards.size()*magicNumber));
