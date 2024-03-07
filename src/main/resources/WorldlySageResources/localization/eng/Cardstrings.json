@@ -27,7 +27,7 @@
   },
   "${ModID}:Crystallize": {
     "NAME": "Crystallize",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. Enemies hit lose !M! HP when attacked this turn."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Enemies hit grant !M! Block when attacked this turn."
   },
   "${ModID}:CrystalShards": {
     "NAME": "Crystal Shards",

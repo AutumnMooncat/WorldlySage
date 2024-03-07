@@ -19,7 +19,7 @@ public class Crystallize extends AbstractEasyCard {
     public Crystallize() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
         baseDamage = damage = 6;
-        baseMagicNumber = magicNumber = 3;
+        baseMagicNumber = magicNumber = 2;
         isMultiDamage = true;
     }
 
