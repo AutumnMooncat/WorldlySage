@@ -31,7 +31,7 @@
   },
   "${ModID}:CrystalShards": {
     "NAME": "Crystal Shards",
-    "DESCRIPTION": "Deal !D! damage 3 times. NL Draw !M! card{@@}{!M!|>1=s}."
+    "DESCRIPTION": "Deal !D! damage !M! times."
   },
   "${ModID}:Defend": {
     "NAME": "Defend",
