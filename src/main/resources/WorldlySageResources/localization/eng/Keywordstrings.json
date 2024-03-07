@@ -136,6 +136,14 @@
     "DESCRIPTION": "Saplings are #b0 cost #yBlock giving cards which #yExhaust."
   },
   {
+    "ID": "adaptive",
+    "PROPER_NAME": "Adaptive",
+    "NAMES": [
+      "adaptive"
+    ],
+    "DESCRIPTION": "Trigger an effect when this card enters your hand."
+  },
+  {
     "ID": "glyph",
     "PROPER_NAME": "Glyph",
     "NAMES": [

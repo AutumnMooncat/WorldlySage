@@ -166,7 +166,7 @@
   },
   "${ModID}:NightWatch": {
     "NAME": "Night Watch",
-    "DESCRIPTION": "Ethereal. NL When you draw this card, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
+    "DESCRIPTION": "Ethereal. NL ${ModID}:Adaptive - Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
   },
   "${ModID}:Nova": {
     "NAME": "Nova",
@@ -288,7 +288,7 @@
   },
   "${ModID}:TheMountain": {
     "NAME": "The Mountain",
-    "DESCRIPTION": "Apply !M! Weak. NL Apply !M! Vulnerable. NL Apply !M! ${ModID}:Crushed. NL Whenever this enters your hand, lower its cost by 1 this combat."
+    "DESCRIPTION": "Apply !M! Weak. NL Apply !M! Vulnerable. NL Apply !M! ${ModID}:Crushed. NL ${ModID}:Adaptive - Increase these amounts by !${ModID}:M2! this combat."
   },
   "${ModID}:Till": {
     "NAME": "Till",

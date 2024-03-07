@@ -19,6 +19,7 @@ public class KeywordManager {
     public static String CRUSH;
     public static String FLOW;
     public static String PHANTOM;
+    public static String ADAPTIVE;
     public static String GLYPH;
     public static String ENERGY_GLYPH;
     public static String DRAW_GLYPH;

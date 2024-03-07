@@ -1,6 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.ActuallyWaitAction;
+import WorldlySage.actions.ModifyMagicAction;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.patches.EnterCardGroupPatches;
 import WorldlySage.powers.CrushPower;
@@ -21,8 +22,9 @@ public class TheMountain extends AbstractEasyCard implements EnterCardGroupPatch
     private CardGroup lastGroup;
 
     public TheMountain() {
-        super(ID, 4, CardType.SKILL, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, 3, CardType.SKILL, CardRarity.RARE, CardTarget.ENEMY);
         baseMagicNumber = magicNumber = 3;
+        baseSecondMagic = secondMagic = 1;
     }
 
     @Override
@@ -39,7 +41,8 @@ public class TheMountain extends AbstractEasyCard implements EnterCardGroupPatch
     @Override
     public void upp() {
         //upgradeBaseCost(3);
-        upgradeMagicNumber(2);
+        //upgradeMagicNumber(2);
+        upgradeSecondMagic(1);
     }
 
     @Override
@@ -53,7 +56,7 @@ public class TheMountain extends AbstractEasyCard implements EnterCardGroupPatch
             lastGroup = g;
             if (g == Wiz.adp().hand) {
                 superFlash();
-                updateCost(-1);
+                addToTop(new ModifyMagicAction(uuid, secondMagic));
             }
         }
     }
