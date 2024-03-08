@@ -1,29 +1,31 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.ExhaustByPredAction;
+import WorldlySage.actions.DoAction;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import WorldlySage.powers.HydrationPower;
+import WorldlySage.patches.EnterCardGroupPatches;
 import WorldlySage.util.Wiz;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class Reflection extends AbstractEasyCard {
+public class Reflection extends AbstractEasyCard implements EnterCardGroupPatches.OnEnterCardGroupCard {
     public final static String ID = makeID(Reflection.class.getSimpleName());
+    private CardGroup lastGroup;
+    private static boolean cease;
 
     public Reflection() {
-        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
+        super(ID, 0, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
+        baseBlock = block = 4;
         exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ExhaustByPredAction(Wiz.adp().hand, 1, c -> true, new AbstractGameAction() {
+        blck();
+        /*addToBot(new ExhaustByPredAction(Wiz.adp().hand, 1, c -> true, new AbstractGameAction() {
             @Override
             public void update() {
                 for (AbstractCard c : ExhaustByPredAction.exhaustedCards) {
@@ -35,16 +37,29 @@ public class Reflection extends AbstractEasyCard {
                 }
                 this.isDone = true;
             }
-        }));
+        }));*/
     }
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        upgradeBlock(2);
     }
 
     @Override
     public String cardArtCopy() {
         return Defend_Green.ID;
+    }
+
+    @Override
+    public void onEnter(CardGroup g) {
+        if (g != lastGroup) {
+            lastGroup = g;
+            if (g == Wiz.adp().hand && !cease) {
+                superFlash();
+                cease = true;
+                Wiz.makeInHand(makeStatEquivalentCopy());
+                addToBot(new DoAction(() -> cease = false));
+            }
+        }
     }
 }

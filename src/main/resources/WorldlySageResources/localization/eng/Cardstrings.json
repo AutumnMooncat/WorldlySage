@@ -194,7 +194,7 @@
   },
   "${ModID}:Reflection": {
     "NAME": "Reflection",
-    "DESCRIPTION": "Exhaust a card. NL Gain ${ModID}:Hydration equal to its cost. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Adaptive - Add a copy of this card into your hand. NL Exhaust."
   },
   "${ModID}:Reforestation": {
     "NAME": "Reforestation",
