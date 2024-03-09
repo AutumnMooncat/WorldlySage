@@ -123,7 +123,7 @@
   },
   "${ModID}:Irrigation": {
     "NAME": "Irrigation",
-    "DESCRIPTION": "Gain !M! ${ModID}:Hydration."
+    "DESCRIPTION": "At the start of your turn, ${ModID}:Grow all your ${ModID}:Planted cards !M! time{@@}{!M!|>1=s}."
   },
   "${ModID}:Levitate": {
     "NAME": "Levitate",

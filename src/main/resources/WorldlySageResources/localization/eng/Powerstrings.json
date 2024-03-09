@@ -35,7 +35,7 @@
   },
   "${ModID}:HydrationPower": {
     "NAME": "Hydration",
-    "DESCRIPTIONS": ["Whenever you #yGrow a card, increase the amount it #yGrows by #b","."]
+    "DESCRIPTIONS": ["At the start of your turn, #yGrow all your #yPlanted cards #b"," time."," times."]
   },
   "${ModID}:CrushPower": {
     "NAME": "Crushed",
