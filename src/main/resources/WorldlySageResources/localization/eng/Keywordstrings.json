@@ -61,7 +61,7 @@
       "plant",
       "planted"
     ],
-    "DESCRIPTION": "A planted card is set aside. Each turn, it #yGrows, increasing its damage and #yBlock. NL You may #yRight #yClick a planted card to add it into your hand."
+    "DESCRIPTION": "A planted card is set aside. NL You may #yRight #yClick a planted card to add it into your hand."
   },
   {
     "ID": "growth",

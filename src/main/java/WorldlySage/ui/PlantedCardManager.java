@@ -116,7 +116,7 @@ public class PlantedCardManager {
         public static SpireField<Boolean> projectedField = new SpireField<>(() -> false);
     }
 
-    @SpirePatch2(clz = AbstractPlayer.class, method = "applyStartOfTurnCards")
+    /*@SpirePatch2(clz = AbstractPlayer.class, method = "applyStartOfTurnCards")
     public static class GrowCards {
         @SpirePrefixPatch
         public static void growCards() {
@@ -124,7 +124,7 @@ public class PlantedCardManager {
                 ApplyGrowthAction.applyGrowth(c, 1);
             }
         }
-    }
+    }*/
 
     @SpirePatch2(clz = OverlayMenu.class, method = "render")
     public static class RenderPanel {
@@ -172,10 +172,10 @@ public class PlantedCardManager {
     public static class MakeColoredText {
         private static final Color ENERGY_COST_RESTRICTED_COLOR = new Color(1.0F, 0.3F, 0.3F, 1.0F);
         @SpireInsertPatch(locator = Locator.class, localvars = {"costColor"})
-        public static void plz(AbstractCard __instance, Color costColor) {
+        public static void plz(AbstractCard __instance, @ByRef Color[] costColor) {
             if (AbstractDungeon.player != null && cards.contains(__instance) && !__instance.hasEnoughEnergy()) {
-                costColor.set(ENERGY_COST_RESTRICTED_COLOR);
-                costColor.set(costColor.r, costColor.g, costColor.b, __instance.transparency);
+                costColor[0] = ENERGY_COST_RESTRICTED_COLOR;
+                costColor[0].a =  __instance.transparency;
             }
         }
 
