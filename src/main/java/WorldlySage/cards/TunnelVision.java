@@ -1,7 +1,6 @@
 package WorldlySage.cards;
 
 import WorldlySage.actions.BetterSelectCardsInHandAction;
-import WorldlySage.cardmods.EnergyGlyph;
 import WorldlySage.cardmods.PhantomMod;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import basemod.helpers.CardModifierManager;
@@ -36,7 +35,8 @@ public class TunnelVision extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        CardModifierManager.addModifier(this, new EnergyGlyph(1));
+        //CardModifierManager.addModifier(this, new EnergyGlyph(1));
+        upgradeBaseCost(0);
     }
 
     @Override
