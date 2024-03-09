@@ -1,8 +1,9 @@
 package WorldlySage.cards;
 
-import WorldlySage.actions.PlantCardsAction;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
+import WorldlySage.powers.GrowNextCardPower;
+import WorldlySage.powers.PlantNextCardPower;
+import WorldlySage.util.Wiz;
 import com.megacrit.cardcrawl.cards.purple.InnerPeace;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -22,16 +23,13 @@ public class Lookout extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (int i = 0 ; i < magicNumber ; i++) {
-            group.addToTop(new Sapling());
-        }
-        addToBot(new PlantCardsAction(group, group.size()));
+        Wiz.applyToSelf(new PlantNextCardPower(p, magicNumber));
+        Wiz.applyToSelf(new GrowNextCardPower(p, magicNumber));
     }
 
     @Override
     public void upp() {
-        //upgradeBlock(2);
+        upgradeBlock(2);
         upgradeMagicNumber(1);
     }
 
