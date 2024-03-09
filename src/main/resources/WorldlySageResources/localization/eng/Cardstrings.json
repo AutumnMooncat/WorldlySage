@@ -103,7 +103,7 @@
   },
   "${ModID}:GrassyPlain": {
     "NAME": "Grassy Plain",
-    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Plant the next card you play this turn{@@}{!M!|>1= and ${ModID}:Grow it !M! times}."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Plant !M! ${ModID}:Sapling{@@}{!M!|>1=s}."
   },
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
@@ -292,7 +292,7 @@
   },
   "${ModID}:Till": {
     "NAME": "Till",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Plant !M! ${ModID}:Sapling{@@}{!M!|>1=s}."
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Grow all your ${ModID}:Planted cards !M! time{@@}{!M!|>1=s}."
   },
   "${ModID}:ToweringOak": {
     "NAME": "Towering Oak",
