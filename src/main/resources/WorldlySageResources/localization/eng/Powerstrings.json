@@ -139,7 +139,7 @@
     "NAME": "Grow Next Card",
     "DESCRIPTIONS": [
       "#yGrow the next card you play this turn.",
-      "#yGrow the next card you play this turn #b"," times."
+      "#yGrow the next #b"," cards you play this turn."
     ]
   }
 }

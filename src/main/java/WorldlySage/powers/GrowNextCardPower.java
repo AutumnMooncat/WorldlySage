@@ -2,6 +2,7 @@ package WorldlySage.powers;
 
 import WorldlySage.MainModfile;
 import WorldlySage.actions.ApplyGrowthAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -40,8 +41,8 @@ public class GrowNextCardPower extends AbstractPower {
             justEvoked = false;
         } else {
             flash();
-            ApplyGrowthAction.applyGrowth(card, amount);
-            addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+            ApplyGrowthAction.applyGrowth(card, 1);
+            addToBot(new ReducePowerAction(owner, owner, this, 1));
         }
     }
 
