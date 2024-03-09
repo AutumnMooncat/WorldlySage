@@ -52,7 +52,7 @@
   },
   "${ModID}:Etherealize": {
     "NAME": "Etherealize",
-    "DESCRIPTION": "Exhaust 1 card. NL Make !M! ${ModID}:Phantoms of it."
+    "DESCRIPTION": "Exhaust up to !M! cards. NL Gain !B! Block for each card Exhausted."
   },
   "${ModID}:Exploration": {
     "NAME": "Exploration",

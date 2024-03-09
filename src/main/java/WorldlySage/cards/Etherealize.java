@@ -2,10 +2,8 @@ package WorldlySage.cards;
 
 import WorldlySage.actions.DoAction;
 import WorldlySage.actions.ExhaustByPredAction;
-import WorldlySage.cardmods.PhantomMod;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
-import basemod.helpers.CardModifierManager;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.BladeDance;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,22 +17,26 @@ public class Etherealize extends AbstractEasyCard {
     public Etherealize() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
         baseMagicNumber = magicNumber = 2;
+        baseBlock = block = 5;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ExhaustByPredAction(p.hand, 1, c -> true, new DoAction(() -> {
-            for (AbstractCard c : ExhaustByPredAction.exhaustedCards) {
-                AbstractCard copy = c.makeStatEquivalentCopy();
+        addToBot(new ExhaustByPredAction(p.hand, magicNumber, true, c -> true, new DoAction(() -> {
+            for (AbstractCard ignored : ExhaustByPredAction.exhaustedCards) {
+                /*AbstractCard copy = c.makeStatEquivalentCopy();
                 CardModifierManager.addModifier(copy, new PhantomMod());
-                addToTop(new MakeTempCardInHandAction(copy, magicNumber));
+                addToTop(new MakeTempCardInHandAction(copy, magicNumber));*/
+                addToTop(new GainBlockAction(p, block));
             }
         })));
     }
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        //upgradeBaseCost(0);
+        upgradeMagicNumber(1);
+        //upgradeBlock(2);
     }
 
     @Override
