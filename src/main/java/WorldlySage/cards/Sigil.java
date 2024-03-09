@@ -22,6 +22,7 @@ public class Sigil extends AbstractEasyCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new BetterSelectCardsInHandAction(1, cardStrings.EXTENDED_DESCRIPTION[0], false, false, c -> c.type == CardType.ATTACK, l -> {
             for (AbstractCard c : l) {
+                c.superFlash();
                 addToTop(new ModifyDamageAction(c.uuid, magicNumber));
             }
         }));
