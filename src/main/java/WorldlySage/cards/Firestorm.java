@@ -14,7 +14,7 @@ public class Firestorm extends AbstractEasyCard {
 
     public Firestorm() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = damage = 10;
+        baseDamage = damage = 9;
     }
 
     @Override
