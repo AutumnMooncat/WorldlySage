@@ -203,7 +203,7 @@
   },
   "${ModID}:RiverOfAsh": {
     "NAME": "River of Ash",
-    "DESCRIPTION": "Whenever a card is Exhausted this turn, draw !M! card{@@}{!M!|>1=s}. NL Exhaust 1 card. NL Exhaust."
+    "DESCRIPTION": "Whenever a card is Exhausted this turn, draw !M! card{@@}{!M!|>1=s}. NL Exhaust."
   },
   "${ModID}:RiverOfPeace": {
     "NAME": "River of Peace",
