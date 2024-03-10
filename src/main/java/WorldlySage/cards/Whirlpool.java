@@ -14,7 +14,7 @@ public class Whirlpool extends AbstractEasyCard {
 
     public Whirlpool() {
         super(ID, 2, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 1;
+        baseMagicNumber = magicNumber = 2;
     }
 
     @Override
