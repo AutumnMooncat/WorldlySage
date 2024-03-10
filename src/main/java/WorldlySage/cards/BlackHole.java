@@ -63,7 +63,7 @@ public class BlackHole extends AbstractEasyCard implements EnterCardGroupPatches
 
     @Override
     public void upp() {
-        upgradeDamage(10);
+        upgradeDamage(5);
         upgradeMagicNumber(2);
     }
 
