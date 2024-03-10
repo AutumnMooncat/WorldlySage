@@ -1,10 +1,7 @@
 package WorldlySage.powers;
 
 import WorldlySage.MainModfile;
-import WorldlySage.powers.interfaces.OnGrowthPower;
-import WorldlySage.ui.PlantedCardManager;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -34,9 +31,10 @@ public class SunnyDayPower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
-        if (!PlantedCardManager.cards.isEmpty()) {
+        addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount)));
+        /*if (!PlantedCardManager.cards.isEmpty()) {
             flash();
             addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount * PlantedCardManager.cards.size())));
-        }
+        }*/
     }
 }

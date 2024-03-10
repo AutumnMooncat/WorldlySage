@@ -93,7 +93,7 @@
   },
   "${ModID}:SunnyDayPower": {
     "NAME": "Sunny Day",
-    "DESCRIPTIONS": ["At the start of your turn, gain #b"," #yVigor for each of your #yPlanted cards."]
+    "DESCRIPTIONS": ["At the start of your turn, gain #b"," #yVigor."]
   },
   "${ModID}:PlayWithFirePower": {
     "NAME": "Play With Fire",

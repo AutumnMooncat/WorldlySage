@@ -13,8 +13,8 @@ public class SunnyDay extends AbstractEasyCard {
     public final static String ID = makeID(SunnyDay.class.getSimpleName());
 
     public SunnyDay() {
-        super(ID, 2, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 2;
+        super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
+        baseMagicNumber = magicNumber = 5;
     }
 
     @Override
@@ -24,8 +24,8 @@ public class SunnyDay extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        //upgradeMagicNumber(1);
-        upgradeBaseCost(1);
+        upgradeMagicNumber(2);
+        //upgradeBaseCost(1);
     }
 
     @Override
