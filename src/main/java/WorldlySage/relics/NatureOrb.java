@@ -1,6 +1,7 @@
 package WorldlySage.relics;
 
 import WorldlySage.TheWorldlySage;
+import WorldlySage.actions.ApplyGrowthAction;
 import WorldlySage.actions.PlantCardsAction;
 import WorldlySage.cards.Sapling;
 import WorldlySage.patches.CustomTags;
@@ -34,17 +35,32 @@ public class NatureOrb extends AbstractEasyRelic {
     }
 
     @Override
-    public void atTurnStartPostDraw() {
+    public void atBattleStart() {
         flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (int i = 0 ; i < 2 ; i++) {
+        for (int i = 0 ; i < 3 ; i++) {
             AbstractCard card = new Sapling();
             card.tags.add(CustomTags.SAGE_RELIC_TRACKER);
+            ApplyGrowthAction.applyGrowth(card, 2);
             group.addToTop(card);
         }
         addToBot(new PlantCardsAction(group, group.size()));
     }
+
+/*    @Override
+    public void atTurnStartPostDraw() {
+        flash();
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        for (int i = 0 ; i < 3 ; i++) {
+            AbstractCard card = new Sapling();
+            card.tags.add(CustomTags.SAGE_RELIC_TRACKER);
+            ApplyGrowthAction.applyGrowth(card, 2);
+            group.addToTop(card);
+        }
+        addToBot(new PlantCardsAction(group, group.size()));
+    }*/
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
