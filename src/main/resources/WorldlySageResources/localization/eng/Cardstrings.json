@@ -341,7 +341,7 @@
   },
   "${ModID}:WorldTree": {
     "NAME": "World Tree",
-    "DESCRIPTION": "${ModID}:Grow ALL your cards !M! times."
+    "DESCRIPTION": "${ModID}:Grow ALL your cards{@@}{!M!|>1= !M! times}."
   },
   "${ModID}:Wormhole": {
     "NAME": "Wormhole",

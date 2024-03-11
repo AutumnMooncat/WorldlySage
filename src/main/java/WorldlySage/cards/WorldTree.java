@@ -14,13 +14,11 @@ public class WorldTree extends AbstractEasyCard {
 
     public WorldTree() {
         super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
-        //baseBlock = block = 8;
-        baseMagicNumber = magicNumber = 2;
+        baseMagicNumber = magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        //blck();
         addToBot(new ApplyGrowthToAllCardsAction(magicNumber));
         addToBot(new ApplyGrowthAction(this, magicNumber));
     }
