@@ -15,7 +15,7 @@
   },
   "${ModID}:BlackHole": {
     "NAME": "Black Hole",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Adaptive - Apply !M! ${ModID}:Crushed to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever this card enters your hand, apply !M! ${ModID}:Crushed to ALL enemies."
   },
   "${ModID}:BoulderCrash": {
     "NAME": "Boulder Crash",
@@ -166,7 +166,7 @@
   },
   "${ModID}:NightWatch": {
     "NAME": "Night Watch",
-    "DESCRIPTION": "Ethereal. NL ${ModID}:Adaptive - Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
+    "DESCRIPTION": "Ethereal. NL Whenever this card enters your hand, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
   },
   "${ModID}:Nova": {
     "NAME": "Nova",
@@ -194,7 +194,7 @@
   },
   "${ModID}:Reflection": {
     "NAME": "Reflection",
-    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Adaptive - Add a copy of this card into your hand. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Whenever this card enters your hand, make a copy of it. NL Exhaust."
   },
   "${ModID}:Reforestation": {
     "NAME": "Reforestation",
@@ -288,7 +288,7 @@
   },
   "${ModID}:TheMountain": {
     "NAME": "The Mountain",
-    "DESCRIPTION": "Apply !M! Weak. NL Apply !M! Vulnerable. NL Apply !M! ${ModID}:Crushed. NL ${ModID}:Adaptive - Increase these amounts by !${ModID}:M2! this combat."
+    "DESCRIPTION": "Apply !M! Weak. NL Apply !M! Vulnerable. NL Apply !M! ${ModID}:Crushed. NL Whenever this card enters your hand, increase these amounts by !${ModID}:M2! this combat."
   },
   "${ModID}:Till": {
     "NAME": "Till",
