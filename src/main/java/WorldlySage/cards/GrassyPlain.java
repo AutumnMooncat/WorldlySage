@@ -16,6 +16,7 @@ public class GrassyPlain extends AbstractEasyCard {
         super(ID, 2, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF);
         baseBlock = block = 6;
         baseMagicNumber = magicNumber = 1;
+        cardsToPreview = new Sapling();
     }
 
     @Override

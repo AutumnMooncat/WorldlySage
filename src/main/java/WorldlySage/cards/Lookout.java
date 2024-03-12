@@ -17,7 +17,6 @@ public class Lookout extends AbstractEasyCard {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
         baseBlock = block = 5;
         baseMagicNumber = magicNumber = 1;
-        cardsToPreview = new Sapling();
     }
 
     @Override
