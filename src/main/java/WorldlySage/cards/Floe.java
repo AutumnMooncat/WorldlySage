@@ -28,7 +28,7 @@ public class Floe extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBlock(1);
+        upgradeBlock(2);
         upgradeMagicNumber(1);
     }
 
