@@ -1,4 +1,4 @@
-package WorldlySage.cards;
+package WorldlySage.cutStuff.cards;
 
 import WorldlySage.actions.DoAction;
 import WorldlySage.actions.ExhaustByPredAction;
