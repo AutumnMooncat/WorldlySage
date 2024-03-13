@@ -76,8 +76,8 @@ public class NatureOrb extends AbstractEasyRelic {
         //If we have the starter relic...
         if (p.hasRelic(WaterOrb.ID)) {
             //Grab its data for relic stats if you want to carry the stats over to the boss relic
-            WaterOrb mb = (WaterOrb) p.getRelic(WaterOrb.ID);
-            stats.put(STAT, mb.getStat());
+            //WaterOrb mb = (WaterOrb) p.getRelic(WaterOrb.ID);
+            //stats.put(STAT, mb.getStat());
             //Find it...
             for (int i = 0; i < p.relics.size(); ++i) {
                 if (p.relics.get(i).relicId.equals(WaterOrb.ID)) {
