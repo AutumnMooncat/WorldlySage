@@ -107,8 +107,7 @@
   },
   "${ModID}:GrowingPains": {
     "NAME": "Growing Pains",
-    "DESCRIPTION": "${ModID}:Plant !M! *Shivs.",
-    "UPGRADE_DESCRIPTION": "${ModID}:Plant !M! *Shivs. NL ${ModID}:Grow them !M! times."
+    "DESCRIPTION": "${ModID}:Plant 2 *Shivs. NL ${ModID}:Grow all your ${ModID}:Planted cards{@@}{!M!|>1= !M! times}."
   },
   "${ModID}:Haste": {
     "NAME": "Haste",
@@ -143,10 +142,7 @@
   },
   "${ModID}:Mending": {
     "NAME": "Mending",
-    "DESCRIPTION": "Unplayable. NL At the end of your turn, gain !B! Block.",
-    "EXTENDED_DESCRIPTION": [
-      "I can't play this card."
-    ]
+    "DESCRIPTION": "${ModID}:Plant 1 ${ModID}:Sapling. NL ${ModID}:Grow all your ${ModID}:Planted cards{@@}{!M!|>1= !M! times}."
   },
   "${ModID}:Meteor": {
     "NAME": "Meteor",

@@ -4,42 +4,37 @@ import WorldlySage.actions.ApplyGrowthToAllCardsAction;
 import WorldlySage.actions.PlantCardsAction;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import WorldlySage.ui.PlantedCardManager;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.cards.green.BladeDance;
-import com.megacrit.cardcrawl.cards.tempCards.Shiv;
+import com.megacrit.cardcrawl.cards.blue.AutoShields;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static WorldlySage.MainModfile.makeID;
 
-public class GrowingPains extends AbstractEasyCard {
-    public final static String ID = makeID(GrowingPains.class.getSimpleName());
+public class Mending extends AbstractEasyCard {
+    public final static String ID = makeID(Mending.class.getSimpleName());
 
-    public GrowingPains() {
-        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 2;
-        cardsToPreview = new Shiv();
+    public Mending() {
+        super(ID, 0, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        baseMagicNumber = magicNumber = 1;
+        cardsToPreview = new Sapling();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (int i = 0 ; i < 2 ; i++) {
-            AbstractCard card = new Shiv();
-            group.addToTop(card);
-        }
+        group.addToTop(new Sapling());
         addToBot(new PlantCardsAction(group, group.size()));
         addToBot(new ApplyGrowthToAllCardsAction(magicNumber, PlantedCardManager.cards::contains));
     }
 
     @Override
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
     }
 
     @Override
     public String cardArtCopy() {
-        return BladeDance.ID;
+        return AutoShields.ID;
     }
 }
