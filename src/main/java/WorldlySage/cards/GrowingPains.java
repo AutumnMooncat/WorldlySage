@@ -18,7 +18,7 @@ public class GrowingPains extends AbstractEasyCard {
 
     public GrowingPains() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 2;
+        baseMagicNumber = magicNumber = 1;
         cardsToPreview = new Shiv();
     }
 
@@ -35,7 +35,7 @@ public class GrowingPains extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
     }
 
     @Override
