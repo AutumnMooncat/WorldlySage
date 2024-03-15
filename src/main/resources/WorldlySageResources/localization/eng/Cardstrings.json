@@ -47,7 +47,7 @@
     "EXTENDED_DESCRIPTION": ["Swap Costs"]
   },
   "${ModID}:Eruption": {
-    "NAME": "Eruption",
+    "NAME": "Volcanic Eruption",
     "DESCRIPTION": "Gain !M! Vigor for each card in your hand."
   },
   "${ModID}:Etherealize": {

@@ -13,8 +13,8 @@ public class Eruption extends AbstractEasyCard {
     public final static String ID = makeID(Eruption.class.getSimpleName());
 
     public Eruption() {
-        super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 3;
+        super(ID, 0, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
+        baseMagicNumber = magicNumber = 2;
     }
 
     @Override
