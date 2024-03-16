@@ -14,10 +14,6 @@ public class PhantomMod extends AbstractCardModifier {
         return TEXT[0] + rawDescription;
     }
 
-    public boolean shouldApply(AbstractCard card) {
-        return !card.isEthereal;
-    }
-
     public void onInitialApplication(AbstractCard card) {
         card.isEthereal = true;
         if (card.type != AbstractCard.CardType.POWER) {
