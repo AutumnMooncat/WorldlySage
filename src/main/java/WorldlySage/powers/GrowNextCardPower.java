@@ -39,7 +39,7 @@ public class GrowNextCardPower extends AbstractPower {
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
         if (justEvoked) {
             justEvoked = false;
-        } else {
+        } else if (!card.purgeOnUse) {
             flash();
             ApplyGrowthAction.applyGrowth(card, 1);
             addToBot(new ReducePowerAction(owner, owner, this, 1));

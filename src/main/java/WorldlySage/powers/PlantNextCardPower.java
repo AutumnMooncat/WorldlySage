@@ -39,7 +39,7 @@ public class PlantNextCardPower extends AbstractPower {
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
         if (justEvoked) {
             justEvoked = false;
-        } else {
+        } else if (!card.purgeOnUse) {
             if (card.type != AbstractCard.CardType.POWER) {
                 flash();
                 UseCardActionPatches.PlantField.plantNextCard.set(action, true);
