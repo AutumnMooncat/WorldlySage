@@ -1,6 +1,7 @@
 package WorldlySage.cards;
 
 import WorldlySage.cards.abstracts.AbstractEasyCard;
+import WorldlySage.patches.EnterCardGroupPatches;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MultiGroupSelectAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -34,6 +35,7 @@ public class Wormhole extends AbstractEasyCard {
                 onSuccess = () -> {
                     //Actually add the card to the pile
                     group.group.add(index, this);
+                    EnterCardGroupPatches.CardAddedToGroup.checkCard(group, this);
 
                     //Animate the card cosmetically
                     unhover();
@@ -66,6 +68,7 @@ public class Wormhole extends AbstractEasyCard {
                 c.targetDrawScale = 0.75F;
                 if (handIndex != -1) {
                     p.hand.group.add(handIndex, c);
+                    EnterCardGroupPatches.CardAddedToGroup.checkCard(p.hand, c);
                 } else {
                     p.hand.addToTop(c);
                 }
