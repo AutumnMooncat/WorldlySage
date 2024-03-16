@@ -1,5 +1,6 @@
 package WorldlySage.cards;
 
+import WorldlySage.actions.DoAction;
 import WorldlySage.cards.abstracts.AbstractEasyCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.purple.Wish;
@@ -18,16 +19,12 @@ public class RockSmash extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DoAction(() -> {
+            if (m.currentBlock > 0) {
+                dmgTop(m, AbstractGameAction.AttackEffect.BLUNT_HEAVY);
+            }
+        }));
         dmg(m, AbstractGameAction.AttackEffect.BLUNT_HEAVY);
-    }
-
-    @Override
-    public void calculateCardDamage(AbstractMonster mo) {
-        super.calculateCardDamage(mo);
-        if (mo.currentBlock > 0) {
-            damage *= 2;
-            isDamageModified = damage != baseDamage;
-        }
     }
 
     @Override

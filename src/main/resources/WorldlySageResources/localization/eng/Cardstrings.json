@@ -219,7 +219,7 @@
   },
   "${ModID}:RockSmash": {
     "NAME": "Rock Smash",
-    "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Block."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy had Block, deal !D! damage again."
   },
   "${ModID}:RollingFog": {
     "NAME": "Rolling Fog",
