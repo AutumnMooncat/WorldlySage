@@ -14,7 +14,7 @@ public class Druidry extends AbstractEasyCard {
 
     public Druidry() {
         super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 4;
+        baseMagicNumber = magicNumber = 5;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class Druidry extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        upgradeMagicNumber(2);
     }
 
     @Override
